@@ -1,9 +1,9 @@
 <?php
 class connect{
-    public $servername = "localhost";
-    private $username = "atriprints_vksolar";
-    private $password = "atriprints_vksolar";
-    private $dbname = "atriprints_vksolar";
+     public $servername = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $dbname = "abcoedtech_vksolar";
 
     public function dbconnect()
     {

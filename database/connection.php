@@ -2,15 +2,15 @@
 
 class connection
 {
-    public $hostname = 'localhost';
-    public $username = 'root';
-    public $pswd = '';
-    public $databaseName = 'vk_solar';
+     public $servername = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $database = "abcoedtech_vksolar";
     public $conn;
 
     public function my_connect()
     {
-        $this->conn = new mysqli($this->hostname,$this->username,$this->pswd,$this->databaseName);
+        $this->conn = new mysqli($this->servername,$this->username,$this->password,$this->database);
         return $this->conn;
     }
 }

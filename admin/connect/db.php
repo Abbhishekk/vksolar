@@ -2,9 +2,9 @@
 // connect/db.php - Enhanced MySQLi connection
 class Database {
     public $servername = "localhost";
-    private $username = "atriprints_vksolar";
-    private $password = "atriprints_vksolar";
-    private $database = "atriprints_vksolar";
+    private $username = "root";
+    private $password = "";
+    private $database = "abcoedtech_vksolar";
     public $conn;
 
    public function __construct() {
