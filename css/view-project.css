@@ -1,0 +1,285 @@
+/* VK Solar Energy - Green Theme Custom CSS */
+
+:root {
+  --primary: #2e8b57; /* Forest Green */
+  --primary-light: #3cb371; /* Medium Sea Green */
+  --primary-dark: #1e6b47; /* Darker Green */
+  --secondary: #f5f5f5; /* Off-white */
+  --accent: #87ceeb; /* Sky Blue */
+  --accent-light: #b0e2ff; /* Light Sky Blue */
+  --earth: #d2b48c; /* Tan/Earth tone */
+  --earth-light: #f0e6d6; /* Light Beige */
+  --dark: #2c3e50; /* Dark Blue-Gray */
+  --light: #f8f9fa; /* Light Gray */
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-light) 100%
+  );
+  --gradient-secondary: linear-gradient(
+    135deg,
+    var(--earth-light) 0%,
+    var(--secondary) 100%
+  );
+  --gradient-hero: linear-gradient(
+    135deg,
+    rgba(46, 139, 87, 0.85) 0%,
+    rgba(60, 179, 113, 0.85) 100%
+  );
+  --gradient-nature: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--accent) 100%
+  );
+}
+
+/* Base Typography */
+
+/* Topbar - Green Theme */
+.bg-dark {
+  background-color: var(--primary-dark) !important;
+}
+
+/* Navbar - Green Theme */
+
+/* Hero Section - Green Theme */
+.hero-section {
+  background: var(--gradient-hero),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80")
+      center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+  border-radius: 25px !important;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  padding: 12px 30px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4) !important;
+  background: linear-gradient(
+    135deg,
+    var(--primary-light) 0%,
+    var(--primary) 100%
+  ) !important;
+}
+
+/* Section Headers */
+.text-primary {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+/* Product Section */
+.product-section {
+  padding: 50px 0;
+}
+
+.product-item {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  margin-bottom: 30px;
+  border: 1px solid rgba(46, 139, 87, 0.1);
+  height: 100%;
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-item .position-relative {
+  overflow: hidden;
+}
+
+.product-item img {
+  transition: transform 0.5s ease;
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-item:hover img {
+  transform: scale(1.05);
+}
+
+.product-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--gradient-primary);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(46, 139, 87, 0.3);
+  color: white;
+  font-size: 2rem;
+}
+
+.product-content {
+  padding: 1.5rem;
+}
+
+.product-content h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--dark);
+  min-height: 60px;
+}
+
+.product-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  min-height: 80px;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.current-price {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+.discount {
+  color: #28a745;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.warranty {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Filter Section */
+.filter-section {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.filter-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.filter-option {
+  margin-bottom: 10px;
+}
+
+.filter-option label {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Common Style for Floating Buttons */
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  bottom: 80px; /* sits above Back to Top */
+  background: #25d366;
+}
+.whatsapp-btn:hover {
+  background: #20b954;
+  transform: translateY(-3px);
+}
+
+/* Back to Top Button */
+.back-to-top {
+  bottom: 20px; /* stays below WhatsApp */
+  background: var(--primary);
+}
+.back-to-top:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .product-content h4 {
+    min-height: auto;
+  }
+
+  .product-content p {
+    min-height: auto;
+  }
+}

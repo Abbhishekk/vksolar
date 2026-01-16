@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quotation / Proforma Invoice</title>
+  <style>
+    /* Renamed from #client-list -> #solar-quote */
+    #solar-quote {
+      --brand: #4caf50;
+      --page-bg: #f6fff5;
+      --text: #111;
+      --muted: #666;
+      --card-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      --compact-font-size: 11px;
+      box-sizing: border-box;
+      background: var(--page-bg);
+      padding: 12px;
+    }
+
+    /* container that matches A4 width for the module */
+    #solar-quote .page {
+      max-width: 210mm; /* A4 width */
+      margin: 18px auto;
+      padding: 14px;
+      box-sizing: border-box;
+    }
+
+    /* modular card look */
+    #solar-quote .card {
+      background: white;
+      border-radius: 12px;
+      padding: 12px 18px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+    }
+
+    #solar-quote header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    #solar-quote .logo-dot {
+      width: 46px; height: 46px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--brand), #2e8b3a);
+      display: flex; align-items: center; justify-content: center;
+      color: #000; font-weight: 700; font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    }
+
+    #solar-quote h2{
+      font-size: 16px;
+      margin:0;
+      letter-spacing:0.2px;
+      color: var(--text);
+    }
+
+    #solar-quote .meta {
+      margin-left: auto;
+      text-align: right;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Table styling (compact) - scoped */
+    #solar-quote table{
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: var(--compact-font-size);
+      line-height: 1.2;
+      margin-top: 8px;
+    }
+
+    #solar-quote thead th{
+      background: linear-gradient(180deg,var(--brand), #3da64a);
+      color:#000;
+      font-weight:700;
+      padding:8px 6px;
+      border:1px solid rgba(0,0,0,0.08);
+      text-align:center;
+      vertical-align:middle;
+      font-size:12px;
+    }
+
+    #solar-quote tbody td{
+      padding:8px 8px;
+      border:1px solid rgba(0,0,0,0.06);
+      vertical-align:middle;
+      word-wrap:break-word;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      font-size:13px;
+    }
+
+    #solar-quote tbody tr:nth-child(odd){ background: #ffffff; }
+    #solar-quote tbody tr:nth-child(even){ background: #fbfff9; }
+
+    /* Column widths for the invoice table */
+    #solar-quote th.col-1, #solar-quote td.col-1 { width:6%; text-align:center; }
+    #solar-quote th.col-2, #solar-quote td.col-2 { width:44%; padding-left:8px; text-align:left; }
+    #solar-quote th.col-3, #solar-quote td.col-3 { width:12%; text-align:center; }
+    #solar-quote th.col-4, #solar-quote td.col-4 { width:12%; text-align:center; }
+    #solar-quote th.col-5, #solar-quote td.col-5 { width:13%; text-align:right; padding-right:12px; }
+
+    /* totals footer */
+    #solar-quote tfoot td{ font-weight:700; background:transparent; border:none; }
+
+    .terms{ margin-top:14px; font-size:13px; color:var(--text); }
+    .terms h3{ margin:6px 0; color:var(--brand); }
+    .terms p, .terms li{ margin:6px 0; color:var(--muted); line-height:1.4; }
+
+    @media print {
+      /* Only modify styles for the module when printing */
+      #solar-quote .page { box-shadow: none; margin: 0; padding: 0; max-width: 100%; }
+      #solar-quote .card { border-radius: 0; padding: 6mm; box-shadow: none; }
+      #solar-quote header .logo-dot { display: none; } /* save space */
+      #solar-quote h2 { font-size: 14px; }
+      #solar-quote table { font-size: 11px; }
+      #solar-quote tbody td { white-space: normal; } /* allow wrapping on print */
+      tr, td, th { page-break-inside: avoid; }
+    }
+
+    /* small screens */
+    @media (max-width:600px){
+      #solar-quote { --compact-font-size: 10px; }
+      #solar-quote .page{ margin:8px; padding:8px; }
+      #solar-quote thead th{ font-size:11px; }
+      #solar-quote tbody td{ white-space:normal; }
+    }
+
+    .right { text-align:right; }
+    .muted { color:var(--muted); font-size:12px; }
+
+  </style>
+</head>
+<body>
+
+<section id="solar-quote" aria-labelledby="solar-quote-title">
+  <div class="page">
+    <div class="card">
+      <header>
+        <div class="logo-dot">OS</div>
+        <div>
+          <h2>OM SAI RAM ENTERPRISES</h2>
+          <div class="muted">Quotation / Proforma Invoice</div>
+        </div>
+        <div class="meta">
+          <div>Date: <strong><!-- insert date here --></strong></div>
+          <div>Quote No: <strong><!-- insert quote no --></strong></div>
+        </div>
+      </header>
+
+      <!-- Items table -->
+      <div style="overflow:auto">
+        <table role="table" aria-label="Quotation Items">
+          <thead>
+            <tr>
+              <th class="col-1">Sr.No</th>
+              <th class="col-2">Description</th>
+              <th class="col-3">Capacity</th>
+              <th class="col-4">Unit</th>
+              <th class="col-5">Rate (INR)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-1">1</td>
+              <td class="col-2">Design, Supply, Installation & Commissioning of Grid Tied solar PV system BIFACIAL HALF-CUT</td>
+              <td class="col-3">3.3</td>
+              <td class="col-4">kWp</td>
+              <td class="col-5">2,18,000.00</td>
+            </tr>
+
+            <tr>
+              <td class="col-1">2</td>
+              <td class="col-2">Load Extension Charges</td>
+              <td class="col-3">EXTRA</td>
+              <td class="col-4">ACTUAL</td>
+              <td class="col-5">&mdash;</td>
+            </tr>
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4" style="text-align:right; padding-right:12px; border:none">Sub Total</td>
+              <td style="text-align:right; border:none;">2,18,000.00</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:right; padding-right:12px; border:none">GST @ 13.8%</td>
+              <td style="text-align:right; border:none;">(calculate)</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:right; padding-right:12px; border:none">Discount %</td>
+              <td style="text-align:right; border:none;">&mdash;</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:right; padding-right:12px; border:none">Grand Total</td>
+              <td style="text-align:right; border:none;">2,18,000.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- Terms & Conditions -->
+      <div class="terms">
+        <h3>Terms &amp; Conditions</h3>
+        <ul>
+          <li><strong>Load Extension:</strong> If required will be charged extra and payment as actual will be on customer scope.</li>
+          <li><strong>Taxes:</strong> GST @ 13.8% on System.</li>
+          <li><strong>Validity:</strong> Above rates are valid for 15 days from the date of offer and subject to our written confirmation thereafter.</li>
+          <li><strong>Delivery, Installation &amp; Commissioning:</strong> Within 5 to 6 weeks from the date of confirmed Purchase Order and advance payment in favor of OM SAI RAM ENTERPRISES.</li>
+          <li><strong>Payment Terms:</strong> Advance: 30% with order | 60% at the time of dispatch of Inverters | 10% after commissioning.</li>
+          <li><strong>Transportation:</strong> Included.</li>
+          <li><strong>Cables, Wire and Accessories:</strong> Included.</li>
+          <li><strong>Monitoring:</strong> Remote monitoring system included in the cost.</li>
+          <li><strong>Civil work and Fabrication:</strong> Civil work and fabrication work for solar system required is in our scope.</li>
+          <li><strong>Net Meter:</strong> Net meter included in the cost.</li>
+          <li><strong>Metering Cubicle CT &amp; PT:</strong> Upgradation or replacement of Metering Cubical CT PT and accessories will be in client scope.</li>
+          <li><strong>Lightning Arrester:</strong> Included in the cost.</li>
+          <li><strong>On Grid Failure:</strong> The plant will cease to feed supply to the grid until the grid is restored.</li>
+          <li><strong>Interruption in Work:</strong> The Customer must not interrupt the works, and/or shall abstain from any act or omission which can reasonably be expected to delay the works.</li>
+          <li><strong>Warranty:</strong> 10 years warranty for PV Inverters &amp; 1 year for Balance of System.</li>
+          <li><strong>For Loan Purpose Only:</strong> Transit Insurance is in our scope.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

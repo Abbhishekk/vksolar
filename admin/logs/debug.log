@@ -1,0 +1,41 @@
+[2025-11-13 14:19:04] Invalid request method: GET
+[2025-11-13 14:19:32] Invalid request method: GET
+[2025-11-13 14:30:12] === NEW REQUEST ===
+[2025-11-13 14:30:12] Request Method: GET
+[2025-11-13 14:30:12] Request URI: /admin/api/workflow_api
+[2025-11-13 14:30:12] POST Data: Array
+(
+)
+
+[2025-11-13 14:30:12] GET Data: Array
+(
+)
+
+[2025-11-13 14:30:12] HTTP Headers: Array
+(
+    [Host] => vksolarenergy.com
+    [sec-ch-ua-platform] => "Android"
+    [x-requested-with] => XMLHttpRequest
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sec-ch-ua] => "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"
+    [sec-ch-ua-mobile] => ?1
+    [Accept] => */*
+    [sec-fetch-site] => same-origin
+    [sec-fetch-mode] => cors
+    [sec-fetch-dest] => empty
+    [Referer] => https://vksolarenergy.com/admin/workflow
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en;q=0.9,hi-IN;q=0.8,hi;q=0.7,en-US;q=0.6,mr;q=0.5
+    [priority] => u=1, i
+    [Cookie] => _tccl_visitor=dcec5c5f-3803-4bc2-a20e-1b3c435bab22; PHPSESSID=2p7bjeb741mf2pvg0fkoammd2b
+    [X-HTTPS] => 1
+)
+
+[2025-11-13 14:30:12] Invalid request method received: GET
+[2025-11-13 14:30:12] Expected: POST
+[2025-11-13 14:30:46] TEST Endpoint Called
+[2025-11-13 14:30:46] Method: GET
+[2025-11-13 14:30:46] POST Data: Array
+(
+)
+

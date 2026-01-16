@@ -1,0 +1,398 @@
+[23-Dec-2025 10:12:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'atriprints_vksolar.commissioning_certificates' doesn't exist in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php:40
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php(40): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 40
+[23-Dec-2025 10:13:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'atriprints_vksolar.commissioning_certificates' doesn't exist in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php:40
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php(40): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 40
+[23-Dec-2025 10:22:25 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/../commissioning.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 130
+[23-Dec-2025 10:22:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/../commissioning.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php:130
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 130
+[23-Dec-2025 10:23:21 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning.php on line 3
+[23-Dec-2025 10:23:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php(130): require_once()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning.php on line 3
+[24-Dec-2025 08:15:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'project_address' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php:41
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php(41): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 41
+[24-Dec-2025 08:16:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:100
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(100): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 100
+[24-Dec-2025 08:22:46 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[24-Dec-2025 08:40:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'system_capacity' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php:23
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php(23): mysqli->query()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 23
+[24-Dec-2025 08:44:26 UTC] PHP Warning:  Undefined array key "system_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 125
+[24-Dec-2025 09:25:44 UTC] PHP Warning:  Undefined array key "system_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 125
+[24-Dec-2025 09:25:46 UTC] PHP Warning:  Undefined array key "system_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 125
+[24-Dec-2025 10:49:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:11:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:23:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:24:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:25:29 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:25:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:26:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:28:31 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:29:54 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:30:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:31:54 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:33:01 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:39:09 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:41:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:42:39 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:43:33 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:44:24 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:45:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 09:46:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 13:33:23 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 13:34:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 13:38:11 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 13:42:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 13:57:21 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 14:04:43 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:63
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 63
+[28-Dec-2025 14:12:32 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 14:14:55 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 14:17:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 14:35:07 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:100
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(100): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 100
+[28-Dec-2025 14:35:55 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:100
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(100): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 100
+[28-Dec-2025 14:36:02 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:100
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(100): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 100
+[28-Dec-2025 14:38:11 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'leter_no' cannot be null in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:127
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(127): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 127
+[28-Dec-2025 14:38:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'leter_no' cannot be null in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:127
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(127): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 127
+[28-Dec-2025 14:40:32 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 14:41:37 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 14:55:33 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 14:59:00 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 15:07:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 15:07:58 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 15:09:05 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:64
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(64): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 64
+[28-Dec-2025 15:11:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:79
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(79): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 79
+[28-Dec-2025 15:14:31 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:83
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(83): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 83
+[28-Dec-2025 15:16:36 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:83
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(83): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 83
+[28-Dec-2025 15:29:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:94
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(94): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 94
+[28-Dec-2025 15:30:12 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:94
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(94): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 94
+[28-Dec-2025 15:30:21 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:94
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(94): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 94
+[28-Dec-2025 15:33:02 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:83
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(83): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 83
+[28-Dec-2025 15:33:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:83
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(83): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 83
+[28-Dec-2025 15:34:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:83
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(83): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 83
+[28-Dec-2025 15:38:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:99
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(99): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 99
+[28-Dec-2025 15:39:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:99
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(99): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 99
+[28-Dec-2025 15:41:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:99
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(99): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 99
+[28-Dec-2025 15:46:17 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:99
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(99): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 99
+[28-Dec-2025 15:46:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:99
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(99): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 99
+[28-Dec-2025 16:44:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '5' for key 'commissioning_certificates.uniq_client' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:175
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(175): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 175
+[28-Dec-2025 17:55:54 UTC] PHP Warning:  Array to string conversion in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 45
+[28-Dec-2025 17:55:54 UTC] PHP Warning:  Array to string conversion in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 46
+[28-Dec-2025 18:00:45 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 54
+[28-Dec-2025 18:01:03 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:01:03 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:00 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:00 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:02 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:02 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:03 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:03 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:03 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:03 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:03 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:03 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:04 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:02:04 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:11 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:11 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:12 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:12 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:12 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:12 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:12 UTC] PHP Warning:  Undefined variable $saved in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[28-Dec-2025 18:03:12 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php:47
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php(47): array_merge()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/test.php on line 47
+[29-Dec-2025 05:44:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'commissioning_certificates.uniq_client' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php:175
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php(175): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/save_commissioning.php on line 175
+[10-Jan-2026 13:30:12 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 3
+[10-Jan-2026 13:30:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php:3
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 3

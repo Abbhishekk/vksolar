@@ -1,0 +1,169 @@
+/* === RESPONSIVE FIXES ONLY (append after your current CSS) === */
+
+/* Prevent horizontal scroll */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Make all images, videos, iframes scale properly */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bootstrap grid safe padding */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+[class*="col-"] {
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+
+/* Navbar responsiveness */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-wrap: wrap;
+  }
+  .navbar .btn {
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Hero / Carousel */
+/* @media (max-width: 768px) {
+  .owl-carousel .owl-carousel-item img {
+    height: auto !important;
+  }
+  .owl-carousel-inner h1 {
+    font-size: 1.6rem;
+  }
+  .owl-carousel-inner p {
+    font-size: 1rem;
+  }
+  .owl-carousel-inner .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+} */
+
+/* About Section - stack on small screens */
+@media (max-width: 992px) {
+  #about .row {
+    flex-direction: column-reverse !important;
+  }
+  #about .about-image-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Quote Section */
+@media (max-width: 768px) {
+  #quote .row {
+    flex-direction: column !important;
+  }
+  #quote img {
+    width: 100%;
+    height: auto;
+  }
+  #quote form {
+    width: 100%;
+  }
+}
+
+/* Services & Products */
+@media (max-width: 768px) {
+  .service-item,
+  .product-item {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+  #contact .row {
+    flex-direction: column !important;
+  }
+  .contact-map iframe {
+    width: 100% !important;
+    height: 250px;
+  }
+}
+
+/* Footer */
+@media (max-width: 576px) {
+  .footer .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+/* Floating buttons */
+@media (max-width: 480px) {
+  .floating-btn {
+    right: 12px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* === Navbar Responsive Fixes === */
+
+/* Prevent horizontal overflow */
+.navbar {
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+/* Make brand logo & text wrap safely */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.navbar-brand img {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+}
+
+/* Navbar collapse behavior */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+
+  /* Align button below nav links */
+  .navbar .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .navbar-brand h2 {
+    font-size: 1rem;
+  }
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+  }
+}

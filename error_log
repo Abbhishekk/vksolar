@@ -1,0 +1,2 @@
+[13-Oct-2025 08:35:03 UTC] PHP Warning:  Undefined property: Database::$database in /home6/atriprints/vksolarenergy.com/admin/connect/db.php on line 12
+[13-Oct-2025 08:39:24 UTC] PHP Warning:  Undefined property: Database::$database in /home6/atriprints/vksolarenergy.com/admin/connect/db.php on line 12

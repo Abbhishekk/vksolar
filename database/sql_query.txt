@@ -1,0 +1,30 @@
+create databse vk_solar
+
+CREATE TABLE brand (
+    brand_id INT AUTO_INCREMENT PRIMARY KEY,
+    logo_name VARCHAR(100) NOT NULL,
+    logo_path VARCHAR(255) NOT NULL,
+    logo_type VARCHAR(50) NOT NULL,
+    brand_name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE slider (
+    slide_id INT AUTO_INCREMENT PRIMARY KEY,
+    slide_title VARCHAR(150) NOT NULL,
+    slide_content TEXT NOT NULL,
+    bg_img_name VARCHAR(100) NOT NULL,
+    bg_img_path VARCHAR(255) NOT NULL,
+    bg_img_type VARCHAR(50) NOT NULL,
+    logo_name VARCHAR(100) NOT NULL,
+    logo_path VARCHAR(255) NOT NULL,
+    logo_type VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE projects (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    project_name VARCHAR(255) NOT NULL,
+    project_summary TEXT,
+    image_name VARCHAR(255),
+    image_path VARCHAR(500),
+    img_type VARCHAR(100)
+);

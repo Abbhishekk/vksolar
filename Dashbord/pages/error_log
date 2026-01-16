@@ -1,0 +1,36 @@
+[10-Oct-2025 06:31:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[10-Oct-2025 06:31:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[10-Oct-2025 17:38:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[10-Oct-2025 17:38:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/carousel.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[13-Oct-2025 02:30:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[13-Oct-2025 07:24:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/carousel.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13

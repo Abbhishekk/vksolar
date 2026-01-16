@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(135deg, #f2fff4, #e8f5e9);
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+h2 {
+  color: #198754;
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #0b3d2e;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 0.6rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #198754, #00b96b);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00b96b, #198754);
+}
+
+.file-upload-area {
+  border: 2px dashed #a3d9a5;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  background: #f9fff9;
+  transition: all 0.3s ease;
+}
+
+.file-upload-area:hover {
+  background-color: #e6f8e7;
+  border-color: #198754;
+}
+
+.file-upload-area.drag-over {
+  background-color: #d1f2d3;
+  border-color: #00b96b;
+}
+
+.image-preview {
+  display: none;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem;
+  }
+  .image-preview img {
+    max-width: 100%;
+  }
+}

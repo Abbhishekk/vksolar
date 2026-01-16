@@ -1,0 +1,5 @@
+[29-Dec-2025 08:18:16 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/net_metering/net_metering.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/net_metering/index.php on line 53
+[29-Dec-2025 08:18:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/net_metering/net_metering.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/net_metering/index.php:53
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/net_metering/index.php on line 53

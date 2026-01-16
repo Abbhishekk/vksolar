@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EPC Client List</title>
+  <style>
+    /* page-level neutral styles (do not affect module-specific layout) */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      -webkit-print-color-adjust: exact; /* print colors as on screen */
+      background: linear-gradient(180deg, #eaf7ed 0%, #f6fff5 100%);
+    }
+
+    /* === Scoped styles for the client-list module ===
+       Prefix all rules with #client-list so other tables are unaffected.
+    */
+    #client-list {
+      --brand: #4caf50;
+      --page-bg: #f6fff5;
+      --text: #111;
+      --muted: #666;
+      --card-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      --compact-font-size: 11px;
+      box-sizing: border-box;
+    }
+
+    /* container that matches A4 width for the module */
+    #client-list .page {
+      max-width: 210mm; /* A4 width */
+      margin: 18px auto;
+      padding: 14px;
+      box-sizing: border-box;
+    }
+
+    /* modular card look */
+    #client-list .card {
+      background: white;
+      border-radius: 12px;
+      padding: 10px 14px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+    }
+
+    #client-list header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    #client-list .logo-dot {
+      width: 46px; height: 46px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--brand), #2e8b3a);
+      display: flex; align-items: center; justify-content: center;
+      color: #000; font-weight: 700; font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    }
+
+    #client-list h2{
+      font-size: 14px;
+      margin:0;
+      letter-spacing:0.2px;
+      color: var(--text);
+    }
+
+    #client-list .meta {
+      margin-left: auto;
+      text-align: right;
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    /* Table styling (compact) - scoped */
+    #client-list table{
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: var(--compact-font-size);
+      line-height: 1.1;
+    }
+
+    #client-list thead th{
+      background: linear-gradient(180deg,var(--brand), #3da64a);
+      color:#000;
+      font-weight:700;
+      padding:7px 6px;
+      border:1px solid rgba(0,0,0,0.08);
+      text-align:center;
+      vertical-align:middle;
+      font-size:12px;
+    }
+
+    #client-list tbody td{
+      padding:6px 6px;
+      border:1px solid rgba(0,0,0,0.06);
+      vertical-align:middle;
+      word-wrap:break-word;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    #client-list tbody tr:nth-child(odd){ background: #ffffff; }
+    #client-list tbody tr:nth-child(even){ background: #fbfff9; }
+
+    /* Compact column widths */
+    #client-list th:nth-child(1), #client-list td:nth-child(1) { width:6%; text-align:center; }
+    #client-list th:nth-child(2), #client-list td:nth-child(2) { width:74%; padding-left:8px; text-align:left; }
+    #client-list th:nth-child(3), #client-list td:nth-child(3) { width:20%; text-align:center; }
+
+    /* Make header repeat when printing - scoped */
+    #client-list thead { display: table-header-group; }
+    #client-list tfoot { display: table-row-group; }
+
+    /* Print rules for the scoped module */
+    @page {
+      size: A4 portrait;
+      margin: 10mm 8mm;
+    }
+
+    @media print {
+      /* Only modify styles for the module when printing */
+      #client-list .page { box-shadow: none; margin: 0; padding: 0; max-width: 100%; }
+      #client-list .card { border-radius: 0; padding: 6mm; box-shadow: none; }
+      #client-list header .logo-dot { display: none; } /* save space */
+      #client-list h2 { font-size: 12px; }
+      #client-list table { font-size: 10px; }
+      #client-list tbody td { white-space: normal; } /* allow wrapping on print */
+      tr, td, th { page-break-inside: avoid; }
+    }
+
+    /* small screens */
+    @media (max-width:600px){
+      #client-list { --compact-font-size: 10px; }
+      #client-list .page{ margin:8px; padding:8px; }
+      #client-list thead th{ font-size:11px; }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- === Client List module (scoped) === -->
+  <section id="client-list" aria-labelledby="client-list-title">
+    <div class="page">
+      <div class="card">
+        <header>
+          <div class="logo-dot">AC</div>
+          <div>
+            <h2 id="client-list-title">EPC Client List</h2>
+            <div style="font-size:11px;color:var(--muted);margin-top:3px">Compact — fits A4 when printed</div>
+          </div>
+          <div class="meta">
+            Generated: <strong id="client-list-date">Nov 9, 2025</strong><br/>
+            Page size: A4
+          </div>
+        </header>
+
+        <div style="overflow:auto">
+          <table role="table" aria-label="EPC Client List">
+            <thead>
+              <tr>
+                <th>Sr. No.</th>
+                <th>EPC Client</th>
+                <th>Size of System (KW)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>TANIYA INDUSTRIES SAONER, NAGPUR</td><td>348 WP</td></tr>
+              <tr><td>2</td><td>JMD ENGINEERING, MIDC HINGNA, NAGPUR</td><td>60 KW</td></tr>
+              <tr><td>3</td><td>ZILHA PARISHAD, GADCHIROLI</td><td>60 KW</td></tr>
+              <tr><td>4</td><td>YOGESHWAR STONE CRUSHER, AMBAD JALNA</td><td>50 KW</td></tr>
+              <tr><td>5</td><td>ISHWARI STONE CRUSHER, ABMAD, JALNA</td><td>50 KW</td></tr>
+              <tr><td>6</td><td>HOTEL VRUNDAWAN AMBAD, JALNA</td><td>20 KW</td></tr>
+              <tr><td>7</td><td>HOTEL RAGHUVIR RESTAURENT, NAGPUR</td><td>15 KW</td></tr>
+              <tr><td>8</td><td>VIDARBH LIQUAR CORPORATION</td><td>50 KW</td></tr>
+              <tr><td>9</td><td>MR. PRASHANT RASEKAR SIR SAONER, NAGPUR</td><td>18 KW</td></tr>
+              <tr><td>10</td><td>MR. SIDDHARTH PRASAD SIR</td><td>12 KW</td></tr>
+              <tr><td>11</td><td>MR. PRANAY GEDAM SIR, SAHKAR NAGAR</td><td>18 KW</td></tr>
+              <tr><td>12</td><td>MR. MARAIN SIR, SADAR NAGPUR</td><td>10 KW</td></tr>
+              <tr><td>13</td><td>SWAMI SAMARTH HOSPITAL, TRIMURTI NAGAR NAGPUR</td><td>18 KW</td></tr>
+              <tr><td>14</td><td>HITUL PATEL SIR, SAONER NAGPUR</td><td>10 KW</td></tr>
+              <tr><td>15</td><td>MR. INDRANARAYAN TIWARI, GOREWADA, NAGPUR</td><td>6 KW</td></tr>
+              <tr><td>16</td><td>MR. DEEPAK BANSOD SIR, SHANKAR NAGAR NAGPUR</td><td>5 KW</td></tr>
+              <tr><td>17</td><td>YOGESH CHAKRADHARE, MANISH NAGAR NAGPUR</td><td>5 KW</td></tr>
+              <tr><td>18</td><td>SADANAND SHETTE, MEDICAL SQUARE NAGPUR</td><td>4 KW</td></tr>
+              <tr><td>19</td><td>MR. PRADIP PATIL SIR, JAITALA, NAGPUR</td><td>5 KW</td></tr>
+              <tr><td>20</td><td>MR. AYAZ AHMED, GOREWADA, NAGPUR</td><td>3 KW</td></tr>
+              <tr><td>21</td><td>MR. SHASHANK KAMBLE, SUBODH NAGAR, NAGPUR</td><td>5 KW</td></tr>
+              <tr><td>22</td><td>RAHUL DHOBLE, WADHAMANA, NAGPUR</td><td>6 KW</td></tr>
+              <tr><td>23</td><td>CHANDRASHEKHAR KAPNICHOR</td><td>5 KW</td></tr>
+              <tr><td>24</td><td>NAMDEO NINAWE, GODHANI, NAGPUR</td><td>3 KW</td></tr>
+              <tr><td>25</td><td>PRADIP PATIL SIR, JAITALA, NAGPUR</td><td>3 KW</td></tr>
+              <tr><td>26</td><td>VINOD PATIL SIR, JAITALA, NAGPUR</td><td>3 KW</td></tr>
+              <tr><td>27</td><td>DR. MANKAR SIR, SAONER, NAGPUR</td><td>15 KW</td></tr>
+              <tr><td>28</td><td>BHUPESH KHADGI, DAIMOND NAGAR, NAGPUR</td><td>5 KW</td></tr>
+              <tr><td>29</td><td>SAWARKAR SIR, RAMNA MAROTI, NAGPUR</td><td>5 KW</td></tr>
+              <tr><td>30</td><td>RUPESH ZADE, WADI NAGPUR</td><td>6 KW</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // fill dynamic date for the scoped module
+    const dateEl = document.getElementById('client-list-date');
+    if (dateEl) {
+      dateEl.textContent = new Date().toLocaleDateString('en-GB', {
+        day:'2-digit', month:'short', year:'numeric'
+      });
+    }
+  </script>
+</body>
+</html>

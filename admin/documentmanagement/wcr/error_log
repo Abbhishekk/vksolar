@@ -1,0 +1,132 @@
+[24-Dec-2025 09:49:54 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php on line 3
+[24-Dec-2025 09:49:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php(63): require_once()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php on line 3
+[24-Dec-2025 09:51:12 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php on line 3
+[24-Dec-2025 09:51:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php(63): require_once()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php on line 3
+[24-Dec-2025 10:25:51 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php on line 3
+[24-Dec-2025 10:25:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php(63): require_once()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr.php on line 3
+[24-Dec-2025 10:42:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'REAL_CAPACITY_COLUMN' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php:27
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php(27): mysqli->query()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 27
+[24-Dec-2025 10:45:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'consumer_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php:27
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php(27): mysqli->query()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 27
+[24-Dec-2025 10:45:56 UTC] PHP Warning:  Undefined array key "system_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 130
+[24-Dec-2025 10:45:56 UTC] PHP Warning:  Undefined array key "consumer_name" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 131
+[24-Dec-2025 10:46:29 UTC] PHP Warning:  Undefined array key "system_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 130
+[24-Dec-2025 10:46:29 UTC] PHP Warning:  Undefined array key "consumer_name" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 131
+[24-Dec-2025 10:46:31 UTC] PHP Warning:  Undefined array key "system_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 130
+[24-Dec-2025 10:46:31 UTC] PHP Warning:  Undefined array key "consumer_name" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 131
+[24-Dec-2025 10:46:32 UTC] PHP Warning:  Undefined array key "system_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 130
+[24-Dec-2025 10:46:32 UTC] PHP Warning:  Undefined array key "consumer_name" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/work_completion_list.php on line 131
+[26-Dec-2025 01:54:49 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 67
+[26-Dec-2025 02:01:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Commands out of sync; you can't run this command now in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php:33
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php(33): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 33
+[26-Dec-2025 02:20:18 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 79
+[26-Dec-2025 02:22:26 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 76
+[28-Dec-2025 17:08:22 UTC] PHP Warning:  Undefined variable $client_doc in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 82
+[28-Dec-2025 17:08:22 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 82
+[28-Dec-2025 17:08:22 UTC] PHP Warning:  Undefined variable $client_doc in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 83
+[28-Dec-2025 17:08:22 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 83
+[28-Dec-2025 17:49:42 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 91
+[29-Dec-2025 04:33:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[29-Dec-2025 04:41:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[29-Dec-2025 05:35:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[29-Dec-2025 05:44:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[29-Dec-2025 06:20:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[29-Dec-2025 06:48:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[30-Dec-2025 12:14:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[30-Dec-2025 12:24:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[30-Dec-2025 12:25:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[31-Dec-2025 07:08:24 UTC] PHP Warning:  Undefined array key "sanction_number" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 72
+[31-Dec-2025 07:08:24 UTC] PHP Warning:  Undefined array key "sanctioned_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 73
+[31-Dec-2025 07:08:24 UTC] PHP Warning:  Undefined array key "installed_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 74
+[31-Dec-2025 07:09:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[31-Dec-2025 07:13:06 UTC] PHP Warning:  Undefined array key "sanction_number" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 72
+[31-Dec-2025 07:13:06 UTC] PHP Warning:  Undefined array key "sanctioned_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 73
+[31-Dec-2025 07:13:06 UTC] PHP Warning:  Undefined array key "installed_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 74
+[31-Dec-2025 07:14:31 UTC] PHP Warning:  Undefined array key "sanction_number" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 72
+[31-Dec-2025 07:14:31 UTC] PHP Warning:  Undefined array key "sanctioned_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 73
+[31-Dec-2025 07:14:31 UTC] PHP Warning:  Undefined array key "installed_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 74
+[31-Dec-2025 07:15:13 UTC] PHP Warning:  Undefined array key "sanction_number" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 72
+[31-Dec-2025 07:15:13 UTC] PHP Warning:  Undefined array key "sanctioned_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 73
+[31-Dec-2025 07:15:13 UTC] PHP Warning:  Undefined array key "installed_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 74
+[31-Dec-2025 07:15:18 UTC] PHP Warning:  Undefined array key "sanction_number" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 72
+[31-Dec-2025 07:15:18 UTC] PHP Warning:  Undefined array key "sanctioned_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 73
+[31-Dec-2025 07:15:18 UTC] PHP Warning:  Undefined array key "installed_capacity" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/index.php on line 74
+[31-Dec-2025 07:16:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[31-Dec-2025 07:35:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[31-Dec-2025 08:05:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37

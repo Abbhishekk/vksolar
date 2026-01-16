@@ -1,0 +1,69 @@
+[10-Oct-2025 06:31:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[10-Oct-2025 06:31:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[10-Oct-2025 17:38:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[10-Oct-2025 17:38:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/carousel.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[13-Oct-2025 02:30:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home6/atriprints/vksolarenergy.com/database/connection.php:13
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/database/connection.php(13): mysqli->__construct()
+#1 /home6/atriprints/vksolarenergy.com/Dashbord/pages/logo_&_brand-name.php(7): connection->my_connect()
+#2 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/database/connection.php on line 13
+[15-Oct-2025 02:45:34 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:45:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/pages/add_employee.php(87): require()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:47:00 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:47:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/pages/add_employee.php(87): require()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:47:03 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:47:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/pages/add_employee.php(87): require()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:47:10 UTC] PHP Warning:  require_once(admin/connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:47:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'admin/connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/pages/add_employee.php(87): require()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:48:42 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:48:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/pages/add_employee.php(87): require()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 3
+[15-Oct-2025 02:49:47 UTC] PHP Warning:  Undefined variable $title in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 21
+[15-Oct-2025 02:49:47 UTC] PHP Warning:  Undefined variable $title in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 98
+[15-Oct-2025 02:49:47 UTC] PHP Warning:  Undefined variable $title in /home6/atriprints/vksolarenergy.com/admin/include/sidebar.php on line 103
+[15-Oct-2025 02:49:47 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/include/navbar.php on line 3
+[15-Oct-2025 02:49:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/include/navbar.php:3
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/pages/add_employee.php(94): require()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/include/navbar.php on line 3

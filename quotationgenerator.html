@@ -1,0 +1,1249 @@
+<?php
+// admin/quotation_generator.php
+require_once 'connect/auth_middleware.php';
+$auth->requireAuth();
+$auth->requireAnyRole(['super_admin', 'admin', 'office_staff', 'sales_marketing']);
+$auth->checkPermission('quotation_management', 'create');
+
+$title = "quotation_generator";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <?php require('include/head.php'); ?>
+  <title>Quotation Generator - VK Solar</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <style>
+    /* VK Solar Energy - Green Theme Custom CSS */
+    :root {
+        --primary: #2e8b57; /* Forest Green */
+        --primary-light: #3cb371; /* Medium Sea Green */
+        --primary-dark: #1e6b47; /* Darker Green */
+        --secondary: #f5f5f5; /* Off-white */
+        --accent: #87ceeb; /* Sky Blue */
+        --accent-light: #b0e2ff; /* Light Sky Blue */
+        --earth: #d2b48c; /* Tan/Earth tone */
+        --earth-light: #f0e6d6; /* Light Beige */
+        --dark: #2c3e50; /* Dark Blue-Gray */
+        --light: #f8f9fa; /* Light Gray */
+        --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        --gradient-secondary: linear-gradient(135deg, var(--earth-light) 0%, var(--secondary) 100%);
+        --gradient-hero: linear-gradient(135deg, rgba(46, 139, 87, 0.85) 0%, rgba(60, 179, 113, 0.85) 100%);
+        --gradient-nature: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    }
+
+    /* Section Headers */
+    .text-primary {
+        color: var(--primary) !important;
+        font-weight: 600;
+    }
+
+    .section-title {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: var(--gradient-primary);
+        border-radius: 2px;
+    }
+
+    /* Quotation Section */
+    .quotation-section {
+        padding: 20px 0;
+    }
+
+    .form-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(46, 139, 87, 0.1);
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 8px;
+    }
+
+    .form-control, .form-select {
+        border-radius: 10px;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 0.2rem rgba(46, 139, 87, 0.25);
+    }
+
+    .calculator-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(46, 139, 87, 0.1);
+        height: 100%;
+    }
+
+    .calculator-header {
+        background: var(--gradient-primary);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px 10px 0 0;
+        margin: -30px -30px 20px -30px;
+    }
+
+    .result-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        border: 1px solid rgba(46, 139, 87, 0.1);
+        margin-top: 30px;
+    }
+
+    .result-header {
+        background: var(--gradient-primary);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px 10px 0 0;
+        margin: -30px -30px 20px -30px;
+    }
+
+    .summary-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .summary-total {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-top: 2px solid var(--primary);
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: var(--primary);
+    }
+
+    .savings-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        border: 1px solid rgba(46, 139, 87, 0.1);
+        margin-top: 30px;
+    }
+
+    .savings-header {
+        background: var(--gradient-primary);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px 10px 0 0;
+        margin: -30px -30px 20px -30px;
+    }
+
+    .savings-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    .savings-highlight {
+        background-color: rgba(46, 139, 87, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border-left: 4px solid var(--primary);
+    }
+
+    /* Common Style for Floating Buttons */
+    .floating-btn {
+        position: fixed;
+        right: 20px;
+        z-index: 1000;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        color: #fff;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+        bottom: 80px;
+        background: #25d366;
+    }
+    .whatsapp-btn:hover {
+        background: #20b954;
+        transform: translateY(-3px);
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+        bottom: 20px;
+        background: var(--primary);
+    }
+    .back-to-top:hover {
+        background: var(--primary-dark);
+        transform: translateY(-3px);
+    }
+
+    /* Print Styles */
+    @media print {
+        /* Hide everything except the results sections */
+        body * {
+            visibility: hidden;
+        }
+        
+        /* Show only the quotation summary and savings sections */
+        .result-card, .savings-card,
+        .result-card *, .savings-card * {
+            visibility: visible;
+        }
+        
+        /* Position the printable content */
+        .result-card, .savings-card {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: none;
+            border: 1px solid #ddd;
+            margin: 0;
+        }
+        
+        /* Add page breaks for better printing */
+        .savings-card {
+            page-break-before: always;
+            top: 50%;
+        }
+        
+        /* Hide non-printable elements */
+        .no-print, .floating-btn, .form-card, .calculator-card, .btn {
+            display: none !important;
+        }
+        
+        /* Print header */
+        .print-header {
+            display: block !important;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 15px;
+        }
+        
+        .print-header h2 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        .print-header p {
+            color: #666;
+            margin: 0;
+        }
+        
+        body {
+            background: white;
+            font-size: 14px;
+        }
+    }
+
+    /* Print header - hidden on screen */
+    .print-header {
+        display: none;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .calculator-card, .result-card {
+            margin-top: 20px;
+        }
+    }
+    /* Add this to your CSS */
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <?php require('include/sidebar.php') ?>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <div class="sidebar-overlay"></div>
+
+    <!-- Fixed Header -->
+    <?php require('include/navbar.php') ?>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container-fluid py-4">
+        <!-- Page Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="mb-1">Quotation Management</h4>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./">Dashboard</a></li>
+                <li class="breadcrumb-item active">Quotation Generator</li>
+              </ol>
+            </nav>
+          </div>
+          <div>
+            <a href="view_quotations" class="btn btn-outline-secondary me-2">
+              <i class="bi bi-list me-2"></i>View Quotations
+            </a>
+          </div>
+        </div>
+
+        <!-- Message Alert -->
+        <div id="messageAlert" class="alert d-none">
+          <i id="messageIcon" class="bi me-2"></i>
+          <span id="messageText"></span>
+        </div>
+
+        <!-- Quotation Section -->
+        <section id="quotation" class="quotation-section">
+            <div class="container-fluid">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10 text-center">
+                        <h2 class="section-title text-primary">Generate Solar Quotation</h2>
+                        <p class="lead">Fill in customer details to generate a professional solar energy quotation</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Left Column - Forms -->
+                    <div class="col-lg-6">
+                        <!-- Customer Details Form -->
+                        <div class="form-card">
+                            <h3 class="mb-4 text-primary"><i class="fas fa-user me-2"></i>Customer Details</h3>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address *</label>
+                                <textarea class="form-control" id="address" rows="3" placeholder="Enter complete address" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Property Details Form -->
+                        <div class="form-card">
+                            <h3 class="mb-4 text-primary"><i class="fas fa-home me-2"></i>Property Details</h3>
+                            
+                            <div class="mb-3">
+                                <label for="propertyType" class="form-label">Property Type *</label>
+                                <select class="form-select" id="propertyType" required>
+                                    <option value="">Select property type</option>
+                                    <option value="residential">Residential</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="industrial">Industrial</option>
+                                </select>
+                            </div>
+                            
+                                <div class="mb-3">
+                                    <label for="meterType" class="form-label">Meter Type *</label>
+                                    <select class="form-select" id="meterType" required>
+                                        <option value="">Select Meter Type</option>
+                                        <option value="single_phase">Single Phase</option>
+                                        <option value="three_phase">Three Phase</option>
+                                        <option value="ct_meter">CT Meter</option>
+                                        <option value="ip_meter">IP Meter</option>
+                                    </select>
+                                </div>
+                            
+                            <div class="mb-3">
+                                <label for="roofType" class="form-label">Roof Type *</label>
+                                <select class="form-select" id="roofType" required>
+                                    <option value="">Select roof type</option>
+                                    <option value="concrete">Concrete</option>
+                                    <option value="metal">Metal</option>
+                                    <option value="tiled">Tiled</option>
+                                    <option value="asphalt">Asphalt Shingle</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="roofArea" class="form-label">Available Roof Area (sq. ft.) *</label>
+                                <input type="number" class="form-control" id="roofArea" placeholder="Enter roof area" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Calculator and Results -->
+                    <div class="col-lg-6">
+                        <!-- System Calculator -->
+                        <div class="calculator-card">
+                            <div class="calculator-header">
+                                <h3 class="mb-0"><i class="fas fa-calculator me-2"></i>System Configuration</h3>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="monthlyBill" class="form-label">Average Monthly Electricity Bill (₹) *</label>
+                                <input type="number" class="form-control" id="monthlyBill" placeholder="Enter amount" value="5000" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="systemType" class="form-label">System Type *</label>
+                                <select class="form-select" id="systemType" required>
+                                    <option value="on-grid">On-Grid System</option>
+                                    <option value="off-grid">Off-Grid System</option>
+                                    <option value="hybrid">Hybrid System</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="systemSize" class="form-label">System Size (kW) *</label>
+                                <input type="range" class="form-range" id="systemSize" min="1" max="50" step="0.5" value="5" required>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small>1 kW</small>
+                                    <span id="systemSizeValue" class="fw-bold">5 kW</span>
+                                    <small>50 kW</small>
+                                </div>
+                            </div>
+
+                            <!-- NEW: Panel Company Selection -->
+                            <div class="mb-3">
+                                <label for="panelCompany" class="form-label">Panel Company *</label>
+                                <select class="form-select" id="panelCompany" required>
+                                    <option value="">Select Panel Company</option>
+                                    <option value="kirloskar">Kirloskar Solar</option>
+                                    <option value="waree">Waree Solar</option>
+                                    <option value="adani">Adani Solar</option>
+                                    <option value="premium">Premium Solar</option>
+                                    <option value="satvik">Satvik SOLAR</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+
+                            <!-- NEW: Inverter Company Selection -->
+                            <div class="mb-3">
+                                <label for="inverterCompany" class="form-label">Inverter Company *</label>
+                                <select class="form-select" id="inverterCompany" required>
+                                    <option value="">Select Inverter Company</option>
+                                    <option value="kirloskar">Kirloskar</option>
+                                    <option value="polycab">Polycab</option>
+                                    <option value="v_sole">V Sole</option>
+                                    <option value="utl">Utl</option>
+                                    <option value="growat">Growat</option>
+                                    <option value="k_solar">K Solar</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+
+                            <!-- NEW: Panel Models Selection -->
+                            <div class="mb-3">
+                                <label for="panelModel" class="form-label">Panel Model (Wp) *</label>
+                                <select class="form-select" id="panelModel" required>
+                                    <option value="">Select Panel Model</option>
+                                    <option value="540">540 Wp</option>
+                                    <option value="545">545 Wp</option>
+                                    <option value="550">550 Wp</option>
+                                    <option value="560">560 Wp</option>
+                                    <option value="580">580 Wp</option>
+                                    <option value="590">590 Wp</option>
+                                    <option value="600">600 Wp</option>
+                                    <option value="620">620 Wp</option>
+                                    <option value="630">630 Wp</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Additional Components</label>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="batteryBackup">
+                                    <label class="form-check-label" for="batteryBackup">
+                                        Battery Backup System
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="monitoringSystem">
+                                    <label class="form-check-label" for="monitoringSystem">
+                                        Smart Monitoring System
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="maintenancePackage">
+                                    <label class="form-check-label" for="maintenancePackage">
+                                        Annual Maintenance Package
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-success w-100 mt-3" id="calculateQuote">
+                                <i class="fas fa-calculator me-2"></i>Calculate Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Results Row -->
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-6">
+                        <!-- Quotation Summary -->
+                        <div class="result-card">
+                            <div class="print-header">
+                                <h2>VK Solar - Quotation Summary</h2>
+                                <p>Generated on <span id="printDate"></span></p>
+                            </div>
+                            <div class="result-header">
+                                <h3 class="mb-0"><i class="fas fa-file-invoice-dollar me-2"></i>Quotation Summary</h3>
+                            </div>
+                            
+                            <div id="quoteResults">
+                                <div class="text-center py-4">
+                                    <i class="fas fa-solar-panel text-muted" style="font-size: 3rem;"></i>
+                                    <p class="mt-3 text-muted">Configure your system and click "Calculate Quote" to see your quotation</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <!-- Savings Estimate -->
+                        <div class="savings-card">
+                            <div class="result-header">
+                                <h3 class="mb-0"><i class="fas fa-chart-line me-2"></i>Savings & ROI Estimate</h3>
+                            </div>
+                            
+                            <div id="savingsResults">
+                                <div class="text-center py-4">
+                                    <i class="fas fa-chart-pie text-muted" style="font-size: 3rem;"></i>
+                                    <p class="mt-3 text-muted">Your savings estimate will appear here after calculating your quote</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="row mt-4 no-print">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-success btn-lg me-3" id="printQuote">
+                            <i class="fas fa-print me-2"></i>Print Quote
+                        </button>
+                        <button class="btn btn-outline-success btn-lg me-3" id="saveQuote">
+                            <i class="fas fa-download me-2"></i>Save as PDF
+                        </button>
+                        <button class="btn btn-primary btn-lg" id="saveToDatabase">
+                            <i class="fas fa-save me-2"></i>Save Quotation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919657135476" class="floating-btn whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <a href="#" class="floating-btn back-to-top">
+      <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+      // Set current date for print
+      document.getElementById('printDate').textContent = new Date().toLocaleDateString();
+      
+      // System size slider
+      const systemSizeSlider = document.getElementById('systemSize');
+      const systemSizeValue = document.getElementById('systemSizeValue');
+      
+      systemSizeSlider.addEventListener('input', function() {
+          systemSizeValue.textContent = `${this.value} kW`;
+      });
+
+      // Calculate quote function
+      document.getElementById('calculateQuote').addEventListener('click', function() {
+          calculateQuote();
+      });
+
+      function calculateQuote() {
+          // Get form values
+          const meterType = document.getElementById('meterType').value;
+          const systemSize = parseFloat(document.getElementById('systemSize').value);
+          const panelCompany = document.getElementById('panelCompany').value;
+          const inverterCompany = document.getElementById('inverterCompany').value;
+          const panelModel = document.getElementById('panelModel').value;
+          const systemType = document.getElementById('systemType').value;
+          const monthlyBill = parseFloat(document.getElementById('monthlyBill').value) || 0;
+          const batteryBackup = document.getElementById('batteryBackup').checked;
+          const monitoringSystem = document.getElementById('monitoringSystem').checked;
+          const maintenancePackage = document.getElementById('maintenancePackage').checked;
+          
+          // Get customer details for print
+          const firstName = document.getElementById('firstName').value || 'Customer';
+          const lastName = document.getElementById('lastName').value || '';
+          const customerName = `${firstName} ${lastName}`.trim();
+          const phone = document.getElementById('phone').value || '';
+          const address = document.getElementById('address').value || '';
+          
+          // Validate required fields
+          if (!firstName || !lastName || !phone || !address) {
+              alert('Please fill in all required customer details');
+              return;
+          }
+
+          // Pricing configuration (per kW)
+          const panelPrices = {
+              'kirloskar': 45000,
+              'waree': 42000,
+              'adani': 48000,
+              'premium': 52000,
+              'satvik': 40000,
+              'others': 38000
+          };
+          
+          const inverterPrices = {
+              'kirloskar': 12000,
+              'polycab': 11000,
+              'v_sole': 10000,
+              'utl': 11500,
+              'growat': 13000,
+              'k_solar': 10500,
+              'others': 9500
+          };
+          
+          const systemTypeMultipliers = {
+              'on-grid': 1.0,
+              'off-grid': 1.4,
+              'hybrid': 1.25
+          };
+          
+          // Calculate base system cost
+          const panelCost = systemSize * panelPrices[panelCompany];
+          const inverterCost = systemSize * inverterPrices[inverterCompany];
+          const systemCost = (panelCost + inverterCost) * systemTypeMultipliers[systemType];
+          
+          // Additional components cost
+          let additionalCost = 0;
+          if (batteryBackup) additionalCost += systemSize * 20000;
+          if (monitoringSystem) additionalCost += 15000;
+          if (maintenancePackage) additionalCost += 5000;
+          
+          // Total system cost
+          const totalCost = systemCost + additionalCost;
+          
+          // Government subsidy (if applicable)
+          const subsidy = systemSize <= 3 ? totalCost * 0.4 : totalCost * 0.2;
+          
+          // Final cost after subsidy
+          const finalCost = totalCost - subsidy;
+          
+          // Calculate savings
+          const monthlySavings = monthlyBill * 0.8; // Assuming 80% reduction in electricity bill
+          const yearlySavings = monthlySavings * 12;
+          const paybackPeriod = finalCost / yearlySavings;
+          
+          // Get display names for components
+          const panelCompanyName = document.getElementById('panelCompany').options[document.getElementById('panelCompany').selectedIndex].text;
+          const inverterCompanyName = document.getElementById('inverterCompany').options[document.getElementById('inverterCompany').selectedIndex].text;
+          const panelModelName = document.getElementById('panelModel').options[document.getElementById('panelModel').selectedIndex].text;
+          const systemTypeName = document.getElementById('systemType').options[document.getElementById('systemType').selectedIndex].text;
+          
+          // Generate quotation summary
+          const quoteResults = document.getElementById('quoteResults');
+          quoteResults.innerHTML = `
+              <div class="summary-item">
+                  <span>Customer Name:</span>
+                  <span>${customerName}</span>
+              </div>
+              <div class="summary-item">
+                  <span>Contact:</span>
+                  <span>${phone}</span>
+              </div>
+              <div class="summary-item">
+                  <span>System Size:</span>
+                  <span>${systemSize} kW</span>
+              </div>
+              <div class="summary-item">
+                  <span>Panel Company:</span>
+                  <span>${panelCompanyName}</span>
+              </div>
+              <div class="summary-item">
+                  <span>Inverter Company:</span>
+                  <span>${inverterCompanyName}</span>
+              </div>
+              <div class="summary-item">
+                  <span>Panel Model:</span>
+                  <span>${panelModelName}</span>
+              </div>
+              <div class="summary-item">
+                  <span>System Type:</span>
+                  <span>${systemTypeName}</span>
+              </div>
+              <div class="summary-item">
+                  <span>Meter Type:</span>
+                  <span>${document.getElementById('meterType').options[document.getElementById('meterType').selectedIndex].text}</span>
+              </div>
+              <div class="summary-item">
+                  <span>Panel & Inverter Cost:</span>
+                  <span>₹${systemCost.toLocaleString('en-IN')}</span>
+              </div>
+              ${batteryBackup ? `<div class="summary-item">
+                  <span>Battery Backup:</span>
+                  <span>₹${(systemSize * 20000).toLocaleString('en-IN')}</span>
+              </div>` : ''}
+              ${monitoringSystem ? `<div class="summary-item">
+                  <span>Monitoring System:</span>
+                  <span>₹15,000</span>
+              </div>` : ''}
+              ${maintenancePackage ? `<div class="summary-item">
+                  <span>Maintenance Package:</span>
+                  <span>₹5,000</span>
+              </div>` : ''}
+              <div class="summary-item">
+                  <span>Subsidy (Government):</span>
+                  <span class="text-success">-₹${subsidy.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="summary-total">
+                  <span>Total Investment:</span>
+                  <span>₹${finalCost.toLocaleString('en-IN')}</span>
+              </div>
+          `;
+          
+          // Generate savings estimate
+          const savingsResults = document.getElementById('savingsResults');
+          savingsResults.innerHTML = `
+              <div class="savings-item">
+                  <span>Current Monthly Bill:</span>
+                  <span>₹${monthlyBill.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="savings-item">
+                  <span>Estimated Monthly Savings:</span>
+                  <span class="text-success">₹${monthlySavings.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="savings-item">
+                  <span>Estimated Yearly Savings:</span>
+                  <span class="text-success">₹${yearlySavings.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="savings-item">
+                  <span>Payback Period:</span>
+                  <span>${paybackPeriod.toFixed(1)} years</span>
+              </div>
+              <div class="savings-item">
+                  <span>25-Year Savings Estimate:</span>
+                  <span class="text-success">₹${(yearlySavings * 25).toLocaleString('en-IN')}</span>
+              </div>
+              <div class="savings-highlight">
+                  <h5 class="text-primary mb-2">Financial Benefits</h5>
+                  <p class="mb-0">Your solar investment of ₹${finalCost.toLocaleString('en-IN')} could generate approximately ₹${(yearlySavings * 25).toLocaleString('en-IN')} in electricity savings over 25 years, representing a significant return on investment.</p>
+              </div>
+          `;
+      }
+
+      // Print quote function - now generates PDF
+      document.getElementById('printQuote').addEventListener('click', function() {
+          // Update print date
+          document.getElementById('printDate').textContent = new Date().toLocaleDateString();
+          
+          // Show loading state
+          const printBtn = document.getElementById('printQuote');
+          const originalText = printBtn.innerHTML;
+          printBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Generating PDF...';
+          printBtn.disabled = true;
+
+          // Generate PDF
+          generatePDF().then(() => {
+              // Restore button state
+              printBtn.innerHTML = originalText;
+              printBtn.disabled = false;
+          }).catch(error => {
+              console.error('PDF generation failed:', error);
+              printBtn.innerHTML = originalText;
+              printBtn.disabled = false;
+              alert('Failed to generate PDF. Please try again.');
+          });
+      });
+
+      // Generate PDF function with stylish landscape layout and two columns
+      async function generatePDF() {
+          const { jsPDF } = window.jspdf;
+          
+          // Create new PDF instance in LANDSCAPE mode
+          const doc = new jsPDF('l', 'mm', 'a4'); // 'l' for landscape
+          const pageWidth = doc.internal.pageSize.getWidth();
+          const pageHeight = doc.internal.pageSize.getHeight();
+          const margin = 15;
+          const columnWidth = (pageWidth - (3 * margin)) / 2; // Two columns with gap
+          const leftColumnX = margin;
+          const rightColumnX = margin + columnWidth + margin;
+
+          // Add decorative header with gradient effect
+          doc.setFillColor(46, 139, 87);
+          doc.rect(0, 0, pageWidth, 30, 'F');
+          
+          // Add lighter green accent bar
+          doc.setFillColor(60, 179, 113);
+          doc.rect(0, 30, pageWidth, 3, 'F');
+          
+          // Company name
+          doc.setTextColor(255, 255, 255);
+          doc.setFontSize(22);
+          doc.setFont('helvetica', 'bold');
+          doc.text('VK SOLAR ENERGY', pageWidth / 2, 15, { align: 'center' });
+          
+          // Quotation title
+          doc.setFontSize(14);
+          doc.setFont('helvetica', 'normal');
+          doc.text('Professional Solar Quotation', pageWidth / 2, 23, { align: 'center' });
+          
+          // Date and quotation number
+          doc.setFontSize(9);
+          doc.setTextColor(230, 230, 230);
+          const quoteDate = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+          doc.text('Generated: ' + quoteDate, pageWidth - margin, 12, { align: 'right' });
+          doc.text('Quote #: VK-' + Date.now().toString().slice(-8), pageWidth - margin, 18, { align: 'right' });
+
+          let leftY = 43;
+          let rightY = 43;
+
+          // Get customer data
+          const customerName = document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value;
+          const phone = document.getElementById('phone').value || 'N/A';
+          const email = document.getElementById('email').value || 'N/A';
+          const address = document.getElementById('address').value || 'N/A';
+
+          // LEFT COLUMN - Customer & Property Information
+          leftY = drawSectionHeader(doc, 'CUSTOMER INFORMATION', leftColumnX, leftY, columnWidth);
+          leftY += 2;
+          
+          const customerData = [
+              ['Customer Name', customerName],
+              ['Phone Number', phone],
+              ['Email Address', email],
+              ['Address', address]
+          ];
+          leftY = drawStylishTable(doc, customerData, leftColumnX, leftY, columnWidth);
+          leftY += 10;
+
+          // Property Details
+          leftY = drawSectionHeader(doc, 'PROPERTY DETAILS', leftColumnX, leftY, columnWidth);
+          leftY += 2;
+          
+          const propertyData = [
+              ['Property Type', document.getElementById('propertyType').options[document.getElementById('propertyType').selectedIndex].text],
+              ['Meter Type', document.getElementById('meterType').options[document.getElementById('meterType').selectedIndex].text],
+              ['Roof Type', document.getElementById('roofType').options[document.getElementById('roofType').selectedIndex].text],
+              ['Roof Area', (document.getElementById('roofArea').value || '0') + ' sq. ft.']
+          ];
+          leftY = drawStylishTable(doc, propertyData, leftColumnX, leftY, columnWidth);
+          leftY += 10;
+
+          // System Configuration
+          leftY = drawSectionHeader(doc, 'SYSTEM CONFIGURATION', leftColumnX, leftY, columnWidth);
+          leftY += 2;
+          
+          const systemConfig = [
+              ['System Size', document.getElementById('systemSize').value + ' kW'],
+              ['System Type', document.getElementById('systemType').options[document.getElementById('systemType').selectedIndex].text],
+              ['Panel Company', document.getElementById('panelCompany').options[document.getElementById('panelCompany').selectedIndex].text],
+              ['Panel Model', document.getElementById('panelModel').options[document.getElementById('panelModel').selectedIndex].text],
+              ['Inverter Company', document.getElementById('inverterCompany').options[document.getElementById('inverterCompany').selectedIndex].text]
+          ];
+          leftY = drawStylishTable(doc, systemConfig, leftColumnX, leftY, columnWidth);
+
+          // RIGHT COLUMN - Cost Breakdown & Savings
+          const systemSize = parseFloat(document.getElementById('systemSize').value);
+          const panelCompany = document.getElementById('panelCompany').value;
+          const inverterCompany = document.getElementById('inverterCompany').value;
+          const systemType = document.getElementById('systemType').value;
+          const batteryBackup = document.getElementById('batteryBackup').checked;
+          const monitoringSystem = document.getElementById('monitoringSystem').checked;
+          const maintenancePackage = document.getElementById('maintenancePackage').checked;
+
+          // Calculate costs
+          const panelPrices = {
+              'kirloskar': 45000, 'waree': 42000, 'adani': 48000, 
+              'premium': 52000, 'satvik': 40000, 'others': 38000
+          };
+          
+          const inverterPrices = {
+              'kirloskar': 12000, 'polycab': 11000, 'v_sole': 10000,
+              'utl': 11500, 'growat': 13000, 'k_solar': 10500, 'others': 9500
+          };
+          
+          const systemTypeMultipliers = {
+              'on-grid': 1.0, 'off-grid': 1.4, 'hybrid': 1.25
+          };
+          
+          const panelCost = systemSize * panelPrices[panelCompany];
+          const inverterCost = systemSize * inverterPrices[inverterCompany];
+          const systemCost = (panelCost + inverterCost) * systemTypeMultipliers[systemType];
+          
+          let additionalCost = 0;
+          let costBreakdown = [
+              ['Solar Panels', '₹' + panelCost.toLocaleString('en-IN')],
+              ['Inverter System', '₹' + inverterCost.toLocaleString('en-IN')],
+              ['Installation & Setup', '₹' + (systemCost - panelCost - inverterCost).toLocaleString('en-IN')]
+          ];
+
+          if (batteryBackup) {
+              const batteryCost = systemSize * 20000;
+              additionalCost += batteryCost;
+              costBreakdown.push(['Battery Backup', '₹' + batteryCost.toLocaleString('en-IN')]);
+          }
+
+          if (monitoringSystem) {
+              additionalCost += 15000;
+              costBreakdown.push(['Monitoring System', '₹15,000']);
+          }
+
+          if (maintenancePackage) {
+              additionalCost += 5000;
+              costBreakdown.push(['Maintenance Package', '₹5,000']);
+          }
+
+          const totalCost = systemCost + additionalCost;
+          const subsidy = systemSize <= 3 ? totalCost * 0.4 : totalCost * 0.2;
+          const finalCost = totalCost - subsidy;
+
+          rightY = drawSectionHeader(doc, 'COST BREAKDOWN', rightColumnX, rightY, columnWidth);
+          rightY += 2;
+          rightY = drawStylishTable(doc, costBreakdown, rightColumnX, rightY, columnWidth);
+          rightY += 5;
+
+          // Subsidy and Total in highlighted box
+          doc.setFillColor(240, 255, 240);
+          doc.roundedRect(rightColumnX, rightY, columnWidth, 22, 3, 3, 'F');
+          doc.setDrawColor(46, 139, 87);
+          doc.setLineWidth(0.5);
+          doc.roundedRect(rightColumnX, rightY, columnWidth, 22, 3, 3, 'S');
+          
+          doc.setFontSize(9);
+          doc.setTextColor(0, 100, 0);
+          doc.setFont('helvetica', 'normal');
+          doc.text('Government Subsidy', rightColumnX + 3, rightY + 6);
+          doc.setFont('helvetica', 'bold');
+          doc.text('-₹' + subsidy.toLocaleString('en-IN'), rightColumnX + columnWidth - 3, rightY + 6, { align: 'right' });
+          
+          doc.setFontSize(12);
+          doc.setTextColor(46, 139, 87);
+          doc.text('TOTAL INVESTMENT', rightColumnX + 3, rightY + 16);
+          doc.setFontSize(14);
+          doc.text('₹' + finalCost.toLocaleString('en-IN'), rightColumnX + columnWidth - 3, rightY + 16, { align: 'right' });
+          rightY += 27;
+
+          // Savings Analysis
+          rightY = drawSectionHeader(doc, 'SAVINGS & ROI ANALYSIS', rightColumnX, rightY, columnWidth);
+          rightY += 2;
+
+          const monthlyBill = parseFloat(document.getElementById('monthlyBill').value) || 0;
+          const monthlySavings = monthlyBill * 0.8;
+          const yearlySavings = monthlySavings * 12;
+          const paybackPeriod = finalCost / yearlySavings;
+
+          const savingsData = [
+              ['Current Monthly Bill', '₹' + monthlyBill.toLocaleString('en-IN')],
+              ['Monthly Savings', '₹' + monthlySavings.toLocaleString('en-IN')],
+              ['Yearly Savings', '₹' + yearlySavings.toLocaleString('en-IN')],
+              ['Payback Period', paybackPeriod.toFixed(1) + ' years'],
+              ['25-Year Total Savings', '₹' + (yearlySavings * 25).toLocaleString('en-IN')]
+          ];
+          rightY = drawStylishTable(doc, savingsData, rightColumnX, rightY, columnWidth, true);
+
+          // Footer with gradient bar
+          doc.setFillColor(60, 179, 113);
+          doc.rect(0, pageHeight - 25, pageWidth, 3, 'F');
+          
+          doc.setFillColor(46, 139, 87);
+          doc.rect(0, pageHeight - 22, pageWidth, 22, 'F');
+          
+          doc.setFontSize(11);
+          doc.setTextColor(255, 255, 255);
+          doc.setFont('helvetica', 'bold');
+          doc.text('VK Solar Energy - Powering Your Future with Clean Energy', pageWidth / 2, pageHeight - 14, { align: 'center' });
+          
+          doc.setFontSize(9);
+          doc.setFont('helvetica', 'normal');
+          doc.text('📞 +91 9657135476  |  📧 info@vksolar.com  |  🌐 www.vksolar.com', pageWidth / 2, pageHeight - 7, { align: 'center' });
+
+          // Save the PDF
+          const fileName = `VK_Solar_Quotation_${customerName.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
+          doc.save(fileName);
+      }
+
+      // Helper function to draw section headers
+      function drawSectionHeader(doc, title, x, y, width) {
+          doc.setFillColor(46, 139, 87);
+          doc.roundedRect(x, y, width, 8, 2, 2, 'F');
+          
+          doc.setTextColor(255, 255, 255);
+          doc.setFontSize(10);
+          doc.setFont('helvetica', 'bold');
+          doc.text(title, x + 3, y + 5.5);
+          
+          return y + 10;
+      }
+
+      // Helper function to draw stylish tables with proper spacing
+      function drawStylishTable(doc, data, x, y, width, alternateRows = false) {
+          const rowHeight = 7;
+          const cellPadding = 2;
+          let currentY = y;
+          
+          doc.setFontSize(9);
+          
+          data.forEach((row, index) => {
+              // Alternate row background
+              if (alternateRows && index % 2 === 0) {
+                  doc.setFillColor(248, 248, 248);
+                  doc.rect(x, currentY, width, rowHeight, 'F');
+              }
+              
+              // Draw text
+              doc.setFont('helvetica', 'normal');
+              doc.setTextColor(60, 60, 60);
+              doc.text(row[0], x + cellPadding, currentY + 5);
+              
+              doc.setFont('helvetica', 'bold');
+              doc.setTextColor(0, 0, 0);
+              doc.text(row[1], x + width - cellPadding, currentY + 5, { align: 'right' });
+              
+              // Draw separator line
+              if (index < data.length - 1) {
+                  doc.setDrawColor(220, 220, 220);
+                  doc.setLineWidth(0.1);
+                  doc.line(x + cellPadding, currentY + rowHeight - 0.5, x + width - cellPadding, currentY + rowHeight - 0.5);
+              }
+              
+              currentY += rowHeight;
+          });
+          
+          // Draw border around table
+          doc.setDrawColor(180, 180, 180);
+          doc.setLineWidth(0.3);
+          doc.roundedRect(x, y, width, data.length * rowHeight, 2, 2, 'S');
+          
+          return currentY + 3;
+      }
+
+      // Save as PDF function (uses same generation)
+      document.getElementById('saveQuote').addEventListener('click', function() {
+          // Simply call the same PDF generation function
+          document.getElementById('printQuote').click();
+      });
+
+      // Save to database function
+      document.getElementById('saveToDatabase').addEventListener('click', function() {
+          saveQuotationToDatabase();
+      });
+
+      function saveQuotationToDatabase() {
+          // Get all form values
+          const firstName = document.getElementById('firstName').value;
+          const lastName = document.getElementById('lastName').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('phone').value;
+          const address = document.getElementById('address').value;
+          const propertyType = document.getElementById('propertyType').value;
+          const roofType = document.getElementById('roofType').value;
+          const meterType = document.getElementById('meterType').value;
+          const roofArea = document.getElementById('roofArea').value;
+          const systemSize = parseFloat(document.getElementById('systemSize').value);
+          const panelCompany = document.getElementById('panelCompany').value;
+          const inverterCompany = document.getElementById('inverterCompany').value;
+          const panelModel = document.getElementById('panelModel').value;
+          const systemType = document.getElementById('systemType').value;
+          const monthlyBill = parseFloat(document.getElementById('monthlyBill').value);
+          const batteryBackup = document.getElementById('batteryBackup').checked;
+          const monitoringSystem = document.getElementById('monitoringSystem').checked;
+          const maintenancePackage = document.getElementById('maintenancePackage').checked;
+
+          // Validate required fields
+          if (!firstName || !lastName || !phone || !address || !propertyType || !roofType || !meterType || !roofArea) {
+              showMessage('error', 'Please fill in all required fields');
+              return;
+          }
+
+          // Calculate costs (reuse your existing calculation logic)
+          const panelPrices = {
+              'kirloskar': 45000, 'waree': 42000, 'adani': 48000, 
+              'premium': 52000, 'satvik': 40000, 'others': 38000
+          };
+          
+          const inverterPrices = {
+              'kirloskar': 12000, 'polycab': 11000, 'v_sole': 10000,
+              'utl': 11500, 'growat': 13000, 'k_solar': 10500, 'others': 9500
+          };
+          
+          const systemTypeMultipliers = {
+              'on-grid': 1.0, 'off-grid': 1.4, 'hybrid': 1.25
+          };
+          
+          const panelCost = systemSize * panelPrices[panelCompany];
+          const inverterCost = systemSize * inverterPrices[inverterCompany];
+          const systemCost = (panelCost + inverterCost) * systemTypeMultipliers[systemType];
+          
+          let additionalCost = 0;
+          if (batteryBackup) additionalCost += systemSize * 20000;
+          if (monitoringSystem) additionalCost += 15000;
+          if (maintenancePackage) additionalCost += 5000;
+          
+          const totalCost = systemCost + additionalCost;
+          const subsidy = systemSize <= 3 ? totalCost * 0.4 : totalCost * 0.2;
+          const finalCost = totalCost - subsidy;
+          const monthlySavings = monthlyBill * 0.8;
+          const yearlySavings = monthlySavings * 12;
+          const paybackPeriod = finalCost / yearlySavings;
+
+          // Prepare data for API
+          const quotationData = {
+              action: 'save_quotation',
+              customer_name: `${firstName} ${lastName}`.trim(),
+              customer_phone: phone,
+              customer_email: email || '',
+              customer_address: address,
+              property_type: propertyType,
+              roof_type: roofType,
+              meter_type: meterType,
+              roof_area: parseFloat(roofArea) || 0,
+              system_size: parseFloat(systemSize),
+              panel_company: panelCompany,
+              inverter_company: inverterCompany,
+              panel_model: panelModel,
+              system_type: systemType,
+              monthly_bill: parseFloat(monthlyBill),
+              battery_backup: batteryBackup,
+              monitoring_system: monitoringSystem,
+              maintenance_package: maintenancePackage,
+              total_cost: parseFloat(totalCost),
+              subsidy: parseFloat(subsidy),
+              final_cost: parseFloat(finalCost),
+              monthly_savings: parseFloat(monthlySavings),
+              yearly_savings: parseFloat(yearlySavings),
+              payback_period: parseFloat(paybackPeriod),
+              status: 'draft'
+          };
+
+          // Show loading state
+          const saveBtn = document.getElementById('saveToDatabase');
+          const originalText = saveBtn.innerHTML;
+          saveBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Saving...';
+          saveBtn.disabled = true;
+
+          // Send to API
+          fetch('api/quotation_api.php', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(quotationData)
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (data.success) {
+                  showMessage('success', data.message);
+                  // Update button to show quotation number
+                  saveBtn.innerHTML = `<i class="fas fa-check me-2"></i>Saved (${data.quotation_number})`;
+                  saveBtn.classList.remove('btn-primary');
+                  saveBtn.classList.add('btn-success');
+                  
+                  // Enable print and PDF buttons
+                  document.getElementById('printQuote').disabled = false;
+                  document.getElementById('saveQuote').disabled = false;
+              } else {
+                  showMessage('error', data.message);
+                  saveBtn.innerHTML = originalText;
+                  saveBtn.disabled = false;
+              }
+          })
+          .catch(error => {
+              console.error('Error:', error);
+              showMessage('error', 'Failed to save quotation');
+              saveBtn.innerHTML = originalText;
+              saveBtn.disabled = false;
+          });
+      }
+
+      // Back to top button
+      const backToTopButton = document.querySelector('.back-to-top');
+
+      window.addEventListener('scroll', function() {
+          if (window.pageYOffset > 300) {
+              backToTopButton.style.display = 'flex';
+          } else {
+              backToTopButton.style.display = 'none';
+          }
+      });
+
+      // Message display function
+      function showMessage(type, text) {
+          const alert = document.getElementById('messageAlert');
+          const icon = document.getElementById('messageIcon');
+          const message = document.getElementById('messageText');
+          
+          alert.className = 'alert alert-' + (type === 'success' ? 'success' : 'danger') + ' d-block';
+          icon.className = type === 'success' ? 'bi bi-check-circle-fill' : 'bi bi-exclamation-triangle-fill';
+          message.textContent = text;
+          
+          setTimeout(() => {
+              alert.classList.add('d-none');
+          }, 5000);
+      }
+  </script>
+</body>
+</html>

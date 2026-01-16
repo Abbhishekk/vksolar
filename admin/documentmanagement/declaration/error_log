@@ -1,0 +1,27 @@
+[23-Dec-2025 09:25:04 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../../../connect/db.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php on line 4
+[23-Dec-2025 09:25:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../../../connect/db.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php:4
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php on line 4
+[28-Dec-2025 09:01:22 UTC] PHP Parse error:  syntax error, unexpected identifier "style", expecting "," or ";" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/decleration.php on line 925
+[28-Dec-2025 09:01:29 UTC] PHP Parse error:  syntax error, unexpected identifier "style", expecting "," or ";" in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/decleration.php on line 925
+[10-Jan-2026 13:30:06 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php on line 2
+[10-Jan-2026 13:30:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php:2
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php on line 2
+[10-Jan-2026 13:30:09 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php on line 2
+[10-Jan-2026 13:30:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php:2
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/declaration_list.php on line 2
+[13-Jan-2026 11:35:50 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/index.php on line 2
+[13-Jan-2026 11:35:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/index.php on line 2
+[13-Jan-2026 11:36:03 UTC] PHP Warning:  require_once(/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/index.php on line 2
+[13-Jan-2026 11:36:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/../connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/declaration/index.php on line 2

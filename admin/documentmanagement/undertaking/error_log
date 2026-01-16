@@ -1,0 +1,30 @@
+[29-Dec-2025 06:08:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'atriprints_vksolar.undertaking_documents' doesn't exist in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/index.php:34
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/index.php(34): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/index.php on line 34
+[29-Dec-2025 06:09:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'atriprints_vksolar.undertaking_documents' doesn't exist in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/index.php:34
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/index.php(34): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/index.php on line 34
+[29-Dec-2025 06:42:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'company_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php:78
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php(78): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php on line 78
+[29-Dec-2025 06:46:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'company_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php:78
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php(78): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php on line 78
+[29-Dec-2025 06:46:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'company_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php:78
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php(78): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php on line 78
+[29-Dec-2025 06:49:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'company_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php:78
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php(78): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/undertaking/save_undertaking.php on line 78

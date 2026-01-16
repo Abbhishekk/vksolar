@@ -1,0 +1,122 @@
+[14-Nov-2025 07:51:18 UTC] PHP Parse error:  Unclosed '{' on line 55 in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 81
+[14-Nov-2025 07:57:16 UTC] PHP Warning:  Undefined array key "name" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 19
+[14-Nov-2025 07:57:16 UTC] PHP Warning:  Undefined array key "consumer_number" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 20
+[14-Nov-2025 07:57:16 UTC] PHP Warning:  Undefined array key "billing_unit" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 21
+[14-Nov-2025 07:57:16 UTC] PHP Warning:  Undefined array key "location_url" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 22
+[14-Nov-2025 07:58:28 UTC] PHP Warning:  Undefined array key "name" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 19
+[14-Nov-2025 07:58:28 UTC] PHP Warning:  Undefined array key "consumer_number" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 20
+[14-Nov-2025 07:58:28 UTC] PHP Warning:  Undefined array key "billing_unit" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 21
+[14-Nov-2025 07:58:28 UTC] PHP Warning:  Undefined array key "location_url" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 22
+[14-Nov-2025 08:00:14 UTC] PHP Warning:  Undefined array key "name" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 19
+[14-Nov-2025 08:00:14 UTC] PHP Warning:  Undefined array key "consumer_number" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 20
+[14-Nov-2025 08:00:14 UTC] PHP Warning:  Undefined array key "billing_unit" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 21
+[14-Nov-2025 08:00:14 UTC] PHP Warning:  Undefined array key "location_url" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 22
+[14-Nov-2025 08:01:02 UTC] PHP Warning:  Undefined array key "name" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 19
+[14-Nov-2025 08:01:02 UTC] PHP Warning:  Undefined array key "consumer_number" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 20
+[14-Nov-2025 08:01:02 UTC] PHP Warning:  Undefined array key "billing_unit" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 21
+[14-Nov-2025 08:01:02 UTC] PHP Warning:  Undefined array key "location_url" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step1.php on line 22
+[18-Nov-2025 03:20:30 UTC] PHP Warning:  Undefined variable $current_step in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 19
+[18-Nov-2025 03:25:06 UTC] PHP Warning:  Undefined array key "step" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 46
+[18-Nov-2025 03:25:11 UTC] PHP Warning:  Undefined array key "step" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 46
+[04-Dec-2025 02:30:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'requested_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php:15
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php(15): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php on line 15
+[04-Dec-2025 02:31:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'requested_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php:15
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php(15): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php on line 15
+[04-Dec-2025 02:31:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'requested_name' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php:15
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php(15): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step5.php on line 15
+[04-Dec-2025 03:57:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'filename' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php:39
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php(39): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php on line 39
+[04-Dec-2025 03:57:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'filename' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php:39
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php(39): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php on line 39
+[04-Dec-2025 04:09:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'filename' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php:39
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php(39): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step9.php on line 39
+[04-Dec-2025 07:33:21 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php:172
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php(172): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php on line 172
+[04-Dec-2025 08:24:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'rts_application_number' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step11.php:14
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step11.php(14): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step11.php on line 14
+[04-Dec-2025 08:25:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'rts_application_number' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step11.php:14
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step11.php(14): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step11.php on line 14
+[04-Dec-2025 10:02:50 UTC] PHP Parse error:  syntax error, unexpected string content "workflow_errors"] = ["Server e...", expecting "]" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step14.php on line 49
+[04-Dec-2025 10:03:36 UTC] PHP Parse error:  syntax error, unexpected string content "workflow_errors"] = ["Server e...", expecting "]" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step14.php on line 49
+[05-Dec-2025 07:24:48 UTC] PHP Warning:  Undefined variable $current_step in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 50
+[05-Dec-2025 07:24:48 UTC] PHP Warning:  Undefined variable $clientsArr in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:48 UTC] PHP Warning:  Undefined variable $selected_client_id in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 70
+[05-Dec-2025 07:24:55 UTC] PHP Warning:  Undefined variable $current_step in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 50
+[05-Dec-2025 07:24:55 UTC] PHP Warning:  Undefined variable $clientsArr in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:55 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:55 UTC] PHP Warning:  Undefined variable $selected_client_id in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 70
+[05-Dec-2025 07:24:57 UTC] PHP Warning:  Undefined variable $current_step in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 50
+[05-Dec-2025 07:24:57 UTC] PHP Warning:  Undefined variable $clientsArr in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:57 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:57 UTC] PHP Warning:  Undefined variable $selected_client_id in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 70
+[05-Dec-2025 07:24:59 UTC] PHP Warning:  Undefined variable $current_step in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 50
+[05-Dec-2025 07:24:59 UTC] PHP Warning:  Undefined variable $clientsArr in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:59 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:24:59 UTC] PHP Warning:  Undefined variable $selected_client_id in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 70
+[05-Dec-2025 07:25:15 UTC] PHP Warning:  Undefined variable $current_step in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 50
+[05-Dec-2025 07:25:15 UTC] PHP Warning:  Undefined variable $clientsArr in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:25:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:25:15 UTC] PHP Warning:  Undefined variable $selected_client_id in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 70
+[05-Dec-2025 07:25:17 UTC] PHP Warning:  Undefined variable $current_step in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 50
+[05-Dec-2025 07:25:17 UTC] PHP Warning:  Undefined variable $clientsArr in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:25:17 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 57
+[05-Dec-2025 07:25:17 UTC] PHP Warning:  Undefined variable $selected_client_id in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 70
+[17-Dec-2025 03:16:23 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php:194
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php(194): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php on line 194
+[17-Dec-2025 03:18:25 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php:194
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php(194): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php on line 194
+[17-Dec-2025 03:20:06 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php:212
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php(212): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php on line 212
+[17-Dec-2025 03:23:08 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php:212
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php(212): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step10.php on line 212
+[26-Dec-2025 01:16:01 UTC] PHP Warning:  Undefined array key "adhar" in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 59
+[02-Jan-2026 02:09:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'picode' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php:18
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php(18): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/step2.php on line 18
+[02-Jan-2026 02:10:08 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step2.php:72
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step2.php(72): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/workflow_steps/save_step2.php on line 72

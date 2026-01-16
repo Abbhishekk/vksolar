@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VK Solar Energy - Gallery</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ===== Theme Colors ===== */
+      :root {
+        --primary: #2e8b57;
+        --primary-light: #3cb371;
+        --primary-dark: #1e6b47;
+        --secondary: #f5f5f5;
+        --accent: #87ceeb;
+        --gradient-primary: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--primary-light) 100%
+        );
+        --gradient-secondary: linear-gradient(135deg, #f0e6d6 0%, #f5f5f5 100%);
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        background: var(--gradient-secondary);
+        color: #333;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      h1,
+      h6 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: var(--primary-dark);
+        text-align: center;
+      }
+
+      h6 {
+        color: var(--primary);
+        letter-spacing: 1px;
+      }
+
+      /* ===== Organic Shapes ===== */
+      .organic-shape {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.1;
+      }
+      .shape-leaf {
+        width: 150px;
+        height: 150px;
+        background: var(--gradient-primary);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        animation: morph 8s ease-in-out infinite;
+      }
+      @keyframes morph {
+        0%,
+        100% {
+          border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        50% {
+          border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+      }
+
+      /* ===== Gallery Section ===== */
+      #gallery {
+        position: relative;
+        padding: 80px 20px;
+      }
+
+      #gallery .section-title {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      #gallery .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: var(--gradient-primary);
+        border-radius: 2px;
+      }
+
+      /* ===== Filter Buttons ===== */
+      .gallery-filters {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 40px;
+      }
+
+      .filter-btn {
+        padding: 12px 25px;
+        background: white;
+        border: 2px solid var(--primary-light);
+        border-radius: 30px;
+        color: var(--primary);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .filter-btn:hover,
+      .filter-btn.active {
+        background: var(--gradient-primary);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(46, 139, 87, 0.3);
+      }
+
+      /* ===== Masonry Grid Layout ===== */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+        gap: 15px;
+        margin-top: 40px;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transition: all 0.4s ease;
+        cursor: pointer;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease, filter 0.6s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.1);
+        filter: brightness(85%);
+      }
+
+      .gallery-item::after {
+        content: "🔆";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        font-size: 2rem;
+        transition: all 0.4s ease;
+      }
+
+      .gallery-item:hover::after {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+
+      /* Different sizes for masonry effect */
+      .gallery-item.tall {
+        grid-row: span 2;
+      }
+      .gallery-item.wide {
+        grid-column: span 2;
+      }
+
+      /* Content overlay on hover */
+      .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        color: white;
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+      }
+
+      .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+      }
+
+      .gallery-overlay h3 {
+        margin: 0 0 10px;
+        font-size: 1.2rem;
+      }
+
+      .gallery-overlay p {
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      /* Badge for category */
+      .gallery-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: var(--gradient-primary);
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .gallery-item:hover .gallery-badge {
+        opacity: 1;
+      }
+
+      /* Floating icons */
+      .floating-icon {
+        position: absolute;
+        font-size: 24px;
+        color: var(--primary-light);
+        opacity: 0;
+        animation: float 6s ease-in-out infinite;
+        transition: opacity 0.3s ease;
+      }
+
+      .gallery-item:hover .floating-icon {
+        opacity: 0.7;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .gallery-item.tall,
+        .gallery-item.wide {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+
+        .gallery-filters {
+          gap: 10px;
+        }
+
+        .filter-btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+      }
+
+      /* ===== Lightbox ===== */
+      .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .lightbox img {
+        max-width: 85%;
+        max-height: 85%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        animation: zoomIn 0.4s ease;
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .lightbox:target {
+        display: flex;
+      }
+
+      .close-lightbox {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        color: #fff;
+        font-size: 2rem;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .close-lightbox:hover {
+        color: var(--primary-light);
+      }
+
+      /* Lightbox info */
+      .lightbox-info {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 80%;
+      }
+
+      .lightbox-info h3 {
+        margin: 0 0 5px;
+        font-size: 1.3rem;
+      }
+
+      .lightbox-info p {
+        margin: 0;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== Gallery Section ===== -->
+    <section id="gallery">
+      <h6>Our Gallery</h6>
+      <h1 class="section-title">Solar Installations Showcase</h1>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 40px">
+        Explore our installations categorized by project type. Each image
+        represents our commitment to quality solar solutions.
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-th-large"></i> All Projects
+        </button>
+        <button class="filter-btn" data-filter="residential">
+          <i class="fas fa-home"></i> Residential
+        </button>
+        <button class="filter-btn" data-filter="commercial">
+          <i class="fas fa-building"></i> Commercial
+        </button>
+        <button class="filter-btn" data-filter="industrial">
+          <i class="fas fa-industry"></i> Industrial
+        </button>
+        <button class="filter-btn" data-filter="government">
+          <i class="fas fa-landmark"></i> Government
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Residential Projects -->
+        <a href="#img1" class="gallery-item" data-category="residential">
+          <img
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBwYW5lbHMlMjByb29mfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="Residential Rooftop"
+          />
+          <div class="gallery-overlay">
+            <h3>Residential Rooftop</h3>
+            <p>5kW system with PM Surya Ghar subsidy</p>
+          </div>
+          <span class="gallery-badge">Residential</span>
+          <div class="floating-icon" style="top: 20px; left: 20px">
+            <i class="fas fa-home"></i>
+          </div>
+        </a>
+
+        <a href="#img2" class="gallery-item tall" data-category="residential">
+          <img
+            src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29sYXIlMjBob21lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="Modern Home Solar"
+          />
+          <div class="gallery-overlay">
+            <h3>Modern Home Setup</h3>
+            <p>8kW premium installation with battery backup</p>
+          </div>
+          <span class="gallery-badge">Residential</span>
+          <div class="floating-icon" style="top: 30px; right: 30px">
+            <i class="fas fa-sun"></i>
+          </div>
+        </a>
+
+        <!-- Commercial Projects -->
+        <a href="#img3" class="gallery-item wide" data-category="commercial">
+          <img
+            src="https://images.unsplash.com/photo-1622653530198-960adb61d7f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvbGFyJTIwcGFuZWxzJTIwY29tbWVyY2lhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Commercial Building"
+          />
+          <div class="gallery-overlay">
+            <h3>Office Complex</h3>
+            <p>50kW commercial solar system</p>
+          </div>
+          <span class="gallery-badge">Commercial</span>
+          <div class="floating-icon" style="bottom: 30px; left: 30px">
+            <i class="fas fa-building"></i>
+          </div>
+        </a>
+
+        <a href="#img4" class="gallery-item" data-category="commercial">
+          <img
+            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c29sYXIlMjBwYW5lbHMlMjBjb21tZXJjaWFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="Shopping Mall"
+          />
+          <div class="gallery-overlay">
+            <h3>Shopping Complex</h3>
+            <p>30kW system with net metering</p>
+          </div>
+          <span class="gallery-badge">Commercial</span>
+          <div class="floating-icon" style="top: 25px; right: 25px">
+            <i class="fas fa-store"></i>
+          </div>
+        </a>
+
+        <!-- Industrial Projects -->
+        <a href="#img5" class="gallery-item tall" data-category="industrial">
+          <img
+            src="https://images.unsplash.com/photo-1584270354949-1c1f93bfaef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvbGFyJTIwaW5kdXN0cmlhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Industrial Plant"
+          />
+          <div class="gallery-overlay">
+            <h3>Manufacturing Unit</h3>
+            <p>100kW industrial solar plant</p>
+          </div>
+          <span class="gallery-badge">Industrial</span>
+          <div class="floating-icon" style="bottom: 20px; right: 20px">
+            <i class="fas fa-industry"></i>
+          </div>
+        </a>
+
+        <a href="#img6" class="gallery-item" data-category="industrial">
+          <img
+            src="https://images.unsplash.com/photo-1569163139394-de44cb2c8cb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNvbGFyJTIwZmFybXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Solar Farm"
+          />
+          <div class="gallery-overlay">
+            <h3>Industrial Solar Farm</h3>
+            <p>Large-scale renewable energy generation</p>
+          </div>
+          <span class="gallery-badge">Industrial</span>
+          <div class="floating-icon" style="bottom: 30px; left: 30px">
+            <i class="fas fa-solar-panel"></i>
+          </div>
+        </a>
+
+        <!-- Government Projects -->
+        <a href="#img7" class="gallery-item wide" data-category="government">
+          <img
+            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNvbGFyJTIwcGFuZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="Government Scheme"
+          />
+          <div class="gallery-overlay">
+            <h3>PM Surya Ghar Scheme</h3>
+            <p>3kW installation with subsidy benefits</p>
+          </div>
+          <span class="gallery-badge">Government</span>
+          <div class="floating-icon" style="top: 40px; right: 40px">
+            <i class="fas fa-landmark"></i>
+          </div>
+        </a>
+
+        <a href="#img8" class="gallery-item" data-category="government">
+          <img
+            src="https://images.unsplash.com/photo-1597764699514-9b5b4e4e8f17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29sYXIlMjB0ZWNobmljaWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="Installation Team"
+          />
+          <div class="gallery-overlay">
+            <h3>Government Project Team</h3>
+            <p>Certified technicians at work</p>
+          </div>
+          <span class="gallery-badge">Government</span>
+          <div
+            class="floating-icon"
+            style="top: 50%; left: 50%; transform: translate(-50%, -50%)"
+          >
+            <i class="fas fa-users"></i>
+          </div>
+        </a>
+
+        <!-- Additional Residential -->
+        <a href="#img9" class="gallery-item" data-category="residential">
+          <img
+            src="https://images.unsplash.com/photo-1604080907141-85a29692c4d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBwYW5lbHMlMjByb29mfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="House Solar Panels"
+          />
+          <div class="gallery-overlay">
+            <h3>Suburban Home</h3>
+            <p>6kW residential solar system</p>
+          </div>
+          <span class="gallery-badge">Residential</span>
+          <div class="floating-icon" style="top: 20px; right: 20px">
+            <i class="fas fa-house-user"></i>
+          </div>
+        </a>
+
+        <!-- Additional Commercial -->
+        <a href="#img10" class="gallery-item tall" data-category="commercial">
+          <img
+            src="https://images.unsplash.com/photo-1601233746433-8b421adcce5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29sYXIlMjByb29mfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="Commercial Roof"
+          />
+          <div class="gallery-overlay">
+            <h3>Business Complex</h3>
+            <p>40kW commercial installation</p>
+          </div>
+          <span class="gallery-badge">Commercial</span>
+          <div class="floating-icon" style="bottom: 30px; left: 30px">
+            <i class="fas fa-city"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Lightbox Views ===== -->
+    <div id="img1" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBwYW5lbHMlMjByb29mfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Residential Rooftop Installation</h3>
+        <p>5kW system with PM Surya Ghar subsidy benefits</p>
+      </div>
+    </div>
+
+    <div id="img2" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29sYXIlMjBob21lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Modern Home Solar Setup</h3>
+        <p>8kW premium installation with battery backup</p>
+      </div>
+    </div>
+
+    <div id="img3" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1622653530198-960adb61d7f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvbGFyJTIwcGFuZWxzJTIwY29tbWVyY2lhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Commercial Building Installation</h3>
+        <p>50kW system for office complex</p>
+      </div>
+    </div>
+
+    <div id="img4" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c29sYXIlMjBwYW5lbHMlMjBjb21tZXJjaWFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Shopping Mall Installation</h3>
+        <p>30kW system for retail center</p>
+      </div>
+    </div>
+
+    <div id="img5" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1584270354949-1c1f93bfaef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvbGFyJTIwaW5kdXN0cmlhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Industrial Solar Plant</h3>
+        <p>100kW system for manufacturing unit</p>
+      </div>
+    </div>
+
+    <div id="img6" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1569163139394-de44cb2c8cb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNvbGFyJTIwZmFybXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Industrial Solar Farm</h3>
+        <p>Large-scale renewable energy generation</p>
+      </div>
+    </div>
+
+    <div id="img7" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNvbGFyJTIwcGFuZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>PM Surya Ghar Scheme</h3>
+        <p>3kW installation with full subsidy benefits</p>
+      </div>
+    </div>
+
+    <div id="img8" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1597764699514-9b5b4e4e8f17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29sYXIlMjB0ZWNobmljaWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Government Project Team</h3>
+        <p>Certified technicians ensuring quality work</p>
+      </div>
+    </div>
+
+    <div id="img9" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1604080907141-85a29692c4d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBwYW5lbHMlMjByb29mfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Suburban Home Installation</h3>
+        <p>6kW residential solar system</p>
+      </div>
+    </div>
+
+    <div id="img10" class="lightbox">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img
+        src="https://images.unsplash.com/photo-1601233746433-8b421adcce5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29sYXIlMjByb29mfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <div class="lightbox-info">
+        <h3>Business Complex Installation</h3>
+        <p>40kW commercial solar system</p>
+      </div>
+    </div>
+
+    <script>
+      // Filter functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+            // Add active class to clicked button
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            // Show/hide gallery items based on filter
+            galleryItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.getAttribute("data-category") === filterValue
+              ) {
+                item.style.display = "block";
+                setTimeout(() => {
+                  item.style.opacity = "1";
+                  item.style.transform = "translateY(0)";
+                }, 100);
+              } else {
+                item.style.opacity = "0";
+                item.style.transform = "translateY(20px)";
+                setTimeout(() => {
+                  item.style.display = "none";
+                }, 300);
+              }
+            });
+          });
+        });
+
+        // Simple fade-in effect on scroll
+        document.addEventListener("scroll", () => {
+          document.querySelectorAll(".gallery-item").forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+              item.style.opacity = "1";
+              item.style.transform = "translateY(0)";
+            }
+          });
+        });
+
+        // Initialize opacity
+        document.querySelectorAll(".gallery-item").forEach((item) => {
+          item.style.opacity = "0";
+          item.style.transform = "translateY(30px)";
+          item.style.transition = "all 0.6s ease";
+        });
+
+        // Trigger initial check
+        window.dispatchEvent(new Event("scroll"));
+      });
+    </script>
+  </body>
+</html>

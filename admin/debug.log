@@ -1,0 +1,94 @@
+2025-11-01 07:44:46 - Method: GET
+2025-11-01 07:44:46 - POST data: Array
+(
+)
+
+2025-11-01 07:46:11 - Method: GET
+2025-11-01 07:46:11 - POST data: Array
+(
+)
+
+2025-11-01 07:49:53 - Method: GET
+2025-11-01 07:49:53 - POST data: Array
+(
+)
+
+2025-11-01 07:51:12 - Method: GET
+2025-11-01 07:51:12 - POST data: Array
+(
+)
+
+2025-11-01 07:58:27 - Method: GET
+2025-11-01 07:58:27 - POST data: Array
+(
+)
+
+2025-11-01 08:00:55 - Method: GET
+2025-11-01 08:00:55 - GET data: Array
+(
+    [firstName] => Abhishek
+    [lastName] => Bante
+    [email] => abhishekbante01@gmail.com
+    [phone] => 08459722098
+    [address] => Plotno.27 niwara society,godhani road,nagpur, Maharashtra
+    [propertyType] => commercial
+    [roofType] => metal
+    [meterType] => three_phase
+    [roofArea] => 2000
+    [systemSize] => 5
+    [panelCompany] => kirloskar
+    [inverterCompany] => polycab
+    [panelModel] => 545
+    [systemType] => on-grid
+    [monthlyBill] => 5000
+    [batteryBackup] => 1
+    [monitoringSystem] => 0
+    [maintenancePackage] => 0
+)
+
+2025-11-01 08:06:30 - Method: GET
+2025-11-01 08:06:30 - GET data: Array
+(
+    [firstName] => Abhishek
+    [lastName] => Bante
+    [email] => abhishekbante01@gmail.com
+    [phone] => 08459722098
+    [address] => Plotno.27 niwara society,godhani road,nagpur, Maharashtra
+    [propertyType] => commercial
+    [roofType] => metal
+    [meterType] => three_phase
+    [roofArea] => 2000
+    [systemSize] => 5
+    [panelCompany] => kirloskar
+    [inverterCompany] => polycab
+    [panelModel] => 545
+    [systemType] => on-grid
+    [monthlyBill] => 5000
+    [batteryBackup] => 1
+    [monitoringSystem] => 0
+    [maintenancePackage] => 0
+)
+
+2025-11-01 08:07:21 - Method: GET
+2025-11-01 08:07:21 - GET data: Array
+(
+    [firstName] => Abhishek
+    [lastName] => Bante
+    [email] => abhishekbante01@gmail.com
+    [phone] => 08459722098
+    [address] => Plotno.27 niwara society,godhani road,nagpur, Maharashtra
+    [propertyType] => commercial
+    [roofType] => metal
+    [meterType] => three_phase
+    [roofArea] => 2000
+    [systemSize] => 5
+    [panelCompany] => kirloskar
+    [inverterCompany] => polycab
+    [panelModel] => 545
+    [systemType] => on-grid
+    [monthlyBill] => 5000
+    [batteryBackup] => 1
+    [monitoringSystem] => 0
+    [maintenancePackage] => 0
+)
+

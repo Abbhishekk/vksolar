@@ -1,0 +1,132 @@
+// Fade in animation on scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElements = document.querySelectorAll(".fade-in");
+
+  const fadeInOnScroll = function () {
+    fadeElements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementVisible = 150;
+
+      if (elementTop < window.innerHeight - elementVisible) {
+        element.classList.add("visible");
+      }
+    });
+  };
+
+  // Check on load
+  fadeInOnScroll();
+
+  // Check on scroll
+  window.addEventListener("scroll", fadeInOnScroll);
+
+  // Add solar panel animation to service icons
+  const solarIcons = document.querySelectorAll(".fa-solar-panel");
+  solarIcons.forEach((icon) => {
+    icon.classList.add("solar-panel-icon");
+  });
+
+  // Add leaf decoration to section titles
+  const sectionTitles = document.querySelectorAll(".section-title");
+  sectionTitles.forEach((title) => {
+    title.classList.add("leaf-decoration");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      // Remove 'active' class from all links
+      navLinks.forEach((l) => l.classList.remove("active"));
+      // Add 'active' class to the clicked link
+      this.classList.add("active");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarCollapse = document.getElementById("navbarCollapse");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  // Function to close navbar
+  function closeNavbar() {
+    if (navbarCollapse.classList.contains("show")) {
+      new bootstrap.Collapse(navbarCollapse, { toggle: true });
+    }
+  }
+
+  // Close when clicking nav-links
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => closeNavbar());
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", function (e) {
+    const isClickInside =
+      navbarCollapse.contains(e.target) || e.target.closest(".navbar-toggler");
+
+    if (!isClickInside) {
+      closeNavbar();
+    }
+  });
+});
+
+// Filter functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+      // Add active class to clicked button
+      this.classList.add("active");
+
+      const filterValue = this.getAttribute("data-filter");
+
+      // Show/hide gallery items based on filter
+      galleryItems.forEach((item) => {
+        if (
+          filterValue === "all" ||
+          item.getAttribute("data-category") === filterValue
+        ) {
+          item.style.display = "block";
+          setTimeout(() => {
+            item.style.opacity = "1";
+            item.style.transform = "translateY(0)";
+          }, 100);
+        } else {
+          item.style.opacity = "0";
+          item.style.transform = "translateY(20px)";
+          setTimeout(() => {
+            item.style.display = "none";
+          }, 300);
+        }
+      });
+    });
+  });
+
+  // Simple fade-in effect on scroll
+  document.addEventListener("scroll", () => {
+    document.querySelectorAll(".gallery-item").forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        item.style.opacity = "1";
+        item.style.transform = "translateY(0)";
+      }
+    });
+  });
+
+  // Initialize opacity
+  document.querySelectorAll(".gallery-item").forEach((item) => {
+    item.style.opacity = "0";
+    item.style.transform = "translateY(30px)";
+    item.style.transition = "all 0.6s ease";
+  });
+
+  // Trigger initial check
+  window.dispatchEvent(new Event("scroll"));
+});

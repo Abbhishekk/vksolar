@@ -1,0 +1,259 @@
+[02-Jan-2026 01:22:43 UTC] PHP Warning:  require_once(connect/auth_middleware.php): Failed to open stream: No such file or directory in /home6/atriprints/vksolarenergy.com/admin/bankquotation/bank_quotation.php on line 15
+[02-Jan-2026 01:22:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'connect/auth_middleware.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home6/atriprints/vksolarenergy.com/admin/bankquotation/bank_quotation.php:15
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/bank_quotation.php on line 15
+[02-Jan-2026 15:31:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:32:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:34:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:34:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:37:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:37:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:38:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:38:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:41:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:41:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:41:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:42:06 UTC] PHP Warning:  Undefined variable $conn in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 29
+[02-Jan-2026 15:42:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:29
+Stack trace:
+#0 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 29
+[02-Jan-2026 15:43:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 15:46:47 UTC] PHP Warning:  Undefined variable $POST in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 2
+[02-Jan-2026 15:46:47 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 2
+[02-Jan-2026 15:48:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'products_json' in 'field list' in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php:43
+Stack trace:
+#0 /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php(43): mysqli->prepare()
+#1 {main}
+  thrown in /home6/atriprints/vksolarenergy.com/admin/bankquotation/index.php on line 43
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[02-Jan-2026 16:26:53 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[03-Jan-2026 12:52:58 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[05-Jan-2026 04:56:42 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[05-Jan-2026 05:13:22 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[05-Jan-2026 05:19:06 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[05-Jan-2026 05:19:35 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[05-Jan-2026 05:21:41 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined variable $data in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 11
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 15
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 19
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 23
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 29
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 35
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 37
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[05-Jan-2026 05:29:38 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 42
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "client_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 16
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "quotation_number" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 20
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "quotation_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 21
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "validity_date" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 22
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 28
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 34
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "bank_id" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 36
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "total_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 38
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "subsidy" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 39
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "final_amount" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 40
+[05-Jan-2026 05:30:11 UTC] PHP Warning:  Undefined array key "products" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 43
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "customer_name" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 24
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "customer_address" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 25
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "pin_code" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 26
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "customer_phone" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 27
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "customer_email" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 28
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "project_location" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 30
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "plant_capacity" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 31
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "system_type" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 32
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "estimated_generation" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 33
+[05-Jan-2026 05:31:39 UTC] PHP Warning:  Undefined array key "system_description" in /home6/atriprints/vksolarenergy.com/admin/bankquotation/save.php on line 34

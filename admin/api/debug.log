@@ -1,0 +1,2378 @@
+[2025-11-18 02:47:35] REQ_METHOD=GET ACTION=delete_client
+[2025-11-18 02:47:35] CONTENT_TYPE=
+[2025-11-18 02:47:35] CONTENT_LENGTH=
+[2025-11-18 02:47:35] RAW_LEN=0
+[2025-11-18 02:47:35] REQUEST_KEYS: action,client_id
+[2025-11-18 02:47:35] POST_KEYS: 
+[2025-11-18 02:47:35] FILES_KEYS: 
+[2025-11-18 02:47:35] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 4
+)
+
+[2025-12-05 07:11:32] REQ_METHOD=GET ACTION=delete_client
+[2025-12-05 07:11:32] CONTENT_TYPE=
+[2025-12-05 07:11:32] CONTENT_LENGTH=
+[2025-12-05 07:11:32] RAW_LEN=0
+[2025-12-05 07:11:32] REQUEST_KEYS: action,client_id
+[2025-12-05 07:11:32] POST_KEYS: 
+[2025-12-05 07:11:32] FILES_KEYS: 
+[2025-12-05 07:11:32] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 4
+)
+
+[2025-12-17 01:37:08] REQ_METHOD=GET ACTION=delete_client
+[2025-12-17 01:37:08] CONTENT_TYPE=
+[2025-12-17 01:37:08] CONTENT_LENGTH=
+[2025-12-17 01:37:08] RAW_LEN=0
+[2025-12-17 01:37:08] REQUEST_KEYS: action,client_id
+[2025-12-17 01:37:08] POST_KEYS: 
+[2025-12-17 01:37:08] FILES_KEYS: 
+[2025-12-17 01:37:08] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 3
+)
+
+[2025-12-17 04:18:23] REQ_METHOD=GET ACTION=delete_client
+[2025-12-17 04:18:23] CONTENT_TYPE=
+[2025-12-17 04:18:23] CONTENT_LENGTH=
+[2025-12-17 04:18:23] RAW_LEN=0
+[2025-12-17 04:18:23] REQUEST_KEYS: action,client_id
+[2025-12-17 04:18:23] POST_KEYS: 
+[2025-12-17 04:18:23] FILES_KEYS: 
+[2025-12-17 04:18:23] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 1
+)
+
+[2025-12-25 05:56:58] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-25 05:56:58] CONTENT_TYPE=
+[2025-12-25 05:56:58] CONTENT_LENGTH=
+[2025-12-25 05:56:58] RAW_LEN=0
+[2025-12-25 05:56:58] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-25 05:56:58] POST_KEYS: 
+[2025-12-25 05:56:58] FILES_KEYS: 
+[2025-12-25 05:56:58] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 10
+    [client_id] => 5
+    [edit_mode] => true
+)
+
+[2025-12-25 05:59:58] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-25 05:59:58] CONTENT_TYPE=
+[2025-12-25 05:59:58] CONTENT_LENGTH=
+[2025-12-25 05:59:58] RAW_LEN=0
+[2025-12-25 05:59:58] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-25 05:59:58] POST_KEYS: 
+[2025-12-25 05:59:58] FILES_KEYS: 
+[2025-12-25 05:59:58] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 10
+    [client_id] => 5
+    [edit_mode] => true
+)
+
+[2025-12-25 06:00:11] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-25 06:00:11] CONTENT_TYPE=
+[2025-12-25 06:00:11] CONTENT_LENGTH=
+[2025-12-25 06:00:11] RAW_LEN=0
+[2025-12-25 06:00:11] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-25 06:00:11] POST_KEYS: 
+[2025-12-25 06:00:11] FILES_KEYS: 
+[2025-12-25 06:00:11] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 10
+    [client_id] => 5
+    [edit_mode] => true
+)
+
+[2025-12-25 06:00:37] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-25 06:00:37] CONTENT_TYPE=
+[2025-12-25 06:00:37] CONTENT_LENGTH=
+[2025-12-25 06:00:37] RAW_LEN=0
+[2025-12-25 06:00:37] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-25 06:00:37] POST_KEYS: 
+[2025-12-25 06:00:37] FILES_KEYS: 
+[2025-12-25 06:00:37] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 10
+    [client_id] => 5
+    [edit_mode] => true
+)
+
+[2025-12-31 07:20:06] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:20:06] CONTENT_TYPE=
+[2025-12-31 07:20:06] CONTENT_LENGTH=
+[2025-12-31 07:20:06] RAW_LEN=0
+[2025-12-31 07:20:06] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:20:06] POST_KEYS: 
+[2025-12-31 07:20:06] FILES_KEYS: 
+[2025-12-31 07:20:06] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 8
+    [edit_mode] => true
+)
+
+[2025-12-31 07:20:09] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:20:09] CONTENT_TYPE=
+[2025-12-31 07:20:09] CONTENT_LENGTH=
+[2025-12-31 07:20:09] RAW_LEN=0
+[2025-12-31 07:20:09] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:20:09] POST_KEYS: 
+[2025-12-31 07:20:09] FILES_KEYS: 
+[2025-12-31 07:20:09] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 8
+    [edit_mode] => true
+)
+
+[2025-12-31 07:20:52] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:20:52] CONTENT_TYPE=
+[2025-12-31 07:20:52] CONTENT_LENGTH=
+[2025-12-31 07:20:52] RAW_LEN=0
+[2025-12-31 07:20:52] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:20:52] POST_KEYS: 
+[2025-12-31 07:20:52] FILES_KEYS: 
+[2025-12-31 07:20:52] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 8
+    [edit_mode] => true
+)
+
+[2025-12-31 07:20:57] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:20:57] CONTENT_TYPE=
+[2025-12-31 07:20:57] CONTENT_LENGTH=
+[2025-12-31 07:20:57] RAW_LEN=0
+[2025-12-31 07:20:57] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:20:57] POST_KEYS: 
+[2025-12-31 07:20:57] FILES_KEYS: 
+[2025-12-31 07:20:57] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 8
+    [edit_mode] => true
+)
+
+[2025-12-31 07:21:14] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:21:14] CONTENT_TYPE=
+[2025-12-31 07:21:14] CONTENT_LENGTH=
+[2025-12-31 07:21:14] RAW_LEN=0
+[2025-12-31 07:21:14] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:21:14] POST_KEYS: 
+[2025-12-31 07:21:14] FILES_KEYS: 
+[2025-12-31 07:21:14] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 8
+    [edit_mode] => true
+)
+
+[2025-12-31 07:22:32] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:22:32] CONTENT_TYPE=
+[2025-12-31 07:22:32] CONTENT_LENGTH=
+[2025-12-31 07:22:32] RAW_LEN=0
+[2025-12-31 07:22:32] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:22:32] POST_KEYS: 
+[2025-12-31 07:22:32] FILES_KEYS: 
+[2025-12-31 07:22:32] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 9
+    [client_id] => 8
+    [edit_mode] => true
+)
+
+[2025-12-31 07:22:47] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:22:47] CONTENT_TYPE=
+[2025-12-31 07:22:47] CONTENT_LENGTH=
+[2025-12-31 07:22:47] RAW_LEN=0
+[2025-12-31 07:22:47] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:22:47] POST_KEYS: 
+[2025-12-31 07:22:47] FILES_KEYS: 
+[2025-12-31 07:22:47] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 13
+    [client_id] => 8
+    [edit_mode] => true
+)
+
+[2025-12-31 07:23:08] REQ_METHOD=GET ACTION=delete_client
+[2025-12-31 07:23:08] CONTENT_TYPE=
+[2025-12-31 07:23:08] CONTENT_LENGTH=
+[2025-12-31 07:23:08] RAW_LEN=0
+[2025-12-31 07:23:08] REQUEST_KEYS: action,client_id
+[2025-12-31 07:23:08] POST_KEYS: 
+[2025-12-31 07:23:08] FILES_KEYS: 
+[2025-12-31 07:23:08] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 8
+)
+
+[2025-12-31 07:23:18] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:23:18] CONTENT_TYPE=
+[2025-12-31 07:23:18] CONTENT_LENGTH=
+[2025-12-31 07:23:18] RAW_LEN=0
+[2025-12-31 07:23:18] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:23:18] POST_KEYS: 
+[2025-12-31 07:23:18] FILES_KEYS: 
+[2025-12-31 07:23:18] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 7
+    [edit_mode] => true
+)
+
+[2025-12-31 07:23:20] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:23:20] CONTENT_TYPE=
+[2025-12-31 07:23:20] CONTENT_LENGTH=
+[2025-12-31 07:23:20] RAW_LEN=0
+[2025-12-31 07:23:20] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:23:20] POST_KEYS: 
+[2025-12-31 07:23:20] FILES_KEYS: 
+[2025-12-31 07:23:20] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 7
+    [edit_mode] => true
+)
+
+[2025-12-31 07:30:16] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:30:16] CONTENT_TYPE=
+[2025-12-31 07:30:16] CONTENT_LENGTH=
+[2025-12-31 07:30:16] RAW_LEN=0
+[2025-12-31 07:30:16] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:30:16] POST_KEYS: 
+[2025-12-31 07:30:16] FILES_KEYS: 
+[2025-12-31 07:30:16] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 10
+    [client_id] => 7
+    [edit_mode] => true
+)
+
+[2025-12-31 07:30:18] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:30:18] CONTENT_TYPE=
+[2025-12-31 07:30:18] CONTENT_LENGTH=
+[2025-12-31 07:30:18] RAW_LEN=0
+[2025-12-31 07:30:18] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:30:18] POST_KEYS: 
+[2025-12-31 07:30:18] FILES_KEYS: 
+[2025-12-31 07:30:18] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 10
+    [client_id] => 7
+    [edit_mode] => true
+)
+
+[2025-12-31 07:49:04] REQ_METHOD=GET ACTION=save_step_data
+[2025-12-31 07:49:04] CONTENT_TYPE=
+[2025-12-31 07:49:04] CONTENT_LENGTH=
+[2025-12-31 07:49:04] RAW_LEN=0
+[2025-12-31 07:49:04] REQUEST_KEYS: action,step,client_id,edit_mode
+[2025-12-31 07:49:04] POST_KEYS: 
+[2025-12-31 07:49:04] FILES_KEYS: 
+[2025-12-31 07:49:04] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 3
+    [client_id] => 7
+    [edit_mode] => true
+)
+
+[2026-01-01 10:50:54] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-01 10:50:54] CONTENT_TYPE=
+[2026-01-01 10:50:54] CONTENT_LENGTH=
+[2026-01-01 10:50:54] RAW_LEN=0
+[2026-01-01 10:50:54] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-01 10:50:54] POST_KEYS: 
+[2026-01-01 10:50:54] FILES_KEYS: 
+[2026-01-01 10:50:54] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 10
+    [edit_mode] => true
+)
+
+[2026-01-01 10:50:54] ERROR save_step_data: Name and Consumer Number are required
+[2026-01-01 10:51:01] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-01 10:51:01] CONTENT_TYPE=
+[2026-01-01 10:51:01] CONTENT_LENGTH=
+[2026-01-01 10:51:01] RAW_LEN=0
+[2026-01-01 10:51:01] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-01 10:51:01] POST_KEYS: 
+[2026-01-01 10:51:01] FILES_KEYS: 
+[2026-01-01 10:51:01] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 10
+    [edit_mode] => true
+)
+
+[2026-01-01 10:51:01] ERROR save_step_data: Name and Consumer Number are required
+[2026-01-01 10:51:05] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-01 10:51:05] CONTENT_TYPE=
+[2026-01-01 10:51:05] CONTENT_LENGTH=
+[2026-01-01 10:51:05] RAW_LEN=0
+[2026-01-01 10:51:05] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-01 10:51:05] POST_KEYS: 
+[2026-01-01 10:51:05] FILES_KEYS: 
+[2026-01-01 10:51:05] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 10
+    [edit_mode] => true
+)
+
+[2026-01-01 10:51:05] ERROR save_step_data: Name and Consumer Number are required
+[2026-01-01 10:51:29] REQ_METHOD=GET ACTION=delete_client
+[2026-01-01 10:51:29] CONTENT_TYPE=
+[2026-01-01 10:51:29] CONTENT_LENGTH=
+[2026-01-01 10:51:29] RAW_LEN=0
+[2026-01-01 10:51:29] REQUEST_KEYS: action,client_id
+[2026-01-01 10:51:29] POST_KEYS: 
+[2026-01-01 10:51:29] FILES_KEYS: 
+[2026-01-01 10:51:29] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 10
+)
+
+[2026-01-01 10:51:44] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-01 10:51:44] CONTENT_TYPE=
+[2026-01-01 10:51:44] CONTENT_LENGTH=
+[2026-01-01 10:51:44] RAW_LEN=0
+[2026-01-01 10:51:44] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-01 10:51:44] POST_KEYS: 
+[2026-01-01 10:51:44] FILES_KEYS: 
+[2026-01-01 10:51:44] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 9
+    [edit_mode] => true
+)
+
+[2026-01-01 10:51:44] ERROR save_step_data: Name and Consumer Number are required
+[2026-01-01 10:51:51] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-01 10:51:51] CONTENT_TYPE=
+[2026-01-01 10:51:51] CONTENT_LENGTH=
+[2026-01-01 10:51:51] RAW_LEN=0
+[2026-01-01 10:51:51] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-01 10:51:51] POST_KEYS: 
+[2026-01-01 10:51:51] FILES_KEYS: 
+[2026-01-01 10:51:51] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 9
+    [edit_mode] => true
+)
+
+[2026-01-01 10:51:51] ERROR save_step_data: Name and Consumer Number are required
+[2026-01-01 10:51:58] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-01 10:51:58] CONTENT_TYPE=
+[2026-01-01 10:51:58] CONTENT_LENGTH=
+[2026-01-01 10:51:58] RAW_LEN=0
+[2026-01-01 10:51:58] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-01 10:51:58] POST_KEYS: 
+[2026-01-01 10:51:58] FILES_KEYS: 
+[2026-01-01 10:51:58] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 3
+    [client_id] => 9
+    [edit_mode] => true
+)
+
+[2026-01-01 11:40:14] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-01 11:40:14] CONTENT_TYPE=
+[2026-01-01 11:40:14] CONTENT_LENGTH=
+[2026-01-01 11:40:14] RAW_LEN=0
+[2026-01-01 11:40:14] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-01 11:40:14] POST_KEYS: 
+[2026-01-01 11:40:14] FILES_KEYS: 
+[2026-01-01 11:40:14] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 11
+    [edit_mode] => true
+)
+
+[2026-01-01 11:40:14] ERROR save_step_data: Name and Consumer Number are required
+[2026-01-01 11:43:03] REQ_METHOD=GET ACTION=delete_client
+[2026-01-01 11:43:03] CONTENT_TYPE=
+[2026-01-01 11:43:03] CONTENT_LENGTH=
+[2026-01-01 11:43:03] RAW_LEN=0
+[2026-01-01 11:43:03] REQUEST_KEYS: action,client_id
+[2026-01-01 11:43:03] POST_KEYS: 
+[2026-01-01 11:43:03] FILES_KEYS: 
+[2026-01-01 11:43:03] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 11
+)
+
+[2026-01-02 05:14:46] REQ_METHOD=GET ACTION=delete_client
+[2026-01-02 05:14:46] CONTENT_TYPE=
+[2026-01-02 05:14:46] CONTENT_LENGTH=
+[2026-01-02 05:14:46] RAW_LEN=0
+[2026-01-02 05:14:46] REQUEST_KEYS: action,client_id
+[2026-01-02 05:14:46] POST_KEYS: 
+[2026-01-02 05:14:46] FILES_KEYS: 
+[2026-01-02 05:14:46] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 2
+)
+
+[2026-01-02 05:14:57] REQ_METHOD=GET ACTION=save_step_data
+[2026-01-02 05:14:57] CONTENT_TYPE=
+[2026-01-02 05:14:57] CONTENT_LENGTH=
+[2026-01-02 05:14:57] RAW_LEN=0
+[2026-01-02 05:14:57] REQUEST_KEYS: action,step,client_id,edit_mode
+[2026-01-02 05:14:57] POST_KEYS: 
+[2026-01-02 05:14:57] FILES_KEYS: 
+[2026-01-02 05:14:57] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 9
+    [edit_mode] => true
+)
+
+[2026-01-02 05:14:57] ERROR save_step_data: Name and Consumer Number are required
+[2026-01-02 07:59:23] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-02 07:59:23] CONTENT_TYPE=multipart/form-data; boundary=----WebKitFormBoundaryKtt56AgrEnyK7rek
+[2026-01-02 07:59:23] CONTENT_LENGTH=684
+[2026-01-02 07:59:23] RAW_LEN=0
+[2026-01-02 07:59:23] REQUEST_KEYS: action,step,client_id,edit_mode,mahadiscom_email,mahadiscom_email_password,mahadiscom_mobile
+[2026-01-02 07:59:23] POST_KEYS: mahadiscom_email,mahadiscom_email_password,mahadiscom_mobile,step,client_id,edit_mode
+[2026-01-02 07:59:23] FILES_KEYS: 
+[2026-01-02 07:59:23] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 3
+    [client_id] => 6
+    [edit_mode] => true
+    [mahadiscom_email] => aniket@gmail.com
+    [mahadiscom_email_password] => Aniket
+    [mahadiscom_mobile] => 9879898989
+)
+
+[2026-01-02 07:59:23] Updated client 6 for step 3
+[2026-01-02 08:26:48] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:26:48] CONTENT_TYPE=
+[2026-01-02 08:26:48] CONTENT_LENGTH=
+[2026-01-02 08:26:48] RAW_LEN=0
+[2026-01-02 08:26:48] REQUEST_KEYS: action,step
+[2026-01-02 08:26:48] POST_KEYS: 
+[2026-01-02 08:26:48] FILES_KEYS: 
+[2026-01-02 08:26:48] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-02 08:26:50] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:26:50] CONTENT_TYPE=
+[2026-01-02 08:26:50] CONTENT_LENGTH=
+[2026-01-02 08:26:50] RAW_LEN=0
+[2026-01-02 08:26:50] REQUEST_KEYS: action,step
+[2026-01-02 08:26:50] POST_KEYS: 
+[2026-01-02 08:26:50] FILES_KEYS: 
+[2026-01-02 08:26:50] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-02 08:26:52] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:26:52] CONTENT_TYPE=
+[2026-01-02 08:26:52] CONTENT_LENGTH=
+[2026-01-02 08:26:52] RAW_LEN=0
+[2026-01-02 08:26:52] REQUEST_KEYS: action,step
+[2026-01-02 08:26:52] POST_KEYS: 
+[2026-01-02 08:26:52] FILES_KEYS: 
+[2026-01-02 08:26:52] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-02 08:26:55] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:26:55] CONTENT_TYPE=
+[2026-01-02 08:26:55] CONTENT_LENGTH=
+[2026-01-02 08:26:55] RAW_LEN=0
+[2026-01-02 08:26:55] REQUEST_KEYS: action,step
+[2026-01-02 08:26:55] POST_KEYS: 
+[2026-01-02 08:26:55] FILES_KEYS: 
+[2026-01-02 08:26:55] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 5
+)
+
+[2026-01-02 08:26:57] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:26:57] CONTENT_TYPE=
+[2026-01-02 08:26:57] CONTENT_LENGTH=
+[2026-01-02 08:26:57] RAW_LEN=0
+[2026-01-02 08:26:57] REQUEST_KEYS: action,step
+[2026-01-02 08:26:57] POST_KEYS: 
+[2026-01-02 08:26:57] FILES_KEYS: 
+[2026-01-02 08:26:57] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 08:26:59] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:26:59] CONTENT_TYPE=
+[2026-01-02 08:26:59] CONTENT_LENGTH=
+[2026-01-02 08:26:59] RAW_LEN=0
+[2026-01-02 08:26:59] REQUEST_KEYS: action,step
+[2026-01-02 08:26:59] POST_KEYS: 
+[2026-01-02 08:26:59] FILES_KEYS: 
+[2026-01-02 08:26:59] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-02 08:27:01] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:27:01] CONTENT_TYPE=
+[2026-01-02 08:27:01] CONTENT_LENGTH=
+[2026-01-02 08:27:01] RAW_LEN=0
+[2026-01-02 08:27:01] REQUEST_KEYS: action,step
+[2026-01-02 08:27:01] POST_KEYS: 
+[2026-01-02 08:27:01] FILES_KEYS: 
+[2026-01-02 08:27:01] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 08:27:03] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:27:03] CONTENT_TYPE=
+[2026-01-02 08:27:03] CONTENT_LENGTH=
+[2026-01-02 08:27:03] RAW_LEN=0
+[2026-01-02 08:27:03] REQUEST_KEYS: action,step
+[2026-01-02 08:27:03] POST_KEYS: 
+[2026-01-02 08:27:03] FILES_KEYS: 
+[2026-01-02 08:27:03] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 08:27:05] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:27:05] CONTENT_TYPE=
+[2026-01-02 08:27:05] CONTENT_LENGTH=
+[2026-01-02 08:27:05] RAW_LEN=0
+[2026-01-02 08:27:05] REQUEST_KEYS: action,step
+[2026-01-02 08:27:05] POST_KEYS: 
+[2026-01-02 08:27:05] FILES_KEYS: 
+[2026-01-02 08:27:05] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-02 08:27:06] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:27:06] CONTENT_TYPE=
+[2026-01-02 08:27:06] CONTENT_LENGTH=
+[2026-01-02 08:27:06] RAW_LEN=0
+[2026-01-02 08:27:06] REQUEST_KEYS: action,step
+[2026-01-02 08:27:06] POST_KEYS: 
+[2026-01-02 08:27:06] FILES_KEYS: 
+[2026-01-02 08:27:06] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 8
+)
+
+[2026-01-02 08:59:14] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:59:14] CONTENT_TYPE=
+[2026-01-02 08:59:14] CONTENT_LENGTH=
+[2026-01-02 08:59:14] RAW_LEN=0
+[2026-01-02 08:59:14] REQUEST_KEYS: action,step
+[2026-01-02 08:59:14] POST_KEYS: 
+[2026-01-02 08:59:14] FILES_KEYS: 
+[2026-01-02 08:59:14] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-02 08:59:17] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:59:17] CONTENT_TYPE=
+[2026-01-02 08:59:17] CONTENT_LENGTH=
+[2026-01-02 08:59:17] RAW_LEN=0
+[2026-01-02 08:59:17] REQUEST_KEYS: action,step
+[2026-01-02 08:59:17] POST_KEYS: 
+[2026-01-02 08:59:17] FILES_KEYS: 
+[2026-01-02 08:59:17] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-02 08:59:19] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 08:59:19] CONTENT_TYPE=
+[2026-01-02 08:59:19] CONTENT_LENGTH=
+[2026-01-02 08:59:19] RAW_LEN=0
+[2026-01-02 08:59:19] REQUEST_KEYS: action,step
+[2026-01-02 08:59:19] POST_KEYS: 
+[2026-01-02 08:59:19] FILES_KEYS: 
+[2026-01-02 08:59:19] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-02 12:33:24] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:33:24] CONTENT_TYPE=
+[2026-01-02 12:33:24] CONTENT_LENGTH=
+[2026-01-02 12:33:24] RAW_LEN=0
+[2026-01-02 12:33:24] REQUEST_KEYS: action,step
+[2026-01-02 12:33:24] POST_KEYS: 
+[2026-01-02 12:33:24] FILES_KEYS: 
+[2026-01-02 12:33:24] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-02 12:34:55] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:34:55] CONTENT_TYPE=
+[2026-01-02 12:34:55] CONTENT_LENGTH=
+[2026-01-02 12:34:55] RAW_LEN=0
+[2026-01-02 12:34:55] REQUEST_KEYS: action,step
+[2026-01-02 12:34:55] POST_KEYS: 
+[2026-01-02 12:34:55] FILES_KEYS: 
+[2026-01-02 12:34:55] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-02 12:35:06] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:35:06] CONTENT_TYPE=
+[2026-01-02 12:35:06] CONTENT_LENGTH=
+[2026-01-02 12:35:06] RAW_LEN=0
+[2026-01-02 12:35:06] REQUEST_KEYS: action,step
+[2026-01-02 12:35:06] POST_KEYS: 
+[2026-01-02 12:35:06] FILES_KEYS: 
+[2026-01-02 12:35:06] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-02 12:35:39] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:35:39] CONTENT_TYPE=
+[2026-01-02 12:35:39] CONTENT_LENGTH=
+[2026-01-02 12:35:39] RAW_LEN=0
+[2026-01-02 12:35:39] REQUEST_KEYS: action,step
+[2026-01-02 12:35:39] POST_KEYS: 
+[2026-01-02 12:35:39] FILES_KEYS: 
+[2026-01-02 12:35:39] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-02 12:35:46] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:35:46] CONTENT_TYPE=
+[2026-01-02 12:35:46] CONTENT_LENGTH=
+[2026-01-02 12:35:46] RAW_LEN=0
+[2026-01-02 12:35:46] REQUEST_KEYS: action,step
+[2026-01-02 12:35:46] POST_KEYS: 
+[2026-01-02 12:35:46] FILES_KEYS: 
+[2026-01-02 12:35:46] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-02 12:36:54] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:36:54] CONTENT_TYPE=
+[2026-01-02 12:36:54] CONTENT_LENGTH=
+[2026-01-02 12:36:54] RAW_LEN=0
+[2026-01-02 12:36:54] REQUEST_KEYS: action,step
+[2026-01-02 12:36:54] POST_KEYS: 
+[2026-01-02 12:36:54] FILES_KEYS: 
+[2026-01-02 12:36:54] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 5
+)
+
+[2026-01-02 12:37:00] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:37:00] CONTENT_TYPE=
+[2026-01-02 12:37:00] CONTENT_LENGTH=
+[2026-01-02 12:37:00] RAW_LEN=0
+[2026-01-02 12:37:00] REQUEST_KEYS: action,step
+[2026-01-02 12:37:00] POST_KEYS: 
+[2026-01-02 12:37:00] FILES_KEYS: 
+[2026-01-02 12:37:00] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:38:02] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:38:02] CONTENT_TYPE=
+[2026-01-02 12:38:02] CONTENT_LENGTH=
+[2026-01-02 12:38:02] RAW_LEN=0
+[2026-01-02 12:38:02] REQUEST_KEYS: action,step
+[2026-01-02 12:38:02] POST_KEYS: 
+[2026-01-02 12:38:02] FILES_KEYS: 
+[2026-01-02 12:38:02] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:38:39] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:38:39] CONTENT_TYPE=
+[2026-01-02 12:38:39] CONTENT_LENGTH=
+[2026-01-02 12:38:39] RAW_LEN=0
+[2026-01-02 12:38:39] REQUEST_KEYS: action,step
+[2026-01-02 12:38:39] POST_KEYS: 
+[2026-01-02 12:38:39] FILES_KEYS: 
+[2026-01-02 12:38:39] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:38:41] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:38:41] CONTENT_TYPE=
+[2026-01-02 12:38:41] CONTENT_LENGTH=
+[2026-01-02 12:38:41] RAW_LEN=0
+[2026-01-02 12:38:41] REQUEST_KEYS: action,step
+[2026-01-02 12:38:41] POST_KEYS: 
+[2026-01-02 12:38:41] FILES_KEYS: 
+[2026-01-02 12:38:41] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-02 12:39:07] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:39:07] CONTENT_TYPE=
+[2026-01-02 12:39:07] CONTENT_LENGTH=
+[2026-01-02 12:39:07] RAW_LEN=0
+[2026-01-02 12:39:07] REQUEST_KEYS: action,step
+[2026-01-02 12:39:07] POST_KEYS: 
+[2026-01-02 12:39:07] FILES_KEYS: 
+[2026-01-02 12:39:07] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 8
+)
+
+[2026-01-02 12:41:33] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:41:33] CONTENT_TYPE=
+[2026-01-02 12:41:33] CONTENT_LENGTH=
+[2026-01-02 12:41:33] RAW_LEN=0
+[2026-01-02 12:41:33] REQUEST_KEYS: action,step
+[2026-01-02 12:41:33] POST_KEYS: 
+[2026-01-02 12:41:33] FILES_KEYS: 
+[2026-01-02 12:41:33] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 9
+)
+
+[2026-01-02 12:41:40] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:41:40] CONTENT_TYPE=
+[2026-01-02 12:41:40] CONTENT_LENGTH=
+[2026-01-02 12:41:40] RAW_LEN=0
+[2026-01-02 12:41:40] REQUEST_KEYS: action,step
+[2026-01-02 12:41:40] POST_KEYS: 
+[2026-01-02 12:41:40] FILES_KEYS: 
+[2026-01-02 12:41:40] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 10
+)
+
+[2026-01-02 12:46:00] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:46:00] CONTENT_TYPE=
+[2026-01-02 12:46:00] CONTENT_LENGTH=
+[2026-01-02 12:46:00] RAW_LEN=0
+[2026-01-02 12:46:00] REQUEST_KEYS: action,step
+[2026-01-02 12:46:00] POST_KEYS: 
+[2026-01-02 12:46:00] FILES_KEYS: 
+[2026-01-02 12:46:00] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 10
+)
+
+[2026-01-02 12:46:20] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:46:20] CONTENT_TYPE=
+[2026-01-02 12:46:20] CONTENT_LENGTH=
+[2026-01-02 12:46:20] RAW_LEN=0
+[2026-01-02 12:46:20] REQUEST_KEYS: action,step
+[2026-01-02 12:46:20] POST_KEYS: 
+[2026-01-02 12:46:20] FILES_KEYS: 
+[2026-01-02 12:46:20] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 11
+)
+
+[2026-01-02 12:46:25] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:46:25] CONTENT_TYPE=
+[2026-01-02 12:46:25] CONTENT_LENGTH=
+[2026-01-02 12:46:25] RAW_LEN=0
+[2026-01-02 12:46:25] REQUEST_KEYS: action,step
+[2026-01-02 12:46:25] POST_KEYS: 
+[2026-01-02 12:46:25] FILES_KEYS: 
+[2026-01-02 12:46:25] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 12
+)
+
+[2026-01-02 12:46:30] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:46:30] CONTENT_TYPE=
+[2026-01-02 12:46:30] CONTENT_LENGTH=
+[2026-01-02 12:46:30] RAW_LEN=0
+[2026-01-02 12:46:30] REQUEST_KEYS: action,step
+[2026-01-02 12:46:30] POST_KEYS: 
+[2026-01-02 12:46:30] FILES_KEYS: 
+[2026-01-02 12:46:30] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-02 12:46:36] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:46:36] CONTENT_TYPE=
+[2026-01-02 12:46:36] CONTENT_LENGTH=
+[2026-01-02 12:46:36] RAW_LEN=0
+[2026-01-02 12:46:36] REQUEST_KEYS: action,step
+[2026-01-02 12:46:36] POST_KEYS: 
+[2026-01-02 12:46:36] FILES_KEYS: 
+[2026-01-02 12:46:36] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-02 12:47:04] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:47:04] CONTENT_TYPE=
+[2026-01-02 12:47:04] CONTENT_LENGTH=
+[2026-01-02 12:47:04] RAW_LEN=0
+[2026-01-02 12:47:04] REQUEST_KEYS: action,step
+[2026-01-02 12:47:04] POST_KEYS: 
+[2026-01-02 12:47:04] FILES_KEYS: 
+[2026-01-02 12:47:04] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-02 12:50:31] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:50:31] CONTENT_TYPE=
+[2026-01-02 12:50:31] CONTENT_LENGTH=
+[2026-01-02 12:50:31] RAW_LEN=0
+[2026-01-02 12:50:31] REQUEST_KEYS: action,step
+[2026-01-02 12:50:31] POST_KEYS: 
+[2026-01-02 12:50:31] FILES_KEYS: 
+[2026-01-02 12:50:31] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:50:39] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:50:39] CONTENT_TYPE=
+[2026-01-02 12:50:39] CONTENT_LENGTH=
+[2026-01-02 12:50:39] RAW_LEN=0
+[2026-01-02 12:50:39] REQUEST_KEYS: action,step
+[2026-01-02 12:50:39] POST_KEYS: 
+[2026-01-02 12:50:39] FILES_KEYS: 
+[2026-01-02 12:50:39] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:51:39] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:51:39] CONTENT_TYPE=
+[2026-01-02 12:51:39] CONTENT_LENGTH=
+[2026-01-02 12:51:39] RAW_LEN=0
+[2026-01-02 12:51:39] REQUEST_KEYS: action,step
+[2026-01-02 12:51:39] POST_KEYS: 
+[2026-01-02 12:51:39] FILES_KEYS: 
+[2026-01-02 12:51:39] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:52:26] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:52:26] CONTENT_TYPE=
+[2026-01-02 12:52:26] CONTENT_LENGTH=
+[2026-01-02 12:52:26] RAW_LEN=0
+[2026-01-02 12:52:26] REQUEST_KEYS: action,step
+[2026-01-02 12:52:26] POST_KEYS: 
+[2026-01-02 12:52:26] FILES_KEYS: 
+[2026-01-02 12:52:26] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:52:59] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:52:59] CONTENT_TYPE=
+[2026-01-02 12:52:59] CONTENT_LENGTH=
+[2026-01-02 12:52:59] RAW_LEN=0
+[2026-01-02 12:52:59] REQUEST_KEYS: action,step
+[2026-01-02 12:52:59] POST_KEYS: 
+[2026-01-02 12:52:59] FILES_KEYS: 
+[2026-01-02 12:52:59] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-02 12:53:03] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:53:03] CONTENT_TYPE=
+[2026-01-02 12:53:03] CONTENT_LENGTH=
+[2026-01-02 12:53:03] RAW_LEN=0
+[2026-01-02 12:53:03] REQUEST_KEYS: action,step
+[2026-01-02 12:53:03] POST_KEYS: 
+[2026-01-02 12:53:03] FILES_KEYS: 
+[2026-01-02 12:53:03] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-02 12:53:12] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:53:12] CONTENT_TYPE=
+[2026-01-02 12:53:12] CONTENT_LENGTH=
+[2026-01-02 12:53:12] RAW_LEN=0
+[2026-01-02 12:53:12] REQUEST_KEYS: action,step
+[2026-01-02 12:53:12] POST_KEYS: 
+[2026-01-02 12:53:12] FILES_KEYS: 
+[2026-01-02 12:53:12] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-02 12:53:19] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:53:19] CONTENT_TYPE=
+[2026-01-02 12:53:19] CONTENT_LENGTH=
+[2026-01-02 12:53:19] RAW_LEN=0
+[2026-01-02 12:53:19] REQUEST_KEYS: action,step
+[2026-01-02 12:53:19] POST_KEYS: 
+[2026-01-02 12:53:19] FILES_KEYS: 
+[2026-01-02 12:53:19] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-02 12:53:25] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:53:25] CONTENT_TYPE=
+[2026-01-02 12:53:25] CONTENT_LENGTH=
+[2026-01-02 12:53:25] RAW_LEN=0
+[2026-01-02 12:53:25] REQUEST_KEYS: action,step
+[2026-01-02 12:53:25] POST_KEYS: 
+[2026-01-02 12:53:25] FILES_KEYS: 
+[2026-01-02 12:53:25] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-02 12:53:56] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-02 12:53:56] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundaryd6f5d522df6d9c1095cb4128b4cfbf49
+[2026-01-02 12:53:56] CONTENT_LENGTH=885
+[2026-01-02 12:53:56] RAW_LEN=0
+[2026-01-02 12:53:56] REQUEST_KEYS: action,step,client_id,edit_mode,name,consumer_number,billing_unit,location_url
+[2026-01-02 12:53:56] POST_KEYS: name,consumer_number,billing_unit,location_url,step,client_id,edit_mode
+[2026-01-02 12:53:56] FILES_KEYS: 
+[2026-01-02 12:53:56] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 12
+    [edit_mode] => true
+    [name] => JAYSHREE JIVAN GOURKHEDE
+    [consumer_number] => 410017255880
+    [billing_unit] => 4690
+    [location_url] => 
+)
+
+[2026-01-02 12:53:56] Updated client id=12
+[2026-01-02 12:57:53] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:57:53] CONTENT_TYPE=
+[2026-01-02 12:57:53] CONTENT_LENGTH=
+[2026-01-02 12:57:53] RAW_LEN=0
+[2026-01-02 12:57:53] REQUEST_KEYS: action,step
+[2026-01-02 12:57:53] POST_KEYS: 
+[2026-01-02 12:57:53] FILES_KEYS: 
+[2026-01-02 12:57:53] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:57:55] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:57:55] CONTENT_TYPE=
+[2026-01-02 12:57:55] CONTENT_LENGTH=
+[2026-01-02 12:57:55] RAW_LEN=0
+[2026-01-02 12:57:55] REQUEST_KEYS: action,step
+[2026-01-02 12:57:55] POST_KEYS: 
+[2026-01-02 12:57:55] FILES_KEYS: 
+[2026-01-02 12:57:55] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:59:04] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:59:04] CONTENT_TYPE=
+[2026-01-02 12:59:04] CONTENT_LENGTH=
+[2026-01-02 12:59:04] RAW_LEN=0
+[2026-01-02 12:59:04] REQUEST_KEYS: action,step
+[2026-01-02 12:59:04] POST_KEYS: 
+[2026-01-02 12:59:04] FILES_KEYS: 
+[2026-01-02 12:59:04] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-02 12:59:06] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:59:06] CONTENT_TYPE=
+[2026-01-02 12:59:06] CONTENT_LENGTH=
+[2026-01-02 12:59:06] RAW_LEN=0
+[2026-01-02 12:59:06] REQUEST_KEYS: action,step
+[2026-01-02 12:59:06] POST_KEYS: 
+[2026-01-02 12:59:06] FILES_KEYS: 
+[2026-01-02 12:59:06] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:59:13] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:59:13] CONTENT_TYPE=
+[2026-01-02 12:59:13] CONTENT_LENGTH=
+[2026-01-02 12:59:13] RAW_LEN=0
+[2026-01-02 12:59:13] REQUEST_KEYS: action,step
+[2026-01-02 12:59:13] POST_KEYS: 
+[2026-01-02 12:59:13] FILES_KEYS: 
+[2026-01-02 12:59:13] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-02 12:59:13] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:59:13] CONTENT_TYPE=
+[2026-01-02 12:59:13] CONTENT_LENGTH=
+[2026-01-02 12:59:13] RAW_LEN=0
+[2026-01-02 12:59:13] REQUEST_KEYS: action,step
+[2026-01-02 12:59:13] POST_KEYS: 
+[2026-01-02 12:59:13] FILES_KEYS: 
+[2026-01-02 12:59:13] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-02 12:59:14] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-02 12:59:14] CONTENT_TYPE=
+[2026-01-02 12:59:14] CONTENT_LENGTH=
+[2026-01-02 12:59:14] RAW_LEN=0
+[2026-01-02 12:59:14] REQUEST_KEYS: action,step
+[2026-01-02 12:59:14] POST_KEYS: 
+[2026-01-02 12:59:14] FILES_KEYS: 
+[2026-01-02 12:59:14] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-06 04:12:08] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 04:12:08] CONTENT_TYPE=
+[2026-01-06 04:12:08] CONTENT_LENGTH=
+[2026-01-06 04:12:08] RAW_LEN=0
+[2026-01-06 04:12:08] REQUEST_KEYS: action,step
+[2026-01-06 04:12:08] POST_KEYS: 
+[2026-01-06 04:12:08] FILES_KEYS: 
+[2026-01-06 04:12:08] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-06 04:12:12] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 04:12:12] CONTENT_TYPE=
+[2026-01-06 04:12:12] CONTENT_LENGTH=
+[2026-01-06 04:12:12] RAW_LEN=0
+[2026-01-06 04:12:12] REQUEST_KEYS: action,step
+[2026-01-06 04:12:12] POST_KEYS: 
+[2026-01-06 04:12:12] FILES_KEYS: 
+[2026-01-06 04:12:12] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-06 04:12:28] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 04:12:28] CONTENT_TYPE=
+[2026-01-06 04:12:28] CONTENT_LENGTH=
+[2026-01-06 04:12:28] RAW_LEN=0
+[2026-01-06 04:12:28] REQUEST_KEYS: action,step
+[2026-01-06 04:12:28] POST_KEYS: 
+[2026-01-06 04:12:28] FILES_KEYS: 
+[2026-01-06 04:12:28] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-06 04:30:23] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 04:30:23] CONTENT_TYPE=
+[2026-01-06 04:30:23] CONTENT_LENGTH=
+[2026-01-06 04:30:23] RAW_LEN=0
+[2026-01-06 04:30:23] REQUEST_KEYS: action,step
+[2026-01-06 04:30:23] POST_KEYS: 
+[2026-01-06 04:30:23] FILES_KEYS: 
+[2026-01-06 04:30:23] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-06 10:21:56] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:21:56] CONTENT_TYPE=
+[2026-01-06 10:21:56] CONTENT_LENGTH=
+[2026-01-06 10:21:56] RAW_LEN=0
+[2026-01-06 10:21:56] REQUEST_KEYS: action,step
+[2026-01-06 10:21:56] POST_KEYS: 
+[2026-01-06 10:21:56] FILES_KEYS: 
+[2026-01-06 10:21:56] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-06 10:30:27] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:30:27] CONTENT_TYPE=
+[2026-01-06 10:30:27] CONTENT_LENGTH=
+[2026-01-06 10:30:27] RAW_LEN=0
+[2026-01-06 10:30:27] REQUEST_KEYS: action,step
+[2026-01-06 10:30:27] POST_KEYS: 
+[2026-01-06 10:30:27] FILES_KEYS: 
+[2026-01-06 10:30:27] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-06 10:30:41] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:30:41] CONTENT_TYPE=
+[2026-01-06 10:30:41] CONTENT_LENGTH=
+[2026-01-06 10:30:41] RAW_LEN=0
+[2026-01-06 10:30:41] REQUEST_KEYS: action,step
+[2026-01-06 10:30:41] POST_KEYS: 
+[2026-01-06 10:30:41] FILES_KEYS: 
+[2026-01-06 10:30:41] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-06 10:30:49] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:30:49] CONTENT_TYPE=
+[2026-01-06 10:30:49] CONTENT_LENGTH=
+[2026-01-06 10:30:49] RAW_LEN=0
+[2026-01-06 10:30:49] REQUEST_KEYS: action,step
+[2026-01-06 10:30:49] POST_KEYS: 
+[2026-01-06 10:30:49] FILES_KEYS: 
+[2026-01-06 10:30:49] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-06 10:33:24] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:33:24] CONTENT_TYPE=
+[2026-01-06 10:33:24] CONTENT_LENGTH=
+[2026-01-06 10:33:24] RAW_LEN=0
+[2026-01-06 10:33:24] REQUEST_KEYS: action,step
+[2026-01-06 10:33:24] POST_KEYS: 
+[2026-01-06 10:33:24] FILES_KEYS: 
+[2026-01-06 10:33:24] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-06 10:33:57] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:33:57] CONTENT_TYPE=
+[2026-01-06 10:33:57] CONTENT_LENGTH=
+[2026-01-06 10:33:57] RAW_LEN=0
+[2026-01-06 10:33:57] REQUEST_KEYS: action,step
+[2026-01-06 10:33:57] POST_KEYS: 
+[2026-01-06 10:33:57] FILES_KEYS: 
+[2026-01-06 10:33:57] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-06 10:34:11] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:34:11] CONTENT_TYPE=
+[2026-01-06 10:34:11] CONTENT_LENGTH=
+[2026-01-06 10:34:11] RAW_LEN=0
+[2026-01-06 10:34:11] REQUEST_KEYS: action,step
+[2026-01-06 10:34:11] POST_KEYS: 
+[2026-01-06 10:34:11] FILES_KEYS: 
+[2026-01-06 10:34:11] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 5
+)
+
+[2026-01-06 10:34:15] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:34:15] CONTENT_TYPE=
+[2026-01-06 10:34:15] CONTENT_LENGTH=
+[2026-01-06 10:34:15] RAW_LEN=0
+[2026-01-06 10:34:15] REQUEST_KEYS: action,step
+[2026-01-06 10:34:15] POST_KEYS: 
+[2026-01-06 10:34:15] FILES_KEYS: 
+[2026-01-06 10:34:15] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-06 10:35:36] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:35:36] CONTENT_TYPE=
+[2026-01-06 10:35:36] CONTENT_LENGTH=
+[2026-01-06 10:35:36] RAW_LEN=0
+[2026-01-06 10:35:36] REQUEST_KEYS: action,step
+[2026-01-06 10:35:36] POST_KEYS: 
+[2026-01-06 10:35:36] FILES_KEYS: 
+[2026-01-06 10:35:36] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-06 10:36:06] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:36:06] CONTENT_TYPE=
+[2026-01-06 10:36:06] CONTENT_LENGTH=
+[2026-01-06 10:36:06] RAW_LEN=0
+[2026-01-06 10:36:06] REQUEST_KEYS: action,step
+[2026-01-06 10:36:06] POST_KEYS: 
+[2026-01-06 10:36:06] FILES_KEYS: 
+[2026-01-06 10:36:06] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-06 10:39:36] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:39:36] CONTENT_TYPE=
+[2026-01-06 10:39:36] CONTENT_LENGTH=
+[2026-01-06 10:39:36] RAW_LEN=0
+[2026-01-06 10:39:36] REQUEST_KEYS: action,step
+[2026-01-06 10:39:36] POST_KEYS: 
+[2026-01-06 10:39:36] FILES_KEYS: 
+[2026-01-06 10:39:36] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 8
+)
+
+[2026-01-06 10:39:53] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:39:53] CONTENT_TYPE=
+[2026-01-06 10:39:53] CONTENT_LENGTH=
+[2026-01-06 10:39:53] RAW_LEN=0
+[2026-01-06 10:39:53] REQUEST_KEYS: action,step
+[2026-01-06 10:39:53] POST_KEYS: 
+[2026-01-06 10:39:53] FILES_KEYS: 
+[2026-01-06 10:39:53] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 9
+)
+
+[2026-01-06 10:40:15] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:40:15] CONTENT_TYPE=
+[2026-01-06 10:40:15] CONTENT_LENGTH=
+[2026-01-06 10:40:15] RAW_LEN=0
+[2026-01-06 10:40:15] REQUEST_KEYS: action,step
+[2026-01-06 10:40:15] POST_KEYS: 
+[2026-01-06 10:40:15] FILES_KEYS: 
+[2026-01-06 10:40:15] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 10
+)
+
+[2026-01-06 10:40:21] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:40:21] CONTENT_TYPE=
+[2026-01-06 10:40:21] CONTENT_LENGTH=
+[2026-01-06 10:40:21] RAW_LEN=0
+[2026-01-06 10:40:21] REQUEST_KEYS: action,step
+[2026-01-06 10:40:21] POST_KEYS: 
+[2026-01-06 10:40:21] FILES_KEYS: 
+[2026-01-06 10:40:21] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 11
+)
+
+[2026-01-06 10:40:24] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:40:24] CONTENT_TYPE=
+[2026-01-06 10:40:24] CONTENT_LENGTH=
+[2026-01-06 10:40:24] RAW_LEN=0
+[2026-01-06 10:40:24] REQUEST_KEYS: action,step
+[2026-01-06 10:40:24] POST_KEYS: 
+[2026-01-06 10:40:24] FILES_KEYS: 
+[2026-01-06 10:40:24] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 12
+)
+
+[2026-01-06 10:41:38] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:41:38] CONTENT_TYPE=
+[2026-01-06 10:41:38] CONTENT_LENGTH=
+[2026-01-06 10:41:38] RAW_LEN=0
+[2026-01-06 10:41:38] REQUEST_KEYS: action,step
+[2026-01-06 10:41:38] POST_KEYS: 
+[2026-01-06 10:41:38] FILES_KEYS: 
+[2026-01-06 10:41:38] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-06 10:41:46] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:41:46] CONTENT_TYPE=
+[2026-01-06 10:41:46] CONTENT_LENGTH=
+[2026-01-06 10:41:46] RAW_LEN=0
+[2026-01-06 10:41:46] REQUEST_KEYS: action,step
+[2026-01-06 10:41:46] POST_KEYS: 
+[2026-01-06 10:41:46] FILES_KEYS: 
+[2026-01-06 10:41:46] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:41:49] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:41:49] CONTENT_TYPE=
+[2026-01-06 10:41:49] CONTENT_LENGTH=
+[2026-01-06 10:41:49] RAW_LEN=0
+[2026-01-06 10:41:49] REQUEST_KEYS: action,step
+[2026-01-06 10:41:49] POST_KEYS: 
+[2026-01-06 10:41:49] FILES_KEYS: 
+[2026-01-06 10:41:49] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:41:52] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:41:52] CONTENT_TYPE=
+[2026-01-06 10:41:52] CONTENT_LENGTH=
+[2026-01-06 10:41:52] RAW_LEN=0
+[2026-01-06 10:41:52] REQUEST_KEYS: action,step
+[2026-01-06 10:41:52] POST_KEYS: 
+[2026-01-06 10:41:52] FILES_KEYS: 
+[2026-01-06 10:41:52] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:43:38] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:43:38] CONTENT_TYPE=
+[2026-01-06 10:43:38] CONTENT_LENGTH=
+[2026-01-06 10:43:38] RAW_LEN=0
+[2026-01-06 10:43:38] REQUEST_KEYS: action,step
+[2026-01-06 10:43:38] POST_KEYS: 
+[2026-01-06 10:43:38] FILES_KEYS: 
+[2026-01-06 10:43:38] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:43:44] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:43:44] CONTENT_TYPE=
+[2026-01-06 10:43:44] CONTENT_LENGTH=
+[2026-01-06 10:43:44] RAW_LEN=0
+[2026-01-06 10:43:44] REQUEST_KEYS: action,step
+[2026-01-06 10:43:44] POST_KEYS: 
+[2026-01-06 10:43:44] FILES_KEYS: 
+[2026-01-06 10:43:44] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:43:46] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:43:46] CONTENT_TYPE=
+[2026-01-06 10:43:46] CONTENT_LENGTH=
+[2026-01-06 10:43:46] RAW_LEN=0
+[2026-01-06 10:43:46] REQUEST_KEYS: action,step
+[2026-01-06 10:43:46] POST_KEYS: 
+[2026-01-06 10:43:46] FILES_KEYS: 
+[2026-01-06 10:43:46] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:43:49] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:43:49] CONTENT_TYPE=
+[2026-01-06 10:43:49] CONTENT_LENGTH=
+[2026-01-06 10:43:49] RAW_LEN=0
+[2026-01-06 10:43:49] REQUEST_KEYS: action,step
+[2026-01-06 10:43:49] POST_KEYS: 
+[2026-01-06 10:43:49] FILES_KEYS: 
+[2026-01-06 10:43:49] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:43:52] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:43:52] CONTENT_TYPE=
+[2026-01-06 10:43:52] CONTENT_LENGTH=
+[2026-01-06 10:43:52] RAW_LEN=0
+[2026-01-06 10:43:52] REQUEST_KEYS: action,step
+[2026-01-06 10:43:52] POST_KEYS: 
+[2026-01-06 10:43:52] FILES_KEYS: 
+[2026-01-06 10:43:52] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:43:59] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:43:59] CONTENT_TYPE=
+[2026-01-06 10:43:59] CONTENT_LENGTH=
+[2026-01-06 10:43:59] RAW_LEN=0
+[2026-01-06 10:43:59] REQUEST_KEYS: action,step
+[2026-01-06 10:43:59] POST_KEYS: 
+[2026-01-06 10:43:59] FILES_KEYS: 
+[2026-01-06 10:43:59] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-06 10:44:11] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-06 10:44:11] CONTENT_TYPE=
+[2026-01-06 10:44:11] CONTENT_LENGTH=
+[2026-01-06 10:44:11] RAW_LEN=0
+[2026-01-06 10:44:11] REQUEST_KEYS: action,step
+[2026-01-06 10:44:11] POST_KEYS: 
+[2026-01-06 10:44:11] FILES_KEYS: 
+[2026-01-06 10:44:11] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-10 06:12:06] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 06:12:06] CONTENT_TYPE=
+[2026-01-10 06:12:06] CONTENT_LENGTH=
+[2026-01-10 06:12:06] RAW_LEN=0
+[2026-01-10 06:12:06] REQUEST_KEYS: action,step
+[2026-01-10 06:12:06] POST_KEYS: 
+[2026-01-10 06:12:06] FILES_KEYS: 
+[2026-01-10 06:12:06] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-10 06:33:14] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 06:33:14] CONTENT_TYPE=
+[2026-01-10 06:33:14] CONTENT_LENGTH=
+[2026-01-10 06:33:14] RAW_LEN=0
+[2026-01-10 06:33:14] REQUEST_KEYS: action,step
+[2026-01-10 06:33:14] POST_KEYS: 
+[2026-01-10 06:33:14] FILES_KEYS: 
+[2026-01-10 06:33:14] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-10 07:53:15] REQ_METHOD=GET ACTION=delete_client
+[2026-01-10 07:53:15] CONTENT_TYPE=
+[2026-01-10 07:53:15] CONTENT_LENGTH=
+[2026-01-10 07:53:15] RAW_LEN=0
+[2026-01-10 07:53:15] REQUEST_KEYS: action,client_id
+[2026-01-10 07:53:15] POST_KEYS: 
+[2026-01-10 07:53:15] FILES_KEYS: 
+[2026-01-10 07:53:15] REQUEST_PREVIEW: Array
+(
+    [action] => delete_client
+    [client_id] => 3
+)
+
+[2026-01-10 07:54:05] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 07:54:05] CONTENT_TYPE=
+[2026-01-10 07:54:05] CONTENT_LENGTH=
+[2026-01-10 07:54:05] RAW_LEN=0
+[2026-01-10 07:54:05] REQUEST_KEYS: action,step
+[2026-01-10 07:54:05] POST_KEYS: 
+[2026-01-10 07:54:05] FILES_KEYS: 
+[2026-01-10 07:54:05] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-10 09:20:17] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:20:17] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundaryc96e5d63e1a250bd7786f236c9d13f6
+[2026-01-10 09:20:17] CONTENT_LENGTH=874
+[2026-01-10 09:20:17] RAW_LEN=0
+[2026-01-10 09:20:17] REQUEST_KEYS: action,step,client_id,edit_mode,name,consumer_number,billing_unit,location_url
+[2026-01-10 09:20:17] POST_KEYS: name,consumer_number,billing_unit,location_url,step,client_id,edit_mode
+[2026-01-10 09:20:17] FILES_KEYS: 
+[2026-01-10 09:20:17] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 1
+    [client_id] => 5
+    [edit_mode] => true
+    [name] => PRANAY RAVINDRA KAMBLE
+    [consumer_number] => 411350027467
+    [billing_unit] => 0562
+    [location_url] => 
+)
+
+[2026-01-10 09:20:17] Updated client id=5
+[2026-01-10 09:20:22] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:20:22] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundary436bee4182549200d751dc990ef6d33f
+[2026-01-10 09:20:22] CONTENT_LENGTH=1375
+[2026-01-10 09:20:22] RAW_LEN=0
+[2026-01-10 09:20:22] REQUEST_KEYS: action,step,client_id,edit_mode,district,block,taluka,village,mobile,email,adhar,pincode
+[2026-01-10 09:20:22] POST_KEYS: district,block,taluka,village,mobile,email,adhar,pincode,step,client_id,edit_mode
+[2026-01-10 09:20:22] FILES_KEYS: 
+[2026-01-10 09:20:22] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 2
+    [client_id] => 5
+    [edit_mode] => true
+    [district] => NAGPUR
+    [block] => NAGPUR
+    [taluka] => NAGPUR
+    [village] => h no 46,pl no27 mihan khapri punarvasan 441108
+    [mobile] => 9370484353
+    [email] => pranay18.kamble@gmail.com
+    [adhar] => 251677441444
+    [pincode] => 441108
+)
+
+[2026-01-10 09:20:22] Updated client 5 for step 2
+[2026-01-10 09:22:41] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:22:41] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundarye1a5e17e809ca7f8db319ac8cc6fc2a6
+[2026-01-10 09:22:41] CONTENT_LENGTH=810
+[2026-01-10 09:22:41] RAW_LEN=0
+[2026-01-10 09:22:41] REQUEST_KEYS: action,step,client_id,edit_mode,mahadiscom_email,mahadiscom_email_password,mahadiscom_mobile
+[2026-01-10 09:22:41] POST_KEYS: mahadiscom_email,mahadiscom_email_password,mahadiscom_mobile,step,client_id,edit_mode
+[2026-01-10 09:22:41] FILES_KEYS: 
+[2026-01-10 09:22:41] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 3
+    [client_id] => 5
+    [edit_mode] => true
+    [mahadiscom_email] => officeomsairament2017@gmail.com
+    [mahadiscom_email_password] => office@12345
+    [mahadiscom_mobile] => 9529750282
+)
+
+[2026-01-10 09:22:41] Updated client 5 for step 3
+[2026-01-10 09:22:50] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:22:50] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundaryce83c688e6c5cf9890c83f732bd60e7
+[2026-01-10 09:22:50] CONTENT_LENGTH=641
+[2026-01-10 09:22:50] RAW_LEN=0
+[2026-01-10 09:22:50] REQUEST_KEYS: action,step,client_id,edit_mode,mahadiscom_user_id,mahadiscom_password
+[2026-01-10 09:22:50] POST_KEYS: mahadiscom_user_id,mahadiscom_password,step,client_id,edit_mode
+[2026-01-10 09:22:50] FILES_KEYS: 
+[2026-01-10 09:22:50] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 4
+    [client_id] => 5
+    [edit_mode] => true
+    [mahadiscom_user_id] => admin
+    [mahadiscom_password] => admin123
+)
+
+[2026-01-10 09:22:50] Updated client 5 for step 4
+[2026-01-10 09:22:54] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:22:54] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundaryb4a8ffe35e9e133220a4ae08affba5a5
+[2026-01-10 09:22:54] CONTENT_LENGTH=644
+[2026-01-10 09:22:54] RAW_LEN=0
+[2026-01-10 09:22:54] REQUEST_KEYS: action,step,client_id,edit_mode,name_change_require,application_no_name_change
+[2026-01-10 09:22:54] POST_KEYS: name_change_require,application_no_name_change,step,client_id,edit_mode
+[2026-01-10 09:22:54] FILES_KEYS: 
+[2026-01-10 09:22:54] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 5
+    [client_id] => 5
+    [edit_mode] => true
+    [name_change_require] => no
+    [application_no_name_change] => 
+)
+
+[2026-01-10 09:22:54] Updated client 5 for step 5
+[2026-01-10 09:23:40] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:23:40] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundary1531fdbf3e9f68b2384b02eccc01b31e
+[2026-01-10 09:23:40] CONTENT_LENGTH=794
+[2026-01-10 09:23:40] RAW_LEN=0
+[2026-01-10 09:23:40] REQUEST_KEYS: action,step,client_id,edit_mode,pm_suryaghar_registration,pm_suryaghar_app_id,pm_registration_date
+[2026-01-10 09:23:40] POST_KEYS: pm_suryaghar_registration,pm_suryaghar_app_id,pm_registration_date,step,client_id,edit_mode
+[2026-01-10 09:23:40] FILES_KEYS: 
+[2026-01-10 09:23:40] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 6
+    [client_id] => 5
+    [edit_mode] => true
+    [pm_suryaghar_registration] => yes
+    [pm_suryaghar_app_id] => NP-MHSED26-9575056
+    [pm_registration_date] => 2026-01-06
+)
+
+[2026-01-10 09:23:40] Updated client 5 for step 6
+[2026-01-10 09:23:53] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:23:53] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundaryc0709e6394d638f61cef9fa15a972593
+[2026-01-10 09:23:53] CONTENT_LENGTH=677
+[2026-01-10 09:23:53] RAW_LEN=0
+[2026-01-10 09:23:53] REQUEST_KEYS: action,step,client_id,edit_mode,load_change_application_number,rooftop_solar_application_number
+[2026-01-10 09:23:53] POST_KEYS: load_change_application_number,rooftop_solar_application_number,step,client_id,edit_mode
+[2026-01-10 09:23:53] FILES_KEYS: 
+[2026-01-10 09:23:53] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 7
+    [client_id] => 5
+    [edit_mode] => true
+    [load_change_application_number] => 
+    [rooftop_solar_application_number] => NP-MHSED26-9575056
+)
+
+[2026-01-10 09:23:54] Updated client 5 for step 7
+[2026-01-10 09:29:45] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:29:45] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundarya3abf29ba485c75d692b9433b9389ed9
+[2026-01-10 09:29:45] CONTENT_LENGTH=1539
+[2026-01-10 09:29:45] RAW_LEN=0
+[2026-01-10 09:29:45] REQUEST_KEYS: action,step,client_id,edit_mode,bank_loan_status,bank_name,account_number,ifsc_code,jan_samartha_application_no,loan_amount,first_installment_amount,second_installment_amount,remaining_amount
+[2026-01-10 09:29:45] POST_KEYS: bank_loan_status,bank_name,account_number,ifsc_code,jan_samartha_application_no,loan_amount,first_installment_amount,second_installment_amount,remaining_amount,step,client_id,edit_mode
+[2026-01-10 09:29:45] FILES_KEYS: 
+[2026-01-10 09:29:45] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 8
+    [client_id] => 5
+    [edit_mode] => true
+    [bank_loan_status] => yes
+    [bank_name] => BANK OF INDIA
+    [account_number] => 872910510000082
+    [ifsc_code] => BKID0008729
+    [jan_samartha_application_no] => ANS-SOLAR-10941572-2398532
+    [loan_amount] => 200000
+    [first_installment_amount] => 0
+    [second_installment_amount] => 0
+    [remaining_amount] => 0
+)
+
+[2026-01-10 09:29:45] Updated client 5 for step 8
+[2026-01-10 09:34:55] REQ_METHOD=POST ACTION=save_step_data
+[2026-01-10 09:34:55] CONTENT_TYPE=multipart/form-data; boundary=----geckoformboundaryef042afc420133e9f3fab060622220af
+[2026-01-10 09:34:55] CONTENT_LENGTH=515
+[2026-01-10 09:34:55] RAW_LEN=0
+[2026-01-10 09:34:55] REQUEST_KEYS: action,step,client_id,edit_mode,rts_portal_status
+[2026-01-10 09:34:55] POST_KEYS: rts_portal_status,step,client_id,edit_mode
+[2026-01-10 09:34:55] FILES_KEYS: 
+[2026-01-10 09:34:55] REQUEST_PREVIEW: Array
+(
+    [action] => save_step_data
+    [step] => 11
+    [client_id] => 5
+    [edit_mode] => true
+    [rts_portal_status] => no
+)
+
+[2026-01-10 09:34:55] Updated client 5 for step 11
+[2026-01-10 09:38:52] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:38:52] CONTENT_TYPE=
+[2026-01-10 09:38:52] CONTENT_LENGTH=
+[2026-01-10 09:38:52] RAW_LEN=0
+[2026-01-10 09:38:52] REQUEST_KEYS: action,step
+[2026-01-10 09:38:52] POST_KEYS: 
+[2026-01-10 09:38:52] FILES_KEYS: 
+[2026-01-10 09:38:52] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-10 09:41:54] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:41:54] CONTENT_TYPE=
+[2026-01-10 09:41:54] CONTENT_LENGTH=
+[2026-01-10 09:41:54] RAW_LEN=0
+[2026-01-10 09:41:54] REQUEST_KEYS: action,step
+[2026-01-10 09:41:54] POST_KEYS: 
+[2026-01-10 09:41:54] FILES_KEYS: 
+[2026-01-10 09:41:54] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-10 09:42:07] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:42:07] CONTENT_TYPE=
+[2026-01-10 09:42:07] CONTENT_LENGTH=
+[2026-01-10 09:42:07] RAW_LEN=0
+[2026-01-10 09:42:07] REQUEST_KEYS: action,step
+[2026-01-10 09:42:07] POST_KEYS: 
+[2026-01-10 09:42:07] FILES_KEYS: 
+[2026-01-10 09:42:07] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-10 09:43:50] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:43:50] CONTENT_TYPE=
+[2026-01-10 09:43:50] CONTENT_LENGTH=
+[2026-01-10 09:43:50] RAW_LEN=0
+[2026-01-10 09:43:50] REQUEST_KEYS: action,step
+[2026-01-10 09:43:50] POST_KEYS: 
+[2026-01-10 09:43:50] FILES_KEYS: 
+[2026-01-10 09:43:50] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-10 09:43:50] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:43:50] CONTENT_TYPE=
+[2026-01-10 09:43:50] CONTENT_LENGTH=
+[2026-01-10 09:43:50] RAW_LEN=0
+[2026-01-10 09:43:50] REQUEST_KEYS: action,step
+[2026-01-10 09:43:50] POST_KEYS: 
+[2026-01-10 09:43:50] FILES_KEYS: 
+[2026-01-10 09:43:50] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 5
+)
+
+[2026-01-10 09:43:54] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:43:54] CONTENT_TYPE=
+[2026-01-10 09:43:54] CONTENT_LENGTH=
+[2026-01-10 09:43:54] RAW_LEN=0
+[2026-01-10 09:43:54] REQUEST_KEYS: action,step
+[2026-01-10 09:43:54] POST_KEYS: 
+[2026-01-10 09:43:54] FILES_KEYS: 
+[2026-01-10 09:43:54] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-10 09:45:44] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:45:44] CONTENT_TYPE=
+[2026-01-10 09:45:44] CONTENT_LENGTH=
+[2026-01-10 09:45:44] RAW_LEN=0
+[2026-01-10 09:45:44] REQUEST_KEYS: action,step
+[2026-01-10 09:45:44] POST_KEYS: 
+[2026-01-10 09:45:44] FILES_KEYS: 
+[2026-01-10 09:45:44] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-10 09:46:26] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:46:26] CONTENT_TYPE=
+[2026-01-10 09:46:26] CONTENT_LENGTH=
+[2026-01-10 09:46:26] RAW_LEN=0
+[2026-01-10 09:46:26] REQUEST_KEYS: action,step
+[2026-01-10 09:46:26] POST_KEYS: 
+[2026-01-10 09:46:26] FILES_KEYS: 
+[2026-01-10 09:46:26] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-10 09:48:05] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:48:05] CONTENT_TYPE=
+[2026-01-10 09:48:05] CONTENT_LENGTH=
+[2026-01-10 09:48:05] RAW_LEN=0
+[2026-01-10 09:48:05] REQUEST_KEYS: action,step
+[2026-01-10 09:48:05] POST_KEYS: 
+[2026-01-10 09:48:05] FILES_KEYS: 
+[2026-01-10 09:48:05] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-10 09:48:12] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:48:12] CONTENT_TYPE=
+[2026-01-10 09:48:12] CONTENT_LENGTH=
+[2026-01-10 09:48:12] RAW_LEN=0
+[2026-01-10 09:48:12] REQUEST_KEYS: action,step
+[2026-01-10 09:48:12] POST_KEYS: 
+[2026-01-10 09:48:12] FILES_KEYS: 
+[2026-01-10 09:48:12] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 8
+)
+
+[2026-01-10 09:51:25] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:51:25] CONTENT_TYPE=
+[2026-01-10 09:51:25] CONTENT_LENGTH=
+[2026-01-10 09:51:25] RAW_LEN=0
+[2026-01-10 09:51:25] REQUEST_KEYS: action,step
+[2026-01-10 09:51:25] POST_KEYS: 
+[2026-01-10 09:51:25] FILES_KEYS: 
+[2026-01-10 09:51:25] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 9
+)
+
+[2026-01-10 09:51:32] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:51:32] CONTENT_TYPE=
+[2026-01-10 09:51:32] CONTENT_LENGTH=
+[2026-01-10 09:51:32] RAW_LEN=0
+[2026-01-10 09:51:32] REQUEST_KEYS: action,step
+[2026-01-10 09:51:32] POST_KEYS: 
+[2026-01-10 09:51:32] FILES_KEYS: 
+[2026-01-10 09:51:32] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 10
+)
+
+[2026-01-10 09:51:39] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:51:39] CONTENT_TYPE=
+[2026-01-10 09:51:39] CONTENT_LENGTH=
+[2026-01-10 09:51:39] RAW_LEN=0
+[2026-01-10 09:51:39] REQUEST_KEYS: action,step
+[2026-01-10 09:51:39] POST_KEYS: 
+[2026-01-10 09:51:39] FILES_KEYS: 
+[2026-01-10 09:51:39] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 10
+)
+
+[2026-01-10 09:51:44] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 09:51:44] CONTENT_TYPE=
+[2026-01-10 09:51:44] CONTENT_LENGTH=
+[2026-01-10 09:51:44] RAW_LEN=0
+[2026-01-10 09:51:44] REQUEST_KEYS: action,step
+[2026-01-10 09:51:44] POST_KEYS: 
+[2026-01-10 09:51:44] FILES_KEYS: 
+[2026-01-10 09:51:44] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-10 11:48:01] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:48:01] CONTENT_TYPE=
+[2026-01-10 11:48:01] CONTENT_LENGTH=
+[2026-01-10 11:48:01] RAW_LEN=0
+[2026-01-10 11:48:01] REQUEST_KEYS: action,step
+[2026-01-10 11:48:01] POST_KEYS: 
+[2026-01-10 11:48:01] FILES_KEYS: 
+[2026-01-10 11:48:01] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-10 11:48:04] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:48:04] CONTENT_TYPE=
+[2026-01-10 11:48:04] CONTENT_LENGTH=
+[2026-01-10 11:48:04] RAW_LEN=0
+[2026-01-10 11:48:04] REQUEST_KEYS: action,step
+[2026-01-10 11:48:04] POST_KEYS: 
+[2026-01-10 11:48:04] FILES_KEYS: 
+[2026-01-10 11:48:04] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-10 11:48:06] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:48:06] CONTENT_TYPE=
+[2026-01-10 11:48:06] CONTENT_LENGTH=
+[2026-01-10 11:48:06] RAW_LEN=0
+[2026-01-10 11:48:06] REQUEST_KEYS: action,step
+[2026-01-10 11:48:06] POST_KEYS: 
+[2026-01-10 11:48:06] FILES_KEYS: 
+[2026-01-10 11:48:06] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-10 11:48:09] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:48:09] CONTENT_TYPE=
+[2026-01-10 11:48:09] CONTENT_LENGTH=
+[2026-01-10 11:48:09] RAW_LEN=0
+[2026-01-10 11:48:09] REQUEST_KEYS: action,step
+[2026-01-10 11:48:09] POST_KEYS: 
+[2026-01-10 11:48:09] FILES_KEYS: 
+[2026-01-10 11:48:09] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 5
+)
+
+[2026-01-10 11:48:11] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:48:11] CONTENT_TYPE=
+[2026-01-10 11:48:11] CONTENT_LENGTH=
+[2026-01-10 11:48:11] RAW_LEN=0
+[2026-01-10 11:48:11] REQUEST_KEYS: action,step
+[2026-01-10 11:48:11] POST_KEYS: 
+[2026-01-10 11:48:11] FILES_KEYS: 
+[2026-01-10 11:48:11] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-10 11:48:40] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:48:40] CONTENT_TYPE=
+[2026-01-10 11:48:40] CONTENT_LENGTH=
+[2026-01-10 11:48:40] RAW_LEN=0
+[2026-01-10 11:48:40] REQUEST_KEYS: action,step
+[2026-01-10 11:48:40] POST_KEYS: 
+[2026-01-10 11:48:40] FILES_KEYS: 
+[2026-01-10 11:48:40] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-10 11:49:44] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:49:44] CONTENT_TYPE=
+[2026-01-10 11:49:44] CONTENT_LENGTH=
+[2026-01-10 11:49:44] RAW_LEN=0
+[2026-01-10 11:49:44] REQUEST_KEYS: action,step
+[2026-01-10 11:49:44] POST_KEYS: 
+[2026-01-10 11:49:44] FILES_KEYS: 
+[2026-01-10 11:49:44] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-10 11:51:59] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:51:59] CONTENT_TYPE=
+[2026-01-10 11:51:59] CONTENT_LENGTH=
+[2026-01-10 11:51:59] RAW_LEN=0
+[2026-01-10 11:51:59] REQUEST_KEYS: action,step
+[2026-01-10 11:51:59] POST_KEYS: 
+[2026-01-10 11:51:59] FILES_KEYS: 
+[2026-01-10 11:51:59] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-10 11:52:20] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:52:20] CONTENT_TYPE=
+[2026-01-10 11:52:20] CONTENT_LENGTH=
+[2026-01-10 11:52:20] RAW_LEN=0
+[2026-01-10 11:52:20] REQUEST_KEYS: action,step
+[2026-01-10 11:52:20] POST_KEYS: 
+[2026-01-10 11:52:20] FILES_KEYS: 
+[2026-01-10 11:52:20] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 4
+)
+
+[2026-01-10 11:52:33] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:52:33] CONTENT_TYPE=
+[2026-01-10 11:52:33] CONTENT_LENGTH=
+[2026-01-10 11:52:33] RAW_LEN=0
+[2026-01-10 11:52:33] REQUEST_KEYS: action,step
+[2026-01-10 11:52:33] POST_KEYS: 
+[2026-01-10 11:52:33] FILES_KEYS: 
+[2026-01-10 11:52:33] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 5
+)
+
+[2026-01-10 11:52:36] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:52:36] CONTENT_TYPE=
+[2026-01-10 11:52:36] CONTENT_LENGTH=
+[2026-01-10 11:52:36] RAW_LEN=0
+[2026-01-10 11:52:36] REQUEST_KEYS: action,step
+[2026-01-10 11:52:36] POST_KEYS: 
+[2026-01-10 11:52:36] FILES_KEYS: 
+[2026-01-10 11:52:36] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 6
+)
+
+[2026-01-10 11:53:02] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:53:02] CONTENT_TYPE=
+[2026-01-10 11:53:02] CONTENT_LENGTH=
+[2026-01-10 11:53:02] RAW_LEN=0
+[2026-01-10 11:53:02] REQUEST_KEYS: action,step
+[2026-01-10 11:53:02] POST_KEYS: 
+[2026-01-10 11:53:02] FILES_KEYS: 
+[2026-01-10 11:53:02] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-10 11:53:51] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:53:51] CONTENT_TYPE=
+[2026-01-10 11:53:51] CONTENT_LENGTH=
+[2026-01-10 11:53:51] RAW_LEN=0
+[2026-01-10 11:53:51] REQUEST_KEYS: action,step
+[2026-01-10 11:53:51] POST_KEYS: 
+[2026-01-10 11:53:51] FILES_KEYS: 
+[2026-01-10 11:53:51] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-10 11:54:20] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:54:20] CONTENT_TYPE=
+[2026-01-10 11:54:20] CONTENT_LENGTH=
+[2026-01-10 11:54:20] RAW_LEN=0
+[2026-01-10 11:54:20] REQUEST_KEYS: action,step
+[2026-01-10 11:54:20] POST_KEYS: 
+[2026-01-10 11:54:20] FILES_KEYS: 
+[2026-01-10 11:54:20] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 7
+)
+
+[2026-01-10 11:54:22] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:54:22] CONTENT_TYPE=
+[2026-01-10 11:54:22] CONTENT_LENGTH=
+[2026-01-10 11:54:22] RAW_LEN=0
+[2026-01-10 11:54:22] REQUEST_KEYS: action,step
+[2026-01-10 11:54:22] POST_KEYS: 
+[2026-01-10 11:54:22] FILES_KEYS: 
+[2026-01-10 11:54:22] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 8
+)
+
+[2026-01-10 11:55:16] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:55:16] CONTENT_TYPE=
+[2026-01-10 11:55:16] CONTENT_LENGTH=
+[2026-01-10 11:55:16] RAW_LEN=0
+[2026-01-10 11:55:16] REQUEST_KEYS: action,step
+[2026-01-10 11:55:16] POST_KEYS: 
+[2026-01-10 11:55:16] FILES_KEYS: 
+[2026-01-10 11:55:16] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 9
+)
+
+[2026-01-10 11:55:20] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:55:20] CONTENT_TYPE=
+[2026-01-10 11:55:20] CONTENT_LENGTH=
+[2026-01-10 11:55:20] RAW_LEN=0
+[2026-01-10 11:55:20] REQUEST_KEYS: action,step
+[2026-01-10 11:55:20] POST_KEYS: 
+[2026-01-10 11:55:20] FILES_KEYS: 
+[2026-01-10 11:55:20] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 10
+)
+
+[2026-01-10 11:55:23] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:55:23] CONTENT_TYPE=
+[2026-01-10 11:55:23] CONTENT_LENGTH=
+[2026-01-10 11:55:23] RAW_LEN=0
+[2026-01-10 11:55:23] REQUEST_KEYS: action,step
+[2026-01-10 11:55:23] POST_KEYS: 
+[2026-01-10 11:55:23] FILES_KEYS: 
+[2026-01-10 11:55:23] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-10 11:55:29] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:55:29] CONTENT_TYPE=
+[2026-01-10 11:55:29] CONTENT_LENGTH=
+[2026-01-10 11:55:29] RAW_LEN=0
+[2026-01-10 11:55:29] REQUEST_KEYS: action,step
+[2026-01-10 11:55:29] POST_KEYS: 
+[2026-01-10 11:55:29] FILES_KEYS: 
+[2026-01-10 11:55:29] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 12
+)
+
+[2026-01-10 11:55:31] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:55:31] CONTENT_TYPE=
+[2026-01-10 11:55:31] CONTENT_LENGTH=
+[2026-01-10 11:55:31] RAW_LEN=0
+[2026-01-10 11:55:31] REQUEST_KEYS: action,step
+[2026-01-10 11:55:31] POST_KEYS: 
+[2026-01-10 11:55:31] FILES_KEYS: 
+[2026-01-10 11:55:31] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-10 11:55:36] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:55:36] CONTENT_TYPE=
+[2026-01-10 11:55:36] CONTENT_LENGTH=
+[2026-01-10 11:55:36] RAW_LEN=0
+[2026-01-10 11:55:36] REQUEST_KEYS: action,step
+[2026-01-10 11:55:36] POST_KEYS: 
+[2026-01-10 11:55:36] FILES_KEYS: 
+[2026-01-10 11:55:36] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-10 11:55:56] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:55:56] CONTENT_TYPE=
+[2026-01-10 11:55:56] CONTENT_LENGTH=
+[2026-01-10 11:55:56] RAW_LEN=0
+[2026-01-10 11:55:56] REQUEST_KEYS: action,step
+[2026-01-10 11:55:56] POST_KEYS: 
+[2026-01-10 11:55:56] FILES_KEYS: 
+[2026-01-10 11:55:56] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-10 11:56:02] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:02] CONTENT_TYPE=
+[2026-01-10 11:56:02] CONTENT_LENGTH=
+[2026-01-10 11:56:02] RAW_LEN=0
+[2026-01-10 11:56:02] REQUEST_KEYS: action,step
+[2026-01-10 11:56:02] POST_KEYS: 
+[2026-01-10 11:56:02] FILES_KEYS: 
+[2026-01-10 11:56:02] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-10 11:56:11] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:11] CONTENT_TYPE=
+[2026-01-10 11:56:11] CONTENT_LENGTH=
+[2026-01-10 11:56:11] RAW_LEN=0
+[2026-01-10 11:56:11] REQUEST_KEYS: action,step
+[2026-01-10 11:56:11] POST_KEYS: 
+[2026-01-10 11:56:11] FILES_KEYS: 
+[2026-01-10 11:56:11] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-10 11:56:20] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:20] CONTENT_TYPE=
+[2026-01-10 11:56:20] CONTENT_LENGTH=
+[2026-01-10 11:56:20] RAW_LEN=0
+[2026-01-10 11:56:20] REQUEST_KEYS: action,step
+[2026-01-10 11:56:20] POST_KEYS: 
+[2026-01-10 11:56:20] FILES_KEYS: 
+[2026-01-10 11:56:20] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 14
+)
+
+[2026-01-10 11:56:29] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:29] CONTENT_TYPE=
+[2026-01-10 11:56:29] CONTENT_LENGTH=
+[2026-01-10 11:56:29] RAW_LEN=0
+[2026-01-10 11:56:29] REQUEST_KEYS: action,step
+[2026-01-10 11:56:29] POST_KEYS: 
+[2026-01-10 11:56:29] FILES_KEYS: 
+[2026-01-10 11:56:29] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 13
+)
+
+[2026-01-10 11:56:33] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:33] CONTENT_TYPE=
+[2026-01-10 11:56:33] CONTENT_LENGTH=
+[2026-01-10 11:56:33] RAW_LEN=0
+[2026-01-10 11:56:33] REQUEST_KEYS: action,step
+[2026-01-10 11:56:33] POST_KEYS: 
+[2026-01-10 11:56:33] FILES_KEYS: 
+[2026-01-10 11:56:33] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 12
+)
+
+[2026-01-10 11:56:35] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:35] CONTENT_TYPE=
+[2026-01-10 11:56:35] CONTENT_LENGTH=
+[2026-01-10 11:56:35] RAW_LEN=0
+[2026-01-10 11:56:35] REQUEST_KEYS: action,step
+[2026-01-10 11:56:35] POST_KEYS: 
+[2026-01-10 11:56:35] FILES_KEYS: 
+[2026-01-10 11:56:35] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 11
+)
+
+[2026-01-10 11:56:39] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:39] CONTENT_TYPE=
+[2026-01-10 11:56:39] CONTENT_LENGTH=
+[2026-01-10 11:56:39] RAW_LEN=0
+[2026-01-10 11:56:39] REQUEST_KEYS: action,step
+[2026-01-10 11:56:39] POST_KEYS: 
+[2026-01-10 11:56:39] FILES_KEYS: 
+[2026-01-10 11:56:39] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-01-10 11:56:41] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 11:56:41] CONTENT_TYPE=
+[2026-01-10 11:56:41] CONTENT_LENGTH=
+[2026-01-10 11:56:41] RAW_LEN=0
+[2026-01-10 11:56:41] REQUEST_KEYS: action,step
+[2026-01-10 11:56:41] POST_KEYS: 
+[2026-01-10 11:56:41] FILES_KEYS: 
+[2026-01-10 11:56:41] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 3
+)
+
+[2026-01-10 13:31:45] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 13:31:45] CONTENT_TYPE=
+[2026-01-10 13:31:45] CONTENT_LENGTH=
+[2026-01-10 13:31:45] RAW_LEN=0
+[2026-01-10 13:31:45] REQUEST_KEYS: action,step
+[2026-01-10 13:31:45] POST_KEYS: 
+[2026-01-10 13:31:45] FILES_KEYS: 
+[2026-01-10 13:31:45] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 9
+)
+
+[2026-01-10 13:31:53] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 13:31:53] CONTENT_TYPE=
+[2026-01-10 13:31:53] CONTENT_LENGTH=
+[2026-01-10 13:31:53] RAW_LEN=0
+[2026-01-10 13:31:53] REQUEST_KEYS: action,step
+[2026-01-10 13:31:53] POST_KEYS: 
+[2026-01-10 13:31:53] FILES_KEYS: 
+[2026-01-10 13:31:53] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 9
+)
+
+[2026-01-10 13:32:30] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-10 13:32:30] CONTENT_TYPE=
+[2026-01-10 13:32:30] CONTENT_LENGTH=
+[2026-01-10 13:32:30] RAW_LEN=0
+[2026-01-10 13:32:30] REQUEST_KEYS: action,step
+[2026-01-10 13:32:30] POST_KEYS: 
+[2026-01-10 13:32:30] FILES_KEYS: 
+[2026-01-10 13:32:30] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 10
+)
+
+[2026-01-13 11:38:14] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-01-13 11:38:14] CONTENT_TYPE=
+[2026-01-13 11:38:14] CONTENT_LENGTH=
+[2026-01-13 11:38:14] RAW_LEN=0
+[2026-01-13 11:38:14] REQUEST_KEYS: action,step
+[2026-01-13 11:38:14] POST_KEYS: 
+[2026-01-13 11:38:14] FILES_KEYS: 
+[2026-01-13 11:38:14] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 5
+)
+

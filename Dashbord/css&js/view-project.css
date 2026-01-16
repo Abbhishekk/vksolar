@@ -1,0 +1,580 @@
+:root {
+  --primary-color: #2e8b57;
+  --secondary-color: #3cb371;
+  --light-color: #f5f5f5;
+  --dark-color: #333;
+  --border-radius: 10px;
+  --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.page-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.header-actions {
+  flex-shrink: 0;
+}
+
+.project-card {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-summary {
+  color: #666;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.project-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.card-footer {
+  background-color: white;
+  border-top: 1px solid #eee;
+  padding: 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.btn-brand {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn-brand:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.filter-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+}
+
+.stats-card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.stats-card:hover {
+  transform: translateY(-3px);
+}
+
+.stats-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stats-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.search-box {
+  width: 100%;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-completed {
+  background-color: #e7f7ef;
+  color: var(--primary-color);
+}
+
+.status-in-progress {
+  background-color: #fff4e6;
+  color: #e67e22;
+}
+
+.status-upcoming {
+  background-color: #e6f3ff;
+  color: #3498db;
+}
+
+.project-details-modal img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.empty-results {
+  text-align: center;
+  padding: 3rem;
+  display: none;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+  .filter-section .row {
+    flex-direction: column;
+  }
+
+  .filter-section .col-md-4,
+  .filter-section .col-md-8 {
+    width: 100%;
+  }
+
+  .stats-card {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .search-container {
+    gap: 0.75rem;
+  }
+
+  /* Remove unwanted space after project summary */
+  .project-card {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-card .card-body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-summary {
+    margin-bottom: 0 !important;
+  }
+
+  /* Optional: tighten spacing between body and footer */
+  .project-card .card-footer {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .header-text {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .header-actions {
+    width: 100%;
+  }
+
+  .header-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filter-section {
+    padding: 1rem;
+  }
+
+  .search-container {
+    gap: 0.5rem;
+  }
+
+  .search-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .search-buttons .btn {
+    width: 100%;
+  }
+
+  .projects-section .row {
+    margin: 0 -10px;
+  }
+
+  .projects-section .col-md-6,
+  .projects-section .col-xl-4 {
+    padding: 0 10px;
+  }
+
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .action-buttons .btn {
+    flex: 1;
+    min-width: 80px;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .project-meta {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .project-meta span {
+    justify-content: center;
+  }
+
+  /* Remove unwanted space after project summary */
+  .project-card {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-card .card-body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-summary {
+    margin-bottom: 0 !important;
+  }
+
+  /* Optional: tighten spacing between body and footer */
+  .project-card .card-footer {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-text .lead {
+    font-size: 1rem;
+  }
+
+  .filter-section {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .stats-card {
+    padding: 1rem;
+  }
+
+  .stats-number {
+    font-size: 1.5rem;
+  }
+
+  .search-box {
+    font-size: 0.9rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-summary {
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  footer .text-md-end {
+    text-align: center !important;
+  }
+
+  /* Remove unwanted space after project summary */
+  .project-card {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-card .card-body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-summary {
+    margin-bottom: 0 !important;
+  }
+
+  /* Optional: tighten spacing between body and footer */
+  .project-card .card-footer {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .stats-number {
+    font-size: 1.3rem;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons .btn {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Remove unwanted space after project summary */
+  .project-card {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-card .card-body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-summary {
+    margin-bottom: 0 !important;
+  }
+
+  /* Optional: tighten spacing between body and footer */
+  .project-card .card-footer {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+/* Tablet specific optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .filter-section .row {
+    align-items: stretch;
+  }
+
+  .search-container {
+    height: 100%;
+    justify-content: center;
+  }
+
+  .projects-section .col-xl-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Remove unwanted space after project summary */
+  .project-card {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-card .card-body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-summary {
+    margin-bottom: 0 !important;
+  }
+
+  /* Optional: tighten spacing between body and footer */
+  .project-card .card-footer {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+/* Large mobile and small tablet landscape */
+@media (max-width: 992px) and (orientation: landscape) {
+  .page-header {
+    padding: 1.5rem 0;
+  }
+
+  .filter-section {
+    padding: 1rem;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  /* Remove unwanted space after project summary */
+  .project-card {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-card .card-body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .project-summary {
+    margin-bottom: 0 !important;
+  }
+
+  /* Optional: tighten spacing between body and footer */
+  .project-card .card-footer {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+/* Remove unwanted space after project summary */
+.project-card {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.project-card .card-body {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.project-summary {
+  margin-bottom: 0 !important;
+}
+
+/* Optional: tighten spacing between body and footer */
+.project-card .card-footer {
+  margin-top: 0 !important;
+  padding-top: 0.5rem !important;
+}
