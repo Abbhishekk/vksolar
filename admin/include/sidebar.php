@@ -525,6 +525,12 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
                   View Invoices
                 </a>
               </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/invoice/generate_receipt_voucher.php">
+                  Receipt Voucher
+                </a>
+              </li>
         
             </ul>
           </div>
