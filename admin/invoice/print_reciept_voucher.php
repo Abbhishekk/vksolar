@@ -6,30 +6,30 @@ require_once __DIR__ . '/../connect/auth_middleware.php';
 $auth->requireAuth();
 $auth->requirePermission('invoice_management', 'view');
 
-$warehouse_id = (int)($_POST['warehouse_id'] ?? 0);
-if (!$warehouse_id) die('Invalid Warehouse');
+$client_id = (int)($_POST['client_id'] ?? 0);
+if (!$client_id) die('Invalid Client');
 
 $payment_mode = $_POST['payment_mode'] ?? '';
 $receipt_date = $_POST['receipt_date'] ?? date('Y-m-d');
 $remarks = $_POST['remarks'] ?? '';
 
-/* ================= FETCH WAREHOUSE ================= */
-$stmt = $conn->prepare("SELECT * FROM warehouses WHERE id = ?");
-$stmt->bind_param("i", $warehouse_id);
+/* ================= FETCH CLIENT ================= */
+$stmt = $conn->prepare("SELECT * FROM clients WHERE id = ?");
+$stmt->bind_param("i", $client_id);
 $stmt->execute();
-$warehouse = $stmt->get_result()->fetch_assoc();
+$client = $stmt->get_result()->fetch_assoc();
 $stmt->close();
 
-if (!$warehouse) die('Warehouse not found');
+if (!$client) die('Client not found');
 
 /* ================= FETCH INVOICES ================= */
 $stmt = $conn->prepare("
     SELECT id, invoice_no, invoice_date, total 
     FROM invoices 
-    WHERE warehouse_id = ? AND status != 'cancelled'
+    WHERE reference_id = ? AND status != 'cancelled'
     ORDER BY invoice_date DESC
 ");
-$stmt->bind_param("i", $warehouse_id);
+$stmt->bind_param("i", $client_id);
 $stmt->execute();
 $invoices = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 $stmt->close();
@@ -147,17 +147,17 @@ table th, table td {
 <!-- CUSTOMER + INVOICE META -->
 <div class="row">
   <div class="col border ">
-    <div class="bold border p5 center">Warehouse Details</div>
+    <div class="bold border p5 center">Client Details</div>
     <div class="p5" >
         <div style="display:flex;justify-items:space-between;margin:5px 0;">
             <span class="bold left-header" >Name: </span>
-            <span class="right-header" ><?= htmlspecialchars($warehouse['name']) ?></span>
+            <span class="right-header" ><?= htmlspecialchars($client['name']) ?></span>
         </div>
         <div style="display:flex;justify-items:space-between;width:100%;margin:5px 0;" >
-            <span class="bold left-header">Address: </span> <p class="right-header" ><?= htmlspecialchars($warehouse['address'] ?? 'N/A') ?></p>
+            <span class="bold left-header">Address: </span> <p class="right-header" ><?= htmlspecialchars($client['village'] . ', ' . $client['taluka'] . ', ' . $client['district']) ?></p>
         </div>
         <div style="display:flex;justify-items:space-between;margin:5px 0;">
-            <span class="bold left-header">Phone: </span><p class="right-header" ><?= htmlspecialchars($warehouse['phone'] ?? 'N/A') ?></p>
+            <span class="bold left-header">Phone: </span><p class="right-header" ><?= htmlspecialchars($client['mobile']) ?></p>
         </div>
         <div style="display:flex;justify-items:space-between;margin:5px 0;">
             <span class="bold left-header">Place of Supply: </span><p class="right-header" >Maharashtra (27)</p>
@@ -167,7 +167,7 @@ table th, table td {
 
   <div class="col border p5"  >
     <div style="display:flex;justify-items:space-between;margin:5px 0;">
-            <span class="bold left-header">Receipt No: </span><p class="right-header" >RV<?= date('Ymd') . $warehouse_id ?></p>
+            <span class="bold left-header">Receipt No: </span><p class="right-header" >RV<?= date('Ymd') . $client_id ?></p>
         </div>
         <div style="display:flex;justify-items:space-between;margin:5px 0;">
             <span class="bold left-header">Receipt Date: </span><p class="right-header" ><?= date('d-m-Y', strtotime($receipt_date)) ?></p>
@@ -192,7 +192,7 @@ table th, table td {
 <tbody>
     <tr>
         <td style="border-bottom: 0;">1</td>
-        <td style="border-bottom: 0;" class="bold">Account: <br> <span style="font-size: x-large;" >  <?= htmlspecialchars($warehouse['name']) ?></span></td>
+        <td style="border-bottom: 0;" class="bold">Account: <br> <span style="font-size: x-large;" >  <?= htmlspecialchars($client['name']) ?></span></td>
         <td style="border-bottom: 0;"></td>
     </tr>
 <?php

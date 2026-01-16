@@ -8,30 +8,30 @@ $auth->requirePermission('invoice_management', 'view');
 
 $title = 'generate_receipt_voucher';
 
-// Fetch all warehouses
-$warehouses = $conn->query("SELECT id, name FROM warehouses ORDER BY name")->fetch_all(MYSQLI_ASSOC);
+// Fetch all clients
+$clients = $conn->query("SELECT id, name FROM clients ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 
-// Fetch warehouse invoices if warehouse selected
-$warehouse_id = (int)($_GET['warehouse_id'] ?? 0);
+// Fetch client invoices if client selected
+$client_id = (int)($_GET['client_id'] ?? 0);
 $invoices = [];
-$warehouse = null;
+$client = null;
 $total_amount = 0;
 
-if ($warehouse_id) {
-    $stmt = $conn->prepare("SELECT * FROM warehouses WHERE id = ?");
-    $stmt->bind_param("i", $warehouse_id);
+if ($client_id) {
+    $stmt = $conn->prepare("SELECT * FROM clients WHERE id = ?");
+    $stmt->bind_param("i", $client_id);
     $stmt->execute();
-    $warehouse = $stmt->get_result()->fetch_assoc();
+    $client = $stmt->get_result()->fetch_assoc();
     $stmt->close();
     
-    if ($warehouse) {
+    if ($client) {
         $stmt = $conn->prepare("
             SELECT id, invoice_no, invoice_date, total 
             FROM invoices 
-            WHERE warehouse_id = ? AND status != 'cancelled'
+            WHERE reference_id = ? AND status != 'cancelled'
             ORDER BY invoice_date DESC
         ");
-        $stmt->bind_param("i", $warehouse_id);
+        $stmt->bind_param("i", $client_id);
         $stmt->execute();
         $invoices = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         $stmt->close();
@@ -78,15 +78,15 @@ function money($v){ return number_format($v,2); }
                 <h4 class="mb-0">Generate Receipt Voucher</h4>
             </div>
             <div class="card-body">
-                <form method="GET" id="warehouseForm">
+                <form method="GET" id="clientForm">
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label class="form-label">Select Warehouse</label>
-                            <select name="warehouse_id" class="form-select" required onchange="this.form.submit()">
-                                <option value="">-- Select Warehouse --</option>
-                                <?php foreach ($warehouses as $wh): ?>
-                                <option value="<?= $wh['id'] ?>" <?= $wh['id'] == $warehouse_id ? 'selected' : '' ?>>
-                                    <?= htmlspecialchars($wh['name']) ?>
+                            <label class="form-label">Select Client</label>
+                            <select name="client_id" class="form-select" required onchange="this.form.submit()">
+                                <option value="">-- Select Client --</option>
+                                <?php foreach ($clients as $cl): ?>
+                                <option value="<?= $cl['id'] ?>" <?= $cl['id'] == $client_id ? 'selected' : '' ?>>
+                                    <?= htmlspecialchars($cl['name']) ?>
                                 </option>
                                 <?php endforeach; ?>
                             </select>
@@ -94,9 +94,9 @@ function money($v){ return number_format($v,2); }
                     </div>
                 </form>
 
-                <?php if ($warehouse): ?>
+                <?php if ($client): ?>
                 <form id="receiptForm" method="POST" action="print_reciept_voucher" target="_blank">
-                    <input type="hidden" name="warehouse_id" value="<?= $warehouse_id ?>">
+                    <input type="hidden" name="client_id" value="<?= $client_id ?>">
                     
                     <div class="row mb-3">
                         <div class="col-md-6">
@@ -123,11 +123,11 @@ function money($v){ return number_format($v,2); }
 
                     <div class="card mb-3">
                         <div class="card-header bg-light">
-                            <h5 class="mb-0">Invoices for <?= htmlspecialchars($warehouse['name']) ?></h5>
+                            <h5 class="mb-0">Invoices for <?= htmlspecialchars($client['name']) ?></h5>
                         </div>
                         <div class="card-body invoice-list">
                             <?php if (empty($invoices)): ?>
-                            <p class="text-muted">No invoices found for this warehouse.</p>
+                            <p class="text-muted">No invoices found for this client.</p>
                             <?php else: ?>
                             <table class="table table-sm table-bordered">
                                 <thead>
@@ -168,7 +168,7 @@ function money($v){ return number_format($v,2); }
         </div>
 
         <!-- Preview Section -->
-        <?php if ($warehouse && !empty($invoices)): ?>
+        <?php if ($client && !empty($invoices)): ?>
         <div class="mt-4" id="previewSection" style="display:none;">
             <div class="card">
                 <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
@@ -177,7 +177,6 @@ function money($v){ return number_format($v,2); }
                 </div>
                 <div class="card-body">
                     <div class="invoice-preview">
-                        <!-- HEADER -->
                         <div class="row p5">
                             <div class="col">
                                 <div class="bold" style="font-size:25px;">VK Solar Energy</div>
@@ -200,22 +199,21 @@ function money($v){ return number_format($v,2); }
                             <div style="font-size:11px" class="bold">ORIGINAL FOR RECIPIENT</div>
                         </div>
 
-                        <!-- WAREHOUSE + RECEIPT META -->
                         <div class="row">
                             <div class="col border">
-                                <div class="bold border p5 center">Warehouse Details</div>
+                                <div class="bold border p5 center">Client Details</div>
                                 <div class="p5">
                                     <div style="display:flex;margin:5px 0;">
                                         <span class="bold left-header">Name: </span>
-                                        <span class="right-header"><?= htmlspecialchars($warehouse['name']) ?></span>
+                                        <span class="right-header"><?= htmlspecialchars($client['name']) ?></span>
                                     </div>
                                     <div style="display:flex;margin:5px 0;">
                                         <span class="bold left-header">Address: </span>
-                                        <p class="right-header"><?= htmlspecialchars($warehouse['address'] ?? 'N/A') ?></p>
+                                        <p class="right-header"><?= htmlspecialchars($client['village'] . ', ' . $client['taluka'] . ', ' . $client['district']) ?></p>
                                     </div>
                                     <div style="display:flex;margin:5px 0;">
                                         <span class="bold left-header">Phone: </span>
-                                        <p class="right-header"><?= htmlspecialchars($warehouse['phone'] ?? 'N/A') ?></p>
+                                        <p class="right-header"><?= htmlspecialchars($client['mobile']) ?></p>
                                     </div>
                                     <div style="display:flex;margin:5px 0;">
                                         <span class="bold left-header">Place of Supply: </span>
@@ -227,7 +225,7 @@ function money($v){ return number_format($v,2); }
                             <div class="col border p5">
                                 <div style="display:flex;margin:5px 0;">
                                     <span class="bold left-header">Receipt No: </span>
-                                    <p class="right-header">RV<?= date('Ymd') . $warehouse_id ?></p>
+                                    <p class="right-header">RV<?= date('Ymd') . $client_id ?></p>
                                 </div>
                                 <div style="display:flex;margin:5px 0;">
                                     <span class="bold left-header">Receipt Date: </span>
@@ -240,7 +238,6 @@ function money($v){ return number_format($v,2); }
                             </div>
                         </div>
 
-                        <!-- ITEMS -->
                         <table style="min-height:200px;">
                             <thead>
                                 <tr>
@@ -252,7 +249,7 @@ function money($v){ return number_format($v,2); }
                             <tbody>
                                 <tr>
                                     <td style="border-bottom: 0;">1</td>
-                                    <td style="border-bottom: 0;" class="bold">Account: <br><span style="font-size: x-large;"><?= htmlspecialchars($warehouse['name']) ?></span></td>
+                                    <td style="border-bottom: 0;" class="bold">Account: <br><span style="font-size: x-large;"><?= htmlspecialchars($client['name']) ?></span></td>
                                     <td style="border-bottom: 0;"></td>
                                 </tr>
                                 <?php foreach($invoices as $inv): ?>
@@ -274,7 +271,6 @@ function money($v){ return number_format($v,2); }
                             </tbody>
                         </table>
 
-                        <!-- TOTALS -->
                         <table>
                             <tr>
                                 <td class="center" style="width:60%">
