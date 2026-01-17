@@ -132,6 +132,7 @@ function money($v){ return number_format($v,2); }
                             <table class="table table-sm table-bordered">
                                 <thead>
                                     <tr>
+                                        <th><input type="checkbox" id="selectAll" onchange="toggleAll()"></th>
                                         <th>Invoice No</th>
                                         <th>Date</th>
                                         <th class="text-end">Amount</th>
@@ -140,14 +141,15 @@ function money($v){ return number_format($v,2); }
                                 <tbody>
                                     <?php foreach ($invoices as $inv): ?>
                                     <tr>
+                                        <td><input type="checkbox" name="selected_invoices[]" value="<?= $inv['id'] ?>" class="invoice-checkbox" onchange="calculateTotal()"></td>
                                         <td><?= htmlspecialchars($inv['invoice_no']) ?></td>
                                         <td><?= date('d-m-Y', strtotime($inv['invoice_date'])) ?></td>
-                                        <td class="text-end">₹<?= number_format($inv['total'], 2) ?></td>
+                                        <td class="text-end" data-amount="<?= $inv['total'] ?>">₹<?= number_format($inv['total'], 2) ?></td>
                                     </tr>
                                     <?php endforeach; ?>
                                     <tr class="table-primary fw-bold">
-                                        <td colspan="2" class="text-end">Total Amount:</td>
-                                        <td class="text-end">₹<?= number_format($total_amount, 2) ?></td>
+                                        <td colspan="3" class="text-end">Selected Total:</td>
+                                        <td class="text-end" id="selectedTotal">₹0.00</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -157,8 +159,8 @@ function money($v){ return number_format($v,2); }
 
                     <?php if (!empty($invoices)): ?>
                     <div class="d-flex gap-2">
-                        <button type="button" class="btn btn-primary" onclick="showPreview()">Preview Receipt</button>
-                        <button type="submit" class="btn btn-success">Print Receipt</button>
+                        <button type="button" class="btn btn-primary" onclick="showPreview()" id="previewBtn" disabled>Preview Receipt</button>
+                        <button type="submit" class="btn btn-success" id="printBtn" disabled>Print Receipt</button>
                         <a href="<?= $_SERVER['PHP_SELF'] ?>" class="btn btn-secondary">Reset</a>
                     </div>
                     <?php endif; ?>
@@ -314,7 +316,36 @@ function money($v){ return number_format($v,2); }
 </div>
 
     <script>
+        function toggleAll() {
+            const selectAll = document.getElementById('selectAll');
+            const checkboxes = document.querySelectorAll('.invoice-checkbox');
+            checkboxes.forEach(cb => cb.checked = selectAll.checked);
+            calculateTotal();
+        }
+        
+        function calculateTotal() {
+            const checkboxes = document.querySelectorAll('.invoice-checkbox:checked');
+            let total = 0;
+            checkboxes.forEach(cb => {
+                const row = cb.closest('tr');
+                const amount = parseFloat(row.querySelector('[data-amount]').dataset.amount);
+                total += amount;
+            });
+            
+            document.getElementById('selectedTotal').textContent = '₹' + total.toLocaleString('en-IN', {minimumFractionDigits: 2});
+            
+            const hasSelection = checkboxes.length > 0;
+            document.getElementById('previewBtn').disabled = !hasSelection;
+            document.getElementById('printBtn').disabled = !hasSelection;
+        }
+        
         function showPreview() {
+            const checkboxes = document.querySelectorAll('.invoice-checkbox:checked');
+            if (checkboxes.length === 0) {
+                alert('Please select at least one invoice');
+                return;
+            }
+            
             const form = document.getElementById('receiptForm');
             if (!form.checkValidity()) {
                 form.reportValidity();

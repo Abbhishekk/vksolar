@@ -6,6 +6,10 @@ require_once __DIR__ . '/../connect/auth_middleware.php';
 $auth->requireAuth();
 $auth->requirePermission('invoice_management', 'view');
 
+// Get selected invoice IDs
+$selected_invoices = $_POST['selected_invoices'] ?? [];
+if (empty($selected_invoices)) die('No invoices selected');
+
 $client_id = (int)($_POST['client_id'] ?? 0);
 if (!$client_id) die('Invalid Client');
 
@@ -22,14 +26,16 @@ $stmt->close();
 
 if (!$client) die('Client not found');
 
-/* ================= FETCH INVOICES ================= */
+/* ================= FETCH SELECTED INVOICES ================= */
+$placeholders = str_repeat('?,', count($selected_invoices) - 1) . '?';
 $stmt = $conn->prepare("
     SELECT id, invoice_no, invoice_date, total 
     FROM invoices 
-    WHERE reference_id = ? AND status != 'cancelled'
+    WHERE id IN ($placeholders) AND reference_id = ? AND status != 'cancelled'
     ORDER BY invoice_date DESC
 ");
-$stmt->bind_param("i", $client_id);
+$types = str_repeat('i', count($selected_invoices)) . 'i';
+$stmt->bind_param($types, ...array_merge($selected_invoices, [$client_id]));
 $stmt->execute();
 $invoices = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 $stmt->close();
