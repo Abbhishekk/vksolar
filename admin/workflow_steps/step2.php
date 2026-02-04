@@ -44,7 +44,12 @@ if (!empty($_SESSION['workflow_success'])) {
 }
 
 ?>
-<!-- Step 2 form (Communication & Address) -->
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 2. Communication & Address</h5>
+    </div>
+    <div class="card-body">
+        <!-- Step 2 form (Communication & Address) -->
 <form id="step2Form" action="/admin/workflow_steps/save_step2" method="POST" novalidate>
   <input type="hidden" name="client_id" id="client_id" value="<?= htmlspecialchars($client['id']) ?>">
 
@@ -108,3 +113,6 @@ if (!empty($_SESSION['workflow_success'])) {
     </div>
   </div>
 </form>
+    </div>
+</div>
+

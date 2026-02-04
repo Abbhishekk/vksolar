@@ -39,9 +39,12 @@ if (!empty($_SESSION['workflow_success'])) {
     unset($_SESSION['workflow_success']);
 }
 ?>
-
-<!-- Step 7: MAHADISCOM Sanction Load (matches earlier UI) -->
-<form id="step7Form" action="/admin/workflow_steps/save_step7" method="post" onsubmit="return validateStep7()" novalidate>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 7:MAHADISCOM Sanction Load</h5>
+    </div>
+    <div class="card-body">
+        <form id="step7Form" action="/admin/workflow_steps/save_step7" method="post" onsubmit="return validateStep7()" novalidate>
   <input type="hidden" name="client_id" value="<?= htmlspecialchars($client['id']) ?>">
 
   <div class="mb-3">
@@ -74,6 +77,10 @@ if (!empty($_SESSION['workflow_success'])) {
     </div>
   </div>
 </form>
+    </div>
+</div>
+<!-- Step 7: MAHADISCOM Sanction Load (matches earlier UI) -->
+
 
 <script>
 // Client-side validation (keeps UX snappy)

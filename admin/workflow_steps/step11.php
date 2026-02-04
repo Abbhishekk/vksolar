@@ -38,7 +38,7 @@ if (!empty($_SESSION['workflow_success'])) {
 
 <div class="card">
   <div class="card-header">
-    <h5 class="card-title">Step 11: RTS Portal Status</h5>
+    <h5 class="card-title text-white">Step 11: RTS Portal Status</h5>
   </div>
   <div class="card-body">
     <form id="step11Form" action="/admin/workflow_steps/save_step11" method="post" novalidate onsubmit="return validateStep11();">

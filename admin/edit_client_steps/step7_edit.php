@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title">Step 7: MAHADISCOM Sanction Load</h5>
+        <h5 class="card-title text-white">Step 7: MAHADISCOM Sanction Load</h5>
     </div>
     <div class="card-body">
         <form id="step7Form">

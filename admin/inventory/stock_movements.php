@@ -19,12 +19,14 @@ SELECT
   p.sku,
   wf.name AS from_warehouse,
   wt.name AS to_warehouse,
-  c.name  AS client_name
+  c.name  AS client_name,
+  vr.company_name as retailer_name
 FROM stock_movements sm
 LEFT JOIN products p   ON p.id = sm.product_id
 LEFT JOIN warehouses wf ON wf.id = sm.warehouse_from
 LEFT JOIN warehouses wt ON wt.id = sm.warehouse_to
 LEFT JOIN clients c ON (sm.reference_type='client' AND c.id = sm.reference_id)
+LEFT JOIN vendors_retailers vr on (sm.reference_type='retailer' AND vr.id = sm.reference_id)
 WHERE 1=1
 ";
 
@@ -134,6 +136,8 @@ $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd);
 
 <?php foreach($rows as $r):
   $badge = 'badge-transfer';
+//   print_r($r);
+//   echo "<br>";
   if ($r['quantity'] > 0) $badge = 'badge-in';
   if ($r['quantity'] < 0) $badge = 'badge-out';
 ?>
@@ -141,7 +145,7 @@ $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd);
   <td><?= $r['created_at'] ?></td>
   <td><?= htmlspecialchars($r['product_name'].' ('.$r['sku'].')') ?></td>
   <td><?= htmlspecialchars($r['from_warehouse'] ?? '—') ?></td>
-  <td><?= htmlspecialchars($r['to_warehouse'] ?? '—') ?></td>
+  <td><?= htmlspecialchars($r['to_warehouse'] ?? $r['reference_type']) ?></td>
   <td class="text-center <?= $r['quantity']>=0?'qty-pos':'qty-neg' ?>">
     <?= $r['quantity']>0?'+':'' ?><?= $r['quantity'] ?>
   </td>
@@ -150,7 +154,7 @@ $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd);
     <?php if ($r['reference_type']==='client'): ?>
       Customer: <?= htmlspecialchars($r['client_name'] ?? 'ID '.$r['reference_id']) ?>
     <?php elseif ($r['reference_type']==='retailer'): ?>
-      Retailer ID: <?= (int)$r['reference_id'] ?>
+      Retailer/Vendor: <?= $r['retailer_name'] ?>
     <?php else: ?> — <?php endif; ?>
   </td>
   <td><?= htmlspecialchars($r['note'] ?? '') ?></td>

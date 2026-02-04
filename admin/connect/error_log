@@ -17,3 +17,8 @@ Stack trace:
 #1 /home6/atriprints/vksolarenergy.com/admin/connect/login_process.php(57): verifyLogin()
 #2 {main}
   thrown in /home6/atriprints/vksolarenergy.com/admin/connect/login_process.php on line 9
+[17-Jan-2026 15:26:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'abcoedtech_vksolar.warehouses_employees' doesn't exist in /home9/abcoedtech/vksolarenergy.com/admin/connect/login_process.php:92
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/connect/login_process.php(92): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/connect/login_process.php on line 92

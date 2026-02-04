@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../connect/auth_middleware.php';
+require_once __DIR__ . '/../../connect/auth_middleware.php';
 
 // admin/documentmanagement/declaration/declaration_list.php
 if (session_status() === PHP_SESSION_NONE) session_start();

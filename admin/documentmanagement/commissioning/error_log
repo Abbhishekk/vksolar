@@ -396,3 +396,18 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 3
+[03-Feb-2026 03:41:21 UTC] PHP Warning:  require_once(/home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 2
+[03-Feb-2026 03:41:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 2
+[03-Feb-2026 03:43:57 UTC] PHP Warning:  require_once(/home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 2
+[03-Feb-2026 03:43:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/index.php on line 2
+[03-Feb-2026 03:45:30 UTC] PHP Warning:  require_once(/home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php): Failed to open stream: No such file or directory in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 3
+[03-Feb-2026 03:45:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/../connect/auth_middleware.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php:3
+Stack trace:
+#0 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/commissioning/commissioning_list.php on line 3

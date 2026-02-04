@@ -54,8 +54,8 @@ function adjustStock(
     try {
         /* 1️⃣ Update warehouse_stock */
         $chk = $conn->prepare("
-            SELECT quantity 
-            FROM warehouse_stock 
+            SELECT quantity
+            FROM warehouse_stock
             WHERE product_id = ? AND warehouse_id = ?
             LIMIT 1
         ");
@@ -77,10 +77,10 @@ function adjustStock(
             $upd->execute();
             $upd->close();
         } else {
-            // Create new row if doesn't exist
             $newQty = max(0, $qty_change);
             $ins = $conn->prepare("
-                INSERT INTO warehouse_stock (product_id, warehouse_id, quantity, reserved, updated_at)
+                INSERT INTO warehouse_stock
+                (product_id, warehouse_id, quantity, reserved, updated_at)
                 VALUES (?, ?, ?, 0, NOW())
             ");
             $ins->bind_param('iii', $product_id, $warehouse_id, $newQty);
@@ -107,7 +107,7 @@ function adjustStock(
         ");
 
         $mov->bind_param(
-            'siidssis',
+            'siidsisi',
             $type,
             $product_id,
             $warehouse_id,
@@ -127,6 +127,7 @@ function adjustStock(
         return false;
     }
 }
+
 
 
 

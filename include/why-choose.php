@@ -18,7 +18,7 @@
                     <div class="choose-icon mb-3">
                         <i class="fa fa-users"></i>
                     </div>
-                    <h2 class="counter" data-target="500">0</h2>
+                    <h2 class="counter" data-target="500">458</h2>
                     <h5>Happy Customers</h5>
                     <p>Satisfied customers across Nagpur who chose solar energy solutions</p>
                 </div>
@@ -30,7 +30,7 @@
                     <div class="choose-icon mb-3">
                         <i class="fa fa-check"></i>
                     </div>
-                    <h2 class="counter" data-target="750">0</h2>
+                    <h2 class="counter" data-target="750">458</h2>
                     <h5>Projects Done</h5>
                     <p>Successfully completed solar installations with government schemes</p>
                 </div>

@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title">Step 13: PM Suryaghar Redeem Status</h5>
+        <h5 class="card-title text-white">Step 13: PM Suryaghar Redeem Status</h5>
     </div>
     <div class="card-body">
         <form id="step13Form" enctype="multipart/form-data">

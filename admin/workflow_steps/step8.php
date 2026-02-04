@@ -40,9 +40,12 @@ if (!empty($_SESSION['workflow_success'])) {
     unset($_SESSION['workflow_success']);
 }
 ?>
-
-<!-- Step 8: Bank Loan Details (matches earlier UI) -->
-<form id="step8Form" action="/admin/workflow_steps/save_step8" method="post" onsubmit="return validateStep8()" novalidate>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 8: Bank Loan</h5>
+    </div>
+    <div class="card-body">
+        <form id="step8Form" action="/admin/workflow_steps/save_step8" method="post" onsubmit="return validateStep8()" novalidate>
   <input type="hidden" name="client_id" value="<?= htmlspecialchars($client['id']) ?>">
 
   <div class="mb-3">
@@ -117,6 +120,10 @@ if (!empty($_SESSION['workflow_success'])) {
     </div>
   </div>
 </form>
+
+    </div>
+</div>
+<!-- Step 8: Bank Loan Details (matches earlier UI) -->
 
 <script>
 // Initialize fragment: if global toggler exists, call it

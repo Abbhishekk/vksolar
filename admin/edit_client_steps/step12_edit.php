@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title">Step 12: Meter Installation Photo</h5>
+        <h5 class="card-title text-white">Step 12: Meter Installation Photo</h5>
     </div>
     <div class="card-body">
         <form id="step12Form" enctype="multipart/form-data">

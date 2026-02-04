@@ -76,129 +76,136 @@ if (!empty($_SESSION['workflow_success'])) {
 ?>
 
 <!-- Step 10 fragment -->
-<form id="step10Form" action="/admin/workflow_steps/save_step10" method="post" enctype="multipart/form-data" onsubmit="return validateStep10()" novalidate>
-  <input type="hidden" name="client_id" value="<?= htmlspecialchars($client['id']) ?>">
-  <!-- hidden CSV backup for compatibility -->
-  <?php
-    // create a CSV of existing panels for prefill convenience (if any)
-    $existing_csv = '';
-    if (!empty($existingPanels)) {
-        $parts = [];
-        foreach ($existingPanels as $num => $sn) $parts[] = $sn;
-        $existing_csv = implode(',', $parts);
-    }
-  ?>
-  <input type="hidden" id="existing_panel_serials" value="<?= htmlspecialchars($existing_csv) ?>">
-
-  <div class="mb-3">
-    <label class="form-label fw-bold">Client</label>
-    <div class="user-info p-2"><?= htmlspecialchars($client['name']) ?> (ID: <?= htmlspecialchars($client['id']) ?>)</div>
-  </div>
-
-  <div class="row">
-    <div class="col-12 mb-4">
-      <h6 class="border-bottom pb-2">Required Documents</h6>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 10:  PM Suryaghar Document Upload</h5>
     </div>
-
-    <?php foreach ($requiredDocs as $input): 
-        $label = ucwords(str_replace(['_','card'],' ', $input)); ?>
-      <div class="col-md-6 mb-3">
-        <label class="form-label"><?= htmlspecialchars($label) ?> <span class="text-danger">*</span></label>
-        <input type="file" class="form-control" name="<?= htmlspecialchars($input) ?>" accept=".pdf,.jpg,.jpeg,.png" <?= !empty($existingDocs[$docMap[$input]]) ? '' : 'required' ?>>
-        <small class="text-muted">PDF, JPG, PNG (Max 5MB)</small>
-        <?php if (!empty($existingDocs[$docMap[$input]])): ?>
-          <div class="small mt-1">Current: <?= htmlspecialchars($existingDocs[$docMap[$input]]['file_name']) ?> 
-            <?php if (!empty($existingDocs[$docMap[$input]]['file_path'])): ?>
-              — <a href="<?= htmlspecialchars($existingDocs[$docMap[$input]]['file_path']) ?>" target="_blank">View</a>
-            <?php endif; ?>
+    <div class="card-body">
+        <form id="step10Form" action="/admin/workflow_steps/save_step10" method="post" enctype="multipart/form-data" onsubmit="return validateStep10()" novalidate>
+          <input type="hidden" name="client_id" value="<?= htmlspecialchars($client['id']) ?>">
+          <!-- hidden CSV backup for compatibility -->
+          <?php
+            // create a CSV of existing panels for prefill convenience (if any)
+            $existing_csv = '';
+            if (!empty($existingPanels)) {
+                $parts = [];
+                foreach ($existingPanels as $num => $sn) $parts[] = $sn;
+                $existing_csv = implode(',', $parts);
+            }
+          ?>
+          <input type="hidden" id="existing_panel_serials" value="<?= htmlspecialchars($existing_csv) ?>">
+        
+          <div class="mb-3">
+            <label class="form-label fw-bold">Client</label>
+            <div class="user-info p-2"><?= htmlspecialchars($client['name']) ?> (ID: <?= htmlspecialchars($client['id']) ?>)</div>
           </div>
-        <?php endif; ?>
-      </div>
-    <?php endforeach; ?>
-
-  </div>
-
-  <div class="row mt-4">
-    <div class="col-12 mb-3"><h6 class="border-bottom pb-2">Additional Documents (Optional)</h6></div>
-    <?php foreach ($optionalDocs as $input):
-        $label = ucwords(str_replace('_',' ', $input)); ?>
-      <div class="col-md-6 mb-3">
-        <label class="form-label"><?= htmlspecialchars($label) ?></label>
-        <input type="file" class="form-control" name="<?= htmlspecialchars($input) ?>" accept=".pdf,.jpg,.jpeg,.png">
-        <small class="text-muted">PDF, JPG, PNG (Max 5MB)</small>
-        <?php if (!empty($existingDocs[$docMap[$input]])): ?>
-          <div class="small mt-1">Current: <?= htmlspecialchars($existingDocs[$docMap[$input]]['file_name']) ?> 
-            <?php if (!empty($existingDocs[$docMap[$input]]['file_path'])): ?>
-              — <a href="<?= htmlspecialchars($existingDocs[$docMap[$input]]['file_path']) ?>" target="_blank">View</a>
-            <?php endif; ?>
+        
+          <div class="row">
+            <div class="col-12 mb-4">
+              <h6 class="border-bottom pb-2">Required Documents</h6>
+            </div>
+        
+            <?php foreach ($requiredDocs as $input): 
+                $label = ucwords(str_replace(['_','card'],' ', $input)); ?>
+              <div class="col-md-6 mb-3">
+                <label class="form-label"><?= htmlspecialchars($label) ?> <span class="text-danger">*</span></label>
+                <input type="file" class="form-control" name="<?= htmlspecialchars($input) ?>" accept=".pdf,.jpg,.jpeg,.png" <?= !empty($existingDocs[$docMap[$input]]) ? '' : 'required' ?>>
+                <small class="text-muted">PDF, JPG, PNG (Max 5MB)</small>
+                <?php if (!empty($existingDocs[$docMap[$input]])): ?>
+                  <div class="small mt-1">Current: <?= htmlspecialchars($existingDocs[$docMap[$input]]['file_name']) ?> 
+                    <?php if (!empty($existingDocs[$docMap[$input]]['file_path'])): ?>
+                      — <a href="<?= htmlspecialchars($existingDocs[$docMap[$input]]['file_path']) ?>" target="_blank">View</a>
+                    <?php endif; ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+            <?php endforeach; ?>
+        
           </div>
-        <?php endif; ?>
-      </div>
-    <?php endforeach; ?>
-  </div>
-
-  <div class="row mt-4">
-    <div class="col-12 mb-3"><h6 class="border-bottom pb-2">System Details <span class="text-danger">*</span></h6></div>
-
-    <div class="col-md-4 mb-3">
-      <label class="form-label">Inverter Manufacturing Company <span class="text-danger">*</span></label>
-      <input type="text" class="form-control" name="inverter_company_name" value="<?= htmlspecialchars($client['inverter_company_name'] ?? '') ?>" required>
+        
+          <div class="row mt-4">
+            <div class="col-12 mb-3"><h6 class="border-bottom pb-2">Additional Documents (Optional)</h6></div>
+            <?php foreach ($optionalDocs as $input):
+                $label = ucwords(str_replace('_',' ', $input)); ?>
+              <div class="col-md-6 mb-3">
+                <label class="form-label"><?= htmlspecialchars($label) ?></label>
+                <input type="file" class="form-control" name="<?= htmlspecialchars($input) ?>" accept=".pdf,.jpg,.jpeg,.png">
+                <small class="text-muted">PDF, JPG, PNG (Max 5MB)</small>
+                <?php if (!empty($existingDocs[$docMap[$input]])): ?>
+                  <div class="small mt-1">Current: <?= htmlspecialchars($existingDocs[$docMap[$input]]['file_name']) ?> 
+                    <?php if (!empty($existingDocs[$docMap[$input]]['file_path'])): ?>
+                      — <a href="<?= htmlspecialchars($existingDocs[$docMap[$input]]['file_path']) ?>" target="_blank">View</a>
+                    <?php endif; ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+            <?php endforeach; ?>
+          </div>
+        
+          <div class="row mt-4">
+            <div class="col-12 mb-3"><h6 class="border-bottom pb-2">System Details <span class="text-danger">*</span></h6></div>
+        
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Inverter Manufacturing Company <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="inverter_company_name" value="<?= htmlspecialchars($client['inverter_company_name'] ?? '') ?>" required>
+            </div>
+        
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Inverter Serial Number <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="inverter_serial_number" value="<?= htmlspecialchars($client['inverter_serial_number'] ?? '') ?>" required>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Inverter Capacity <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="inverter_capacity" value="<?= htmlspecialchars($client['inverter_capacity'] ?? '') ?>" required>
+            </div>
+        
+            <div class="col-md-4 mb-3">
+              <label class="form-label">DCR Certificate Number <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="dcr_certificate_number" value="<?= htmlspecialchars($client['dcr_certificate_number'] ?? '') ?>" required>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Panel module company name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="panel_company_name" value="<?= htmlspecialchars($client['company_name'] ?? '') ?>" required>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Panel Wattage <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="Wattage" value="<?= htmlspecialchars($client['wattage'] ?? '') ?>" required>
+            </div>
+        
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of Solar Panels <span class="text-danger">*</span></label>
+              <input type="number" class="form-control" name="number_of_panels" id="numberOfPanels" value="<?= htmlspecialchars($client['number_of_panels'] ?? '') ?>" min="1" max="50" required>
+            </div>
+          </div>
+        
+          <div class="row mt-3">
+            <div class="col-12 mb-3">
+              <button type="button" id="generatePanelBtn" class="btn btn-outline-primary" onclick="window.generatePanelFields && window.generatePanelFields()">
+                <i class="bi bi-plus-circle"></i> Generate Panel Serial Number Fields
+              </button>
+            </div>
+        
+            <div id="panelSerialNumbers" class="col-12">
+              <!-- dynamic fields will be generated here by global generatePanelFields() -->
+            </div>
+          </div>
+        
+          <div class="form-navigation mt-3">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="/admin/workflow.php?step=9&client_id=<?= htmlspecialchars($client['id']) ?>" class="btn btn-secondary">← Previous Step</a>
+              </div>
+              <div class="col-md-6 text-end">
+                <button type="submit" class="btn btn-primary">Save & Continue →</button>
+              </div>
+            </div>
+          </div>
+        </form>
     </div>
-
-    <div class="col-md-4 mb-3">
-      <label class="form-label">Inverter Serial Number <span class="text-danger">*</span></label>
-      <input type="text" class="form-control" name="inverter_serial_number" value="<?= htmlspecialchars($client['inverter_serial_number'] ?? '') ?>" required>
-    </div>
-    
-    <div class="col-md-4 mb-3">
-      <label class="form-label">Inverter Capacity <span class="text-danger">*</span></label>
-      <input type="text" class="form-control" name="inverter_capacity" value="<?= htmlspecialchars($client['inverter_capacity'] ?? '') ?>" required>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <label class="form-label">DCR Certificate Number <span class="text-danger">*</span></label>
-      <input type="text" class="form-control" name="dcr_certificate_number" value="<?= htmlspecialchars($client['dcr_certificate_number'] ?? '') ?>" required>
-    </div>
-    
-    <div class="col-md-4 mb-3">
-      <label class="form-label">Panel module company name <span class="text-danger">*</span></label>
-      <input type="text" class="form-control" name="panel_company_name" value="<?= htmlspecialchars($client['company_name'] ?? '') ?>" required>
-    </div>
-    
-    <div class="col-md-4 mb-3">
-      <label class="form-label">Panel Wattage <span class="text-danger">*</span></label>
-      <input type="text" class="form-control" name="Wattage" value="<?= htmlspecialchars($client['wattage'] ?? '') ?>" required>
-    </div>
-
-    <div class="col-md-6 mb-3">
-      <label class="form-label">Number of Solar Panels <span class="text-danger">*</span></label>
-      <input type="number" class="form-control" name="number_of_panels" id="numberOfPanels" value="<?= htmlspecialchars($client['number_of_panels'] ?? '') ?>" min="1" max="50" required>
-    </div>
-  </div>
-
-  <div class="row mt-3">
-    <div class="col-12 mb-3">
-      <button type="button" id="generatePanelBtn" class="btn btn-outline-primary" onclick="window.generatePanelFields && window.generatePanelFields()">
-        <i class="bi bi-plus-circle"></i> Generate Panel Serial Number Fields
-      </button>
-    </div>
-
-    <div id="panelSerialNumbers" class="col-12">
-      <!-- dynamic fields will be generated here by global generatePanelFields() -->
-    </div>
-  </div>
-
-  <div class="form-navigation mt-3">
-    <div class="row">
-      <div class="col-md-6">
-        <a href="/admin/workflow.php?step=9&client_id=<?= htmlspecialchars($client['id']) ?>" class="btn btn-secondary">← Previous Step</a>
-      </div>
-      <div class="col-md-6 text-end">
-        <button type="submit" class="btn btn-primary">Save & Continue →</button>
-      </div>
-    </div>
-  </div>
-</form>
+</div>
 
 <script>
 // Provide global helpers so main loader can call window.initStep10() after the fragment is injected.

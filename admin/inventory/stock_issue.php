@@ -9,7 +9,6 @@ require_once __DIR__ . '/inventory_functions.php';
 $auth->requirePermission('inventory_management', 'create');
 
 $title = 'stock_issue';
-
 /* ================= MASTER DATA ================= */
 
 // Products
@@ -26,11 +25,19 @@ $warehouses = $conn->query("
     ORDER BY name
 ")->fetch_all(MYSQLI_ASSOC);
 
-// Customers (clients)
+// Customers
 $clients = $conn->query("
     SELECT id, name 
     FROM clients 
     ORDER BY name
+")->fetch_all(MYSQLI_ASSOC);
+
+// Retailers
+$retailers = $conn->query("
+    SELECT id, company_name 
+    FROM vendors_retailers 
+    WHERE type = 'retailer'
+    ORDER BY company_name
 ")->fetch_all(MYSQLI_ASSOC);
 
 /* ================= HANDLE SUBMIT ================= */
@@ -41,14 +48,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $warehouse_id = (int)($_POST['warehouse_id'] ?? 0);
     $issue_type   = $_POST['issue_type'] ?? ''; // client | retailer
     $reference_id = (int)($_POST['reference_id'] ?? 0);
+    $reference_client_id = (int)($_POST['reference_client_id'] ?? 0);
+    if($reference_id == 0){
+        $reference_id = $reference_client_id;
+    }
     $quantity     = (int)($_POST['quantity'] ?? 0);
     $note         = trim($_POST['note'] ?? '');
     $serials_raw  = trim($_POST['serials'] ?? '');
     $user_id      = $_SESSION['user_id'] ?? null;
-
+    print_r($_POST);
     if (!$product_id || !$warehouse_id || !$reference_id || $quantity <= 0) {
         $_SESSION['inv_error'] = 'Invalid input.';
-        header('Location: stock_issue.php'); exit;
+        // header('Location: stock_issue.php'); 
+        exit;
     }
 
     if (!in_array($issue_type, ['client','retailer'], true)) {
@@ -63,16 +75,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: stock_issue.php'); exit;
     }
 
-    /* DECREASE STOCK (warehouse_stock) */
-    adjustStock(
-        $conn,
-        $product_id,
-        $warehouse_id,
-        -$quantity,
-        'consume',
-        $note,
-        $user_id
-    );
+   adjustStock(
+    $conn,
+    $product_id,
+    $warehouse_id,
+    -$quantity,
+    'consume',
+    $note,
+    $user_id,
+    $issue_type,   // client | retailer
+    $reference_id  // client_id or retailer_id
+);
+
 
    
 
@@ -177,23 +191,35 @@ $cwd = getcwd(); chdir(__DIR__ . '/..'); include 'include/navbar.php'; chdir($cw
 
   <div class="col-md-4">
     <label class="form-label">Issue To</label>
-    <select name="issue_type" class="form-select" required>
-      <option value="">Select</option>
-      <option value="client">Customer</option>
-      <option value="retailer">Retailer</option>
-    </select>
+   <select name="issue_type" id="issue_type" class="form-select" required>
+  <option value="">Select</option>
+  <option value="client">Customer (B2C)</option>
+  <option value="retailer">Retailer (B2B)</option>
+</select>
+
   </div>
 </div>
 
 <div class="row mb-3">
   <div class="col-md-6">
     <label class="form-label">Customer / Retailer</label>
-    <select name="reference_id" class="form-select" required>
-      <option value="">Select</option>
+
+    <!-- CUSTOMER SELECT -->
+    <select name="reference_client_id" id="client_select" class="form-select" style="display:none;">
+      <option value="">Select Customer</option>
       <?php foreach ($clients as $c): ?>
         <option value="<?= $c['id'] ?>"><?= htmlspecialchars($c['name']) ?></option>
       <?php endforeach; ?>
     </select>
+
+    <!-- RETAILER SELECT -->
+    <select name="reference_id" id="retailer_select" class="form-select" style="display:none;">
+      <option value="">Select Retailer</option>
+      <?php foreach ($retailers as $r): ?>
+        <option value="<?= $r['id'] ?>"><?= htmlspecialchars($r['company_name']) ?></option>
+      <?php endforeach; ?>
+    </select>
+
   </div>
 
   <div class="col-md-3">
@@ -247,6 +273,30 @@ productSel.addEventListener('change', () => {
 });
 
 warehouseSel.addEventListener('change', loadStock);
+
+</script>
+<script>
+const issueTypeSel   = document.getElementById('issue_type');
+const clientSelect   = document.getElementById('client_select');
+const retailerSelect = document.getElementById('retailer_select');
+
+issueTypeSel.addEventListener('change', () => {
+  clientSelect.style.display = 'none';
+  retailerSelect.style.display = 'none';
+
+  clientSelect.removeAttribute('required');
+  retailerSelect.removeAttribute('required');
+
+  if (issueTypeSel.value === 'client') {
+    clientSelect.style.display = 'block';
+    clientSelect.setAttribute('required','required');
+  }
+
+  if (issueTypeSel.value === 'retailer') {
+    retailerSelect.style.display = 'block';
+    retailerSelect.setAttribute('required','required');
+  }
+});
 </script>
 
 </body>

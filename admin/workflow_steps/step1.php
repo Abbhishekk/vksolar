@@ -1,5 +1,10 @@
-<h4>Step 1: Basic Details</h4>
-<form id="step1Form" action="workflow_steps/save_step1" method="POST" novalidate enctype="multipart/form-data">
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 1: Basic Details</h5>
+    </div>
+    <div class="card-body">
+        <form id="step1Form" action="workflow_steps/save_step1" method="POST" novalidate enctype="multipart/form-data">
         <input type="hidden" name="action" value="save_step_data">
         <input type="hidden" name="step" value="1">
         <!-- inside step1.php form, keep existing inputs above -->
@@ -25,3 +30,5 @@
         </div>
 
 </form>
+    </div>
+</div>

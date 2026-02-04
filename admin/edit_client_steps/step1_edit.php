@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title">Step 1: Basic Details</h5>
+        <h5 class="card-title text-white">Step 1: Basic Details</h5>
     </div>
     <div class="card-body">
         <form id="step1Form" method="POST" enctype="multipart/form-data">

@@ -52,7 +52,7 @@ if (!empty($_SESSION['workflow_success'])) {
 
 <div class="card">
   <div class="card-header">
-    <h5 class="card-title">Step 12: Meter Installation Photo</h5>
+    <h5 class="card-title text-white">Step 12: Meter Installation Photo</h5>
   </div>
   <div class="card-body">
     <form id="step12Form" action="/admin/workflow_steps/save_step12" method="post" enctype="multipart/form-data" onsubmit="return validateStep12()" novalidate>

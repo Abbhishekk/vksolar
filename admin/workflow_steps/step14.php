@@ -34,10 +34,13 @@ if (!empty($_SESSION['workflow_success'])) {
     unset($_SESSION['workflow_success']);
 }
 ?>
-
-<form action="/admin/workflow_steps/save_step14" method="POST">
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title text-white">Step 14: Reference</h5>
+  </div>
+  <div class="card-body">
+    <form action="/admin/workflow_steps/save_step14" method="POST">
     <input type="hidden" name="client_id" value="<?= htmlspecialchars($client_data['id']) ?>">
-
     <div class="mb-3">
         <label class="form-label fw-bold">Client</label>
         <div class="user-info p-2">
@@ -72,3 +75,5 @@ if (!empty($_SESSION['workflow_success'])) {
         </div>
     </div>
 </form>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="card-header">
+    <div class="card-header text-white">
         <h5 class="card-title">Step 10: PM SuryaGhar Document Upload</h5>
         <p class="text-muted mb-0">Maximum file size: 5MB per document | Allowed formats: PDF, JPG, JPEG, PNG</p>
     </div>

@@ -83,72 +83,72 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
       </li>
       <?php endif; ?>
 
-      <!-- USER MANAGEMENT -->
-      <?php if ($auth->checkPermission('user_management','view')): ?>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#userCollapse">
-          <i class="bi bi-people"></i>
-          <span class="nav-link-text">User Management</span>
-          <i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <div class="collapse" id="userCollapse">
-          <ul class="nav flex-column ps-4">
-
-            <li class="nav-item">
-              <a class="nav-link <?php if($title=='view_users') echo 'active'; ?>"
-                 href="/admin/view_users">
-                 View Users
-              </a>
-            </li>
-
-            <?php if ($auth->checkPermission('user_management','create')): ?>
-            <li class="nav-item">
-              <a class="nav-link <?php if($title=='add_user') echo 'active'; ?>"
-                 href="/admin/add_user">
-                 Add User
-              </a>
-            </li>
-            <?php endif; ?>
-
-            <?php if ($auth->checkPermission('user_management','edit')): ?>
-            <li class="nav-item">
-              <a class="nav-link <?php if($title=='view_permissions') echo 'active'; ?>"
-                 href="/admin/view_permissions">
-                 User Permissions
-              </a>
-            </li>
-            <?php endif; ?>
-
-          </ul>
-        </div>
-      </li>
-      <?php endif; ?>
-
       <!-- MY PROFILE -->
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#profileCollapse">
-          <i class="bi bi-person"></i>
-          <span class="nav-link-text">My Profile</span>
-          <i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <div class="collapse" id="profileCollapse">
-          <ul class="nav flex-column ps-4">
-            <li class="nav-item">
-              <a class="nav-link <?php if($title=='view_profile') echo 'active'; ?>"
-                 href="/admin/view_profile">
-                View Profile
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?php if($title=='edit_profile') echo 'active'; ?>"
+      <!--<li class="nav-item">-->
+      <!--  <a class="nav-link" data-bs-toggle="collapse" href="#profileCollapse">-->
+      <!--    <i class="bi bi-person"></i>-->
+      <!--    <span class="nav-link-text">My Profile</span>-->
+      <!--    <i class="bi bi-chevron-down ms-auto"></i>-->
+      <!--  </a>-->
+      <!--  <div class="collapse" id="profileCollapse">-->
+      <!--    <ul class="nav flex-column ps-4">-->
+      <!--      <li class="nav-item">-->
+             <!-- <a class="nav-link <?php// if($title=='view_profile') echo 'active'; ?>"
+                 href="/admin/view_profile">-->
+            <!--    View Profile-->
+            <!--  </a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+             <!-- <a class="nav-link <?php// if($title=='edit_profile') echo 'active'; ?>"
                  href="/admin/edit_profile">
-                Edit Profile
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
+                Edit Profile-->
+      <!--        </a>-->
+      <!--      </li>-->
+      <!--    </ul>-->
+      <!--  </div>-->
+      <!--</li>-->
       
+      <!-- USER MANAGEMENT -->
+      <!--<?php //if ($auth->checkPermission('user_management','view')): ?>-->
+      <!--<li class="nav-item">-->
+      <!--  <a class="nav-link" data-bs-toggle="collapse" href="#userCollapse">-->
+      <!--    <i class="bi bi-people"></i>-->
+      <!--    <span class="nav-link-text">User Management</span>-->
+      <!--    <i class="bi bi-chevron-down ms-auto"></i>-->
+      <!--  </a>-->
+      <!--  <div class="collapse" id="userCollapse">-->
+      <!--    <ul class="nav flex-column ps-4">-->
+
+      <!--      <li class="nav-item">-->
+      <!--        <a class="nav-link <?php //if($title=='view_users') echo 'active'; ?>"-->
+      <!--           href="/admin/view_users">-->
+      <!--           View Users-->
+      <!--        </a>-->
+      <!--      </li>-->
+
+      <!--      <?php //if ($auth->checkPermission('user_management','create')): ?>-->
+      <!--      <li class="nav-item">-->
+      <!--        <a class="nav-link <?php //if($title=='add_user') echo 'active'; ?>"-->
+      <!--           href="/admin/add_user">-->
+      <!--           Add User-->
+      <!--        </a>-->
+      <!--      </li>-->
+      <!--      <?php //endif; ?>-->
+
+      <!--      <?php //if ($auth->checkPermission('user_management','edit')): ?>-->
+      <!--      <li class="nav-item">-->
+      <!--        <a class="nav-link <?php //if($title=='view_permissions') echo 'active'; ?>"-->
+      <!--           href="/admin/view_permissions">-->
+      <!--           User Permissions-->
+      <!--        </a>-->
+      <!--      </li>-->
+      <!--      <?php //endif; ?>-->
+
+      <!--    </ul>-->
+      <!--  </div>-->
+      <!--</li>-->
+      <!--<?php //endif; ?>-->
+
        <!--Bank Details -->
       <?php if ($auth->checkPermission('bank_details_management','view')): ?>
       <li class="nav-item">
@@ -176,37 +176,38 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
           </ul>
         </div>
       </li>
-      <?php endif; ?>
+      <?php endif; ?>  
+      
       
       <!-- EMPLOYEE MANAGEMENT -->
-      <?php if ($auth->checkPermission('employee_management', 'view')): ?>
-      <li class="nav-item ">
-        <a
-          class="nav-link"
-          data-bs-toggle="collapse"
-          href="#employeeCollapse"
-          role="button"
-          aria-expanded="false"
-          aria-controls="employeeCollapse"
-        >
-          <i class="bi bi-file-text"></i>
-          <span class="nav-link-text"> Employee Management</span>
-          <i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <div class="collapse" id="employeeCollapse">
-          <ul class="nav flex-column ps-4">
-           <?php if ($auth->checkPermission('employee_management','create')): ?>
-            <li class="nav-item">
-                <a class="nav-link" href="/admin/add_employee.php">Add Employee</a>
-            </li>
-            <?php endif; ?>
-            <li class="nav-item">
-              <a class="nav-link" href="/admin/view_employees.php">View Employees</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <?php endif; ?>
+      <!--<?php //if ($auth->checkPermission('employee_management', 'view')): ?>-->
+      <!--<li class="nav-item ">-->
+      <!--  <a-->
+      <!--    class="nav-link"-->
+      <!--    data-bs-toggle="collapse"-->
+      <!--    href="#employeeCollapse"-->
+      <!--    role="button"-->
+      <!--    aria-expanded="false"-->
+      <!--    aria-controls="employeeCollapse"-->
+      <!--  >-->
+      <!--    <i class="bi bi-file-text"></i>-->
+      <!--    <span class="nav-link-text"> Employee Management</span>-->
+      <!--    <i class="bi bi-chevron-down ms-auto"></i>-->
+      <!--  </a>-->
+      <!--  <div class="collapse" id="employeeCollapse">-->
+      <!--    <ul class="nav flex-column ps-4">-->
+      <!--     <?php //if ($auth->checkPermission('employee_management','create')): ?>-->
+      <!--      <li class="nav-item">-->
+      <!--          <a class="nav-link" href="/admin/add_employee.php">Add Employee</a>-->
+      <!--      </li>-->
+      <!--      <?php //endif; ?>-->
+      <!--      <li class="nav-item">-->
+      <!--        <a class="nav-link" href="/admin/view_employees.php">View Employees</a>-->
+      <!--      </li>-->
+      <!--    </ul>-->
+      <!--  </div>-->
+      <!--</li>-->
+      <!--<?php //endif; ?>-->
       
       <!-- CUSTOMER MANAGEMENT -->
       <?php if ($auth->checkPermission('customer_management', 'view')): ?>
@@ -249,7 +250,33 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
         </div>
       </li>
       <?php endif; ?>
-
+  
+   <!-- PARTNER MANAGEMENT -->
+   <?php if ($auth->checkPermission('partner_management', 'view')): ?>
+          <li class="nav-item">
+        <a
+          class="nav-link"
+          data-bs-toggle="collapse"
+          href="#partnerCollapse"
+          role="button"
+          aria-expanded="false"
+          aria-controls="quotationCollapse"
+        >
+          <i class="bi bi-people"></i>
+          <span class="nav-link-text"> Vendor / Retailer</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        
+          <div class="collapse" id="partnerCollapse">
+            <ul class="nav flex-column ps-4">
+              <li><a class="nav-link" href="/admin/partners/partners">View List</a></li>
+              <li><a class="nav-link" href="/admin/partners/partner_create.php">Add New</a></li>
+            </ul>
+          </div>
+        </li>
+    <?php endif; ?>
+    
+    
       <!-- QUOTATION MANAGEMENT -->
       <?php if ($auth->checkPermission('quotation_management', 'view')): ?>
       <li class="nav-item ">
@@ -511,28 +538,79 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
         
           <div class="collapse" id="invoiceCollapse">
             <ul class="nav flex-column ps-4">
-        
-              <?php if ($auth->checkPermission('invoice_management','create')): ?>
-              <li class="nav-item">
-                <a class="nav-link" href="/admin/invoice/invoice_create.php">
-                  Create Invoice
-                </a>
-              </li>
-              <?php endif; ?>
-        
-              <li class="nav-item">
-                <a class="nav-link" href="/admin/invoice/invoices.php">
-                  View Invoices
-                </a>
-              </li>
-              
-              <li class="nav-item">
+                <!-- SELL MANAGEMENT -->
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="collapse" href="#invoicesellCollapse">
+                    <i class="bi bi-cart-plus"></i>
+                    Sale Management
+                    <i class="bi bi-chevron-down ms-auto"></i>
+                  </a>
+                
+                  <div class="collapse" id="invoicesellCollapse">
+                    <ul class="nav flex-column ps-4">
+                
+                      <?php if ($auth->checkPermission('invoice_management','create')): ?>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/admin/invoice/invoice_create.php">
+                            Create Sale Invoice
+                        </a>
+                      </li>
+                      <?php endif; ?>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/admin/invoice/invoices.php">
+                          View Invoices
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <!-- PURCHASE MANAGEMENT -->
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="collapse" href="#invoicePurchaseCollapse">
+                    <i class="bi bi-cart-plus"></i>
+                    Purchase Management
+                    <i class="bi bi-chevron-down ms-auto"></i>
+                  </a>
+                
+                  <div class="collapse" id="invoicePurchaseCollapse">
+                    <ul class="nav flex-column ps-4">
+                
+                      <?php if ($auth->checkPermission('invoice_management','create')): ?>
+                      <li class="nav-item">
+                        <a class="nav-link <?php if($title=='purchase_invoice_create') echo 'active'; ?>"
+                           href="/admin/inventory/purchase_invoice_create.php">
+                          Create Purchase Invoice
+                        </a>
+                      </li>
+                      <?php endif; ?>
+                
+                      <li class="nav-item">
+                        <a class="nav-link <?php if($title=='purchase_invoice_list') echo 'active'; ?>"
+                           href="/admin/inventory/purchase_invoice_list.php">
+                          Purchase Invoice List
+                        </a>
+                      </li>
+                
+                      <?php if ($current_role === 'warehouse_staff'): ?>
+                      <li class="nav-item">
+                        <a class="nav-link <?php if($title=='purchase_requests') echo 'active'; ?>"
+                           href="/admin/inventory/purchase_requests.php">
+                          Pending Purchase Approvals
+                        </a>
+                      </li>
+                      <?php endif; ?>
+                
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="/admin/invoice/generate_receipt_voucher.php">
                   Receipt Voucher
                 </a>
               </li>
-        
             </ul>
+            
           </div>
         </li>
         <?php endif; ?>

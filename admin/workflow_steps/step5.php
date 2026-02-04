@@ -39,9 +39,12 @@ if (!empty($_SESSION['workflow_success'])) {
     unset($_SESSION['workflow_success']);
 }
 ?>
-
-<!-- Step 5 form (Name Change Require) - matches Step 2/3/4 style -->
-<form id="step5Form" action="/admin/workflow_steps/save_step5" method="post" novalidate>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 5. Name Change Require</h5>
+    </div>
+    <div class="card-body">
+        <form id="step5Form" action="/admin/workflow_steps/save_step5" method="post" novalidate>
   <input type="hidden" name="client_id" id="client_id" value="<?= htmlspecialchars($client['id']) ?>">
 
   <div class="mb-3">
@@ -79,6 +82,10 @@ if (!empty($_SESSION['workflow_success'])) {
     </div>
   </div>
 </form>
+    </div>
+</div>
+<!-- Step 5 form (Name Change Require) - matches Step 2/3/4 style -->
+
 
 <script>
 // Toggle application field visibility

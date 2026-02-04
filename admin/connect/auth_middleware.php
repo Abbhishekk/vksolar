@@ -44,6 +44,14 @@ class AuthMiddleware {
             $this->redirectToUnauthorized();
         }
     }
+    public function checkAnyRole($allowedRoles) {
+        $this->requireAuth();
+        
+        if (!isset($_SESSION['role']) || !in_array($_SESSION['role'], $allowedRoles)) {
+            return false;
+        }
+        return true;
+    }
     
     public function checkPermission($module, $action = 'view') {
         $this->requireAuth();

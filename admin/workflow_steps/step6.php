@@ -36,9 +36,12 @@ if (!empty($_SESSION['workflow_success'])) {
     unset($_SESSION['workflow_success']);
 }
 ?>
-
-<!-- Step 6 form (PM Suryaghar Registration) -->
-<form id="step6Form" action="/admin/workflow_steps/save_step6" method="post" novalidate>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 6. PM Suryaghar Portal Registration</h5>
+    </div>
+    <div class="card-body">
+        <form id="step6Form" action="/admin/workflow_steps/save_step6" method="post" novalidate>
   <input type="hidden" name="client_id" id="client_id" value="<?= htmlspecialchars($client['id']) ?>">
 
   <div class="mb-3">
@@ -81,6 +84,10 @@ if (!empty($_SESSION['workflow_success'])) {
     </div>
   </div>
 </form>
+    </div>
+</div>
+<!-- Step 6 form (PM Suryaghar Registration) -->
+
 
 <!-- Inline fallback initializer (server-side display handles initial state; this helps when fragment injected) -->
 <script>

@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title">Step 6: PM Suryaghar Portal Registration</h5>
+        <h5 class="card-title text-white">Step 6: PM Suryaghar Portal Registration</h5>
     </div>
     <div class="card-body">
         <form id="step6Form">

@@ -130,3 +130,48 @@ Stack trace:
 #0 /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
 #1 {main}
   thrown in /home6/atriprints/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[20-Jan-2026 09:25:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[20-Jan-2026 09:26:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[20-Jan-2026 09:26:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[20-Jan-2026 09:26:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[20-Jan-2026 09:27:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[20-Jan-2026 09:27:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[29-Jan-2026 10:00:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[30-Jan-2026 08:25:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37
+[30-Jan-2026 08:27:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'adhar' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php:37
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php(37): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/documentmanagement/wcr/save_wcr.php on line 37

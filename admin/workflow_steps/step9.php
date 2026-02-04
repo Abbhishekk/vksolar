@@ -68,7 +68,12 @@ if (!empty($_SESSION['workflow_success'])) {
 ?>
 
 <!-- Step 9: Fitting Photos (fragment) -->
-<form id="step9Form" action="/admin/workflow_steps/save_step9" method="post" enctype="multipart/form-data" novalidate>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-white">Step 9: Fitting Photos</h5>
+    </div>
+    <div class="card-body">
+        <form id="step9Form" action="/admin/workflow_steps/save_step9" method="post" enctype="multipart/form-data" novalidate>
   <input type="hidden" name="client_id" value="<?= htmlspecialchars($client['id']) ?>">
 
   <div class="mb-3">
@@ -126,3 +131,6 @@ if (!empty($_SESSION['workflow_success'])) {
     </div>
   </div>
 </form>
+    </div>
+</div>
+

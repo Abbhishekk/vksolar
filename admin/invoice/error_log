@@ -167,3 +167,81 @@ Stack trace:
 [13-Jan-2026 12:55:48 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/invoice/invoice_create.php on line 168
 [13-Jan-2026 12:55:48 UTC] PHP Warning:  Undefined variable $item in /home6/atriprints/vksolarenergy.com/admin/invoice/invoice_create.php on line 169
 [13-Jan-2026 12:55:48 UTC] PHP Warning:  Trying to access array offset on null in /home6/atriprints/vksolarenergy.com/admin/invoice/invoice_create.php on line 169
+[16-Jan-2026 11:40:03 UTC] Invoice Save Error: Insufficient stock for 545 WP SOLAR PANEL. Available: 0, Required: 5
+[16-Jan-2026 11:40:03 UTC] POST data: Array
+(
+    [invoice_type] => client
+    [reference_id] => 7
+    [warehouse_id] => 1
+    [invoice_date] => 2026-01-16
+    [product_id] => Array
+        (
+            [0] => 1
+        )
+
+    [qty] => Array
+        (
+            [0] => 5
+        )
+
+    [rate] => Array
+        (
+            [0] => 8000
+        )
+
+    [gst] => 18
+    [action] => draft
+)
+
+[16-Jan-2026 11:41:22 UTC] Invoice Save Error: Insufficient stock for 545 WP SOLAR PANEL. Available: 0, Required: 6
+[16-Jan-2026 11:41:22 UTC] POST data: Array
+(
+    [invoice_type] => client
+    [reference_id] => 7
+    [warehouse_id] => 1
+    [invoice_date] => 2026-01-16
+    [product_id] => Array
+        (
+            [0] => 1
+        )
+
+    [qty] => Array
+        (
+            [0] => 6
+        )
+
+    [rate] => Array
+        (
+            [0] => 8000
+        )
+
+    [gst] => 18
+    [action] => draft
+)
+
+[30-Jan-2026 10:08:48 UTC] Invoice Save Error: Insufficient stock for 545 WP SOLAR PANEL. Available: 0, Required: 1
+[30-Jan-2026 10:08:48 UTC] POST data: Array
+(
+    [invoice_type] => client
+    [reference_id] => 2
+    [warehouse_id] => 3
+    [invoice_date] => 2026-01-30
+    [product_id] => Array
+        (
+            [0] => 1
+        )
+
+    [qty] => Array
+        (
+            [0] => 1
+        )
+
+    [rate] => Array
+        (
+            [0] => 15000
+        )
+
+    [gst] => 5
+    [action] => draft
+)
+
