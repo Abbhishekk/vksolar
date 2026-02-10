@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 16, 2026 at 09:58 AM
--- Server version: 8.0.44-cll-lve
--- PHP Version: 8.4.16
+-- Generation Time: Feb 04, 2026 at 04:35 PM
+-- Server version: 8.0.45
+-- PHP Version: 8.4.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `atriprints_vksolar`
+-- Database: `abcoedtech_vksolar`
 --
 
 -- --------------------------------------------------------
@@ -62,7 +62,10 @@ INSERT INTO `bank_quotations` (`id`, `client_id`, `quotation_number`, `quotation
 (2, 1, '01', '2026-01-10', '2026-04-10', 'SHRI MANOHAR TEMBHURKAR', 'TEACHER COLONY WARD NO. 07 TALODHI NAGBHID CHANDRAPUR', '999999', '9822121061', 'temburkaranshul.maddy@gmail.com', 'TEACHER COLONY WARD NO. 07 TALODHI NAGBHID CHANDRAPUR', '3 kWp', 'On Grid', '45000', 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 200000.00, 78000.00, 122000.00, 'draft', 2, '2026-01-10 06:24:50', NULL),
 (3, 6, '2', '2026-01-10', '2026-04-10', 'NANDA NARAYAN LAYSE', 'p no 29 pathan layout parsodi nagpur 440022', '440022', '7972740850', 'shaileshlayase@gmail.com', 'p no 29 pathan layout parsodi nagpur 440022', ' 3 kWp', 'On Grid', '4500', 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 200000.00, 78000.00, 122000.00, 'draft', 2, '2026-01-10 09:56:43', NULL),
 (4, 6, '2', '2026-01-10', '2026-04-10', 'NANDA NARAYAN LAYSE', 'p no 29 pathan layout parsodi nagpur 440022', '440022', '7972740850', 'shaileshlayase@gmail.com', 'p no 29 pathan layout parsodi nagpur 440022', ' 3 kWp', 'On Grid', '4500', 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 200000.00, 78000.00, 122000.00, 'draft', 2, '2026-01-10 10:06:10', NULL),
-(5, 7, 'v123', '2026-01-13', '2026-04-13', 'JAYSHREE JIWAN GOURKHEDE', 'pl no 71 govt press layout dhaba nagpur 440016', '440016', '8999466479', 'abhishekgourkhede88@gmail.com', 'pl no 71 govt press layout dhaba nagpur 440016', ' kWp', 'On Grid', '4500', 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 1000.00, 60.00, 940.00, 'draft', 2, '2026-01-13 11:34:44', NULL);
+(5, 7, 'v123', '2026-01-13', '2026-04-13', 'JAYSHREE JIWAN GOURKHEDE', 'pl no 71 govt press layout dhaba nagpur 440016', '440016', '8999466479', 'abhishekgourkhede88@gmail.com', 'pl no 71 govt press layout dhaba nagpur 440016', ' kWp', 'On Grid', '4500', 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 1000.00, 60.00, 940.00, 'draft', 2, '2026-01-13 11:34:44', NULL),
+(6, 7, 'v123', '2026-01-13', '2026-04-13', 'JAYSHREE JIWAN GOURKHEDE', 'pl no 71 govt press layout dhaba nagpur 440016', '440016', '8999466479', 'abhishekgourkhede88@gmail.com', 'pl no 71 govt press layout dhaba nagpur 440016', ' kWp', 'On Grid', '4500', 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 200000.00, 78000.00, 122000.00, 'draft', 2, '2026-01-16 11:52:42', NULL),
+(7, 7, 'v123', '2026-01-13', '2026-04-13', 'JAYSHREE JIWAN GOURKHEDE', 'pl no 71 govt press layout dhaba nagpur 440016', '440016', '8999466479', 'abhishekgourkhede88@gmail.com', 'pl no 71 govt press layout dhaba nagpur 440016', ' kWp', 'On Grid', '4500', 'Sale of solar power generating system including supply, installation, and commissioning of 5kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 200000.00, 78000.00, 122000.00, 'draft', 2, '2026-01-16 11:55:01', NULL),
+(8, 7, 'v123', '2026-01-13', '2026-04-13', 'JAYSHREE JIWAN GOURKHEDE', 'pl no 71 govt press layout dhaba nagpur 440016', '440016', '8999466479', 'abhishekgourkhede88@gmail.com', 'pl no 71 govt press layout dhaba nagpur 440016', ' kWp', 'On Grid', '4500', 'Sale of solar power generating system including supply, installation, and commissioning of 5kW On-Grid solar PV system, complete with solar panels, 3kW inverter, all other accessories, net meter and connecting cables, including elevated standard structures.', 2, 200000.00, 78000.00, 122000.00, 'draft', 2, '2026-01-16 11:58:28', NULL);
 
 -- --------------------------------------------------------
 
@@ -88,7 +91,10 @@ INSERT INTO `bank_quotation_products` (`id`, `quotation_id`, `description`, `qua
 (3, 1, 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system', 1, 200000.00, 200000.00),
 (4, 3, 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system', 1, 200000.00, 200000.00),
 (5, 4, 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system', 1, 200000.00, 200000.00),
-(6, 5, 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system', 10, 100.00, 1000.00);
+(6, 5, 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system', 10, 100.00, 1000.00),
+(7, 6, 'Sale of solar power generating system including supply, installation, and commissioning of 3kW On-Grid solar PV system', 1, 200000.00, 200000.00),
+(8, 7, 'Sale of solar power generating system including supply, installation, and commissioning of 5 kW On-Grid solar PV system', 1, 200000.00, 200000.00),
+(9, 8, 'Sale of solar power generating system including supply, installation, and commissioning of 5 kW On-Grid solar PV system', 1, 200000.00, 200000.00);
 
 -- --------------------------------------------------------
 
@@ -168,10 +174,12 @@ CREATE TABLE `clients` (
 INSERT INTO `clients` (`id`, `name`, `consumer_number`, `billing_unit`, `adhar`, `mobile`, `email`, `district`, `block`, `taluka`, `pincode`, `village`, `location`, `mahadiscom_email`, `mahadiscom_email_password`, `mahadiscom_mobile`, `mahadiscom_user_id`, `mahadiscom_password`, `name_change_require`, `application_no_name_change`, `pm_suryaghar_registration`, `pm_suryaghar_app_id`, `pm_registration_date`, `load_change_application_number`, `rooftop_solar_application_number`, `kilo_watt`, `load_change_status`, `bank_loan_status`, `bank_name`, `account_number`, `ifsc_code`, `jan_samartha_application_no`, `loan_amount`, `first_installment_amount`, `second_installment_amount`, `remaining_amount`, `inverter_company_name`, `inverter_capacity`, `inverter_serial_number`, `solar_type`, `dcr_certificate_number`, `number_of_panels`, `company_name`, `wattage`, `panel_serial_numbers`, `rts_portal_status`, `meter_number`, `meter_installation_date`, `pm_redeem_status`, `subsidy_amount`, `subsidy_redeem_date`, `reference_name`, `reference_contact`, `estimate_amount`, `geo_tagging_photo`, `geo_tagged_photo`, `email_password`, `created_at`, `updated_at`, `step9_completed`, `step12_completed`, `step10_completed`) VALUES
 (1, 'SHRI MANOHAR TEMBHURKAR', '463040218726', '4336', 631611994662, '9822121061', 'temburkaranshul.maddy@gmail.com', 'CHANDRAPUR', 'CHANDRAPUR', 'NAGBHID', 999999, 'TEACHER COLONY WARD NO. 07 TALODHI NAGBHID CHANDRAPUR', '', 'officeomsairament2017@gmail.com', '1', '9529750282', '1', '1', 'no', '', 'yes', 'NP-MHSED26-9537253', '2026-01-03', '73770415', '73770415', NULL, NULL, 'no', '', '', '', '', 0.00, 0.00, 0.00, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, 'U5966290', NULL, 'no', NULL, NULL, 'SHAILENDRA SIR', '90283 80699', NULL, NULL, NULL, NULL, '2026-01-06 10:21:56', '2026-01-06 10:44:11', 0, 0, 0),
 (2, 'TUKARAM SANTOSH WAGHADE', '412583254605', '3956', 0, NULL, NULL, NULL, NULL, NULL, 0, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-01-10 06:11:44', '2026-01-10 06:11:44', 0, 0, 0),
-(4, 'SACHIN VISHWAS THAMKE', '410032705697', '3905', 0, NULL, NULL, NULL, NULL, NULL, 0, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-01-10 06:33:12', '2026-01-10 06:33:12', 0, 0, 0),
+(4, 'SACHIN VISHWAS THAMKE', '410032705697', '3905', 372184666126, '9595428845', 'thamkesachin04@gmail.com', 'NAGPUR', '', '', 440023, 'W.NO.4,H.NO.25/9 KAMBLE L/O WADDHAMNA NAGPUR', '', 'thamkesachin04@gmail.com', '.', ' 9595428845', 'admin', 'admin123', 'no', '', 'yes', 'NP-MHSED25-9045379', '2025-11-11', '71840345', '71840345', NULL, NULL, 'no', '', '', '', '', 0.00, 0.00, 0.00, 0.00, 'kirloskar', '3.4', 'KN21M21230EG70316', NULL, '6840-0946-8812-9084', 6, '', 0, NULL, 'yes', 'U5965792', '2026-01-15', 'no', 0.00, '0000-00-00', 'VILAS KADE ', '96571 35476', NULL, NULL, NULL, NULL, '2026-01-10 06:33:12', '2026-01-17 07:12:03', 0, 0, 0),
 (5, 'PRANAY RAVINDRA KAMBLE', '411350027467', '0562', 251677441444, '9370484353', 'pranay18.kamble@gmail.com', 'NAGPUR', 'NAGPUR', 'NAGPUR', 441108, 'h no 46,pl no27 mihan khapri punarvasan 441108', '', 'officeomsairament2017@gmail.com', 'office@12345', '9529750282', 'admin', 'admin123', 'no', '', 'yes', 'NP-MHSED26-9575056', '2026-01-06', '', 'NP-MHSED26-9575056', NULL, NULL, 'yes', 'BANK OF INDIA', '872910510000082', 'BKID0008729', 'ANS-SOLAR-10941572-2398532', 200000.00, 0.00, 0.00, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-01-10 07:54:04', '2026-01-10 09:34:55', 0, 0, 0),
 (6, 'NANDA NARAYAN LAYSE', '410015413372', '4683 TRIMURTI NAGAR', 672068887805, '7972740850', 'shaileshlayase@gmail.com', 'NAGPUR', 'NAGPUR', 'NAGPUR', 440022, 'p no 29 pathan layout parsodi nagpur 440022', '', 'officeomsairament2017@gmail.com', '', '9529750282', '12345', '12345', 'no', '', 'no', '', '0000-00-00', NULL, NULL, NULL, NULL, 'yes', 'STATE BANK OF INDIA', '43189472774', 'SBIN0009057', 'ANS-SOLAR-10986854-2424920', 200000.00, 0.00, 0.00, 200000.00, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-01-10 09:38:51', '2026-01-10 09:51:25', 0, 0, 0),
-(7, 'JAYSHREE JIWAN GOURKHEDE', '410017255880', '4690 MIDC-I', 677762356232, '8999466479', 'abhishekgourkhede88@gmail.com', 'NAGPUR', 'NAGPUR', 'NAGPUR', 440016, 'pl no 71 govt press layout dhaba nagpur 440016', '', 'officeomsairament2017@gmail.com', '', '9529750282', '12345', '1', 'no', '', 'yes', 'NP-MHSED25-9416748', '2025-12-23', NULL, NULL, NULL, NULL, 'yes', 'CANARA BANK', '5096101000626', 'CNRB0005096', 'ANS-SOLAR-10703248-2276355', 200000.00, 0.00, 0.00, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, NULL, NULL, 'no', NULL, NULL, 'VINAY SIR', '8007955787', NULL, NULL, NULL, NULL, '2026-01-10 11:49:44', '2026-01-10 11:56:01', 0, 0, 0);
+(7, 'JAYSHREE JIWAN GOURKHEDE', '410017255880', '4690 MIDC-I', 677762356232, '8999466479', 'abhishekgourkhede88@gmail.com', 'NAGPUR', 'NAGPUR', 'NAGPUR', 440016, 'pl no 71 govt press layout dhaba nagpur 440016', '', 'officeomsairament2017@gmail.com', '', '9529750282', '12345', '1', 'no', '', 'yes', 'NP-MHSED25-9416748', '2025-12-23', NULL, NULL, NULL, NULL, 'yes', 'CANARA BANK', '5096101000626', 'CNRB0005096', 'ANS-SOLAR-10703248-2276355', 200000.00, 0.00, 0.00, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, NULL, NULL, 'no', NULL, NULL, 'VINAY SIR', '8007955787', NULL, NULL, NULL, NULL, '2026-01-10 11:49:44', '2026-01-10 11:56:01', 0, 0, 0),
+(8, 'SMT SUNANDA GAJANANRAO AKHARE', '410013864539', '4686', 978329409344, '8805100531', 'vivekakhare123@gmail.com', 'NAGPUR', '', '', 440009, '2580/35 MEERE LAYOUT UMRER ROAD NAGPUR 440009', '', 'vivekakhare123@gmail.com', '.', '8805100531', 'SUNANDA AKHARE', '.', 'no', '', 'yes', 'NP-MHSED26-9550978', '2026-01-05', '73806846', '73806846', NULL, NULL, 'yes', 'PUNJAB NATIONAL BANK', '0354010100045276', 'PUNB0460800', 'ANS-SOLAR-10909300-2379991', 189000.00, 0.00, 0.00, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-01-17 06:29:29', '2026-01-17 06:48:11', 0, 0, 0),
+(9, 'PRAFUL JAYBHARAT UPARIKAR', '410013164863', '3905', 0, '9145033307', 'vksolarinfo08@gmail.com', 'nagpur', '', '', 440023, '', '', 'vksolarinfo08@gmail.com', 'Password@123', '7876026301', 'vksolarinfo08@gmail.com', 'Password@123', 'no', '', 'yes', 'NP-MHSED25-9331798', '2026-01-19', '3', '73012955', NULL, NULL, 'no', '', '', '', '', 0.00, 0.00, 0.00, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, '', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, NULL, NULL, NULL, '2026-01-20 09:17:56', '2026-01-20 09:23:39', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -182,7 +190,7 @@ INSERT INTO `clients` (`id`, `name`, `consumer_number`, `billing_unit`, `adhar`,
 CREATE TABLE `client_documents` (
   `id` int NOT NULL,
   `client_id` int NOT NULL,
-  `document_type` enum('aadhar','electric_bill','pan_card','bank_passbook','bank_statement','it_return','other','fitting_photos','pm_documents','rts_document','meter_photo','subsidy_redeem','solar_panel_photo','inverter_photo','geotag_photo','model_agreement','dcr_certificate','salary_slip','gumasta','client_signature')   NOT NULL,
+  `document_type` enum('aadhar','electric_bill','pan_card','bank_passbook','bank_statement','it_return','other','fitting_photos','pm_documents','rts_document','meter_photo','subsidy_redeem','solar_panel_photo','inverter_photo','geotag_photo','model_agreement','dcr_certificate','salary_slip','gumasta','client_signature')  NOT NULL,
   `file_path` varchar(500)  NOT NULL,
   `file_name` varchar(255)  DEFAULT NULL,
   `file_size` int DEFAULT NULL,
@@ -190,6 +198,16 @@ CREATE TABLE `client_documents` (
   `original_filename` varchar(255)  DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ;
+
+--
+-- Dumping data for table `client_documents`
+--
+
+INSERT INTO `client_documents` (`id`, `client_id`, `document_type`, `file_path`, `file_name`, `file_size`, `mime_type`, `original_filename`, `created_at`) VALUES
+(1, 4, 'inverter_photo', 'uploads/clients/4/fitting_photos/inverter_photo_1768633302.jpeg', 'inverter_photo_1768633302.jpeg', NULL, NULL, 'sachin thamke inverter .jpeg', '2026-01-17 07:01:42'),
+(2, 4, 'geotag_photo', 'uploads/clients/4/fitting_photos/geotag_photo_1768633302.jpeg', 'geotag_photo_1768633302.jpeg', NULL, NULL, 'sachin thamke geo pic .jpeg', '2026-01-17 07:01:42'),
+(3, 4, 'meter_photo', 'uploads/clients/4/meter_photos/meter_photo_1768633828.jpeg', 'meter_photo_1768633828.jpeg', NULL, NULL, 'SACHIN THAMKE  METER.jpeg', '2026-01-17 07:10:28'),
+(4, 9, 'geotag_photo', '/admin/uploads/client_documents/9_geotag_photo_1768900930_718a1bfbcafe.jpeg', '9_geotag_photo_1768900930_718a1bfbcafe.jpeg', 205286, 'image/jpeg', 'praful site .jpeg', '2026-01-20 09:22:10');
 
 -- --------------------------------------------------------
 
@@ -250,7 +268,7 @@ CREATE TABLE `company_bank_details` (
 --
 
 INSERT INTO `company_bank_details` (`id`, `bank_name`, `branch_name`, `account_number`, `account_type`, `ifsc_code`, `bank_gst`, `is_active`, `created_by`, `created_at`, `updated_at`) VALUES
-(1, 'BOI', 'Godhani', 'bhu1242636633', 'Saving', '1202j3i33i3i393939', '1342627378338', 0, 1, '2026-01-09 14:36:41', '2026-01-10 06:24:15'),
+(1, 'BOI', 'Godhani', 'bhu1242636633', 'Saving', '1202j3i33i3i393939', '1342627378338', 0, 1, '2026-01-09 14:36:41', '2026-01-17 05:27:58'),
 (2, 'STATE BANK OF INDIA', 'WADI', '44488375874', 'CURRENT', 'SBIN0012710', '', 1, 2, '2026-01-10 06:24:06', '2026-01-10 06:25:57');
 
 -- --------------------------------------------------------
@@ -306,6 +324,13 @@ CREATE TABLE `declaration_documents` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ;
 
+--
+-- Dumping data for table `declaration_documents`
+--
+
+INSERT INTO `declaration_documents` (`id`, `client_id`, `company_name`, `system_capacity`, `consumer_name`, `project_address`, `application_number`, `application_date`, `discom_name`, `pv_module_capacity`, `pv_module_count`, `inverter_no`, `pv_module_make`, `cell_manufacturer`, `cell_gst_invoice`, `panel_serial_numbers`, `declarant_name`, `declarant_designation`, `declarant_phone`, `declarant_email`, `declaration_date`, `created_by`, `created_at`, `updated_at`) VALUES
+(1, 4, 'VK SOLAR ENERGY ', 3.00, 'SACHIN VISHWAS THAMKE', 'W.NO.4,H.NO.25/9 KAMBLE L/O WADDHAMNA NAGPUR', '71840345', '2026-02-03', 'mahadiscom', 3.00, 6, 'KN21M21230EG70316', 'kirloskar', 'venfir pvt ltd', '6543564', '13212', 'MR VILAS KALE', 'PROPRIETOR', '2423', 'vksolarenergy1989@gmail.com', '2026-02-03', 2, '2026-02-03 05:04:14', '2026-02-03 05:04:14');
+
 -- --------------------------------------------------------
 
 --
@@ -341,7 +366,8 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `employee_id`, `profile_picture`, `full_name`, `email`, `phone`, `role`, `department`, `position`, `salary`, `joining_date`, `address`, `city`, `state`, `pincode`, `emergency_contact`, `emergency_contact_name`, `is_active`, `created_by`, `created_at`, `updated_at`) VALUES
-(1, 'EMP156754', NULL, 'Test User', 'test@gmail.com', '9860409222', 'warehouse_staff', 'Test', '0', 20000.00, '2026-01-09', 'Test', 'test', 'test', '887766', '78768798', 'Test', 1, 2, '2026-01-09 07:20:26', '2026-01-09 07:20:26');
+(1, 'EMP156754', NULL, 'Test User', 'test@gmail.com', '9860409222', 'warehouse_staff', 'Test', '0', 20000.00, '2026-01-09', 'Test', 'test', 'test', '887766', '78768798', 'Test', 1, 2, '2026-01-09 07:20:26', '2026-01-09 07:20:26'),
+(2, 'EMP060439', NULL, 'MR.SAGAR WAMAN  ZAMBARE SIR', 'vksolarenergy1989@gmail.com', '09657135476', 'warehouse_staff', 'MANGEMENT', '0', 15000.00, '2026-01-01', 'NEAR HEND PATIL ATA CHAKKI GHATPURI NAKA KHAMGAON', 'KHAMGAON', 'Maharashtra ( 27 )', '444303', '', '', 1, 2, '2026-01-16 12:06:58', '2026-01-16 12:06:58');
 
 -- --------------------------------------------------------
 
@@ -372,6 +398,18 @@ CREATE TABLE `invoices` (
   `due_amount` decimal(12,2) DEFAULT '0.00'
 ) ;
 
+--
+-- Dumping data for table `invoices`
+--
+
+INSERT INTO `invoices` (`id`, `invoice_no`, `invoice_type`, `reference_id`, `invoice_date`, `due_date`, `financial_year`, `warehouse_id`, `subtotal`, `cgst`, `sgst`, `igst`, `total`, `status`, `payment_status`, `note`, `created_by`, `created_at`, `paid_amount`, `due_amount`) VALUES
+(3, 'VK/25-26/001', 'client', 7, '2026-01-16', NULL, '25-26', 2, 48000.00, 4320.00, 4320.00, 0.00, 56640.00, 'final', 'partial', NULL, 2, '2026-01-16 17:11:42', 0.00, 0.00),
+(4, 'VK/25-26/004', 'client', 7, '2026-01-17', NULL, '25-26', 2, 2000.00, 180.00, 180.00, 0.00, 2360.00, 'final', 'pending', NULL, 2, '2026-01-17 10:40:36', 0.00, 0.00),
+(16, 'VK/25-26/005', 'client', 7, '2026-01-30', NULL, '25-26', 1, 15000.00, 1350.00, 1350.00, 0.00, 17700.00, 'draft', 'pending', NULL, 2, '2026-01-30 15:39:12', 0.00, 0.00),
+(17, 'VK/25-26/017', 'client', 2, '2026-01-30', NULL, '25-26', 1, 10000.00, 900.00, 900.00, 0.00, 11800.00, 'final', 'pending', NULL, 2, '2026-01-30 15:41:06', 0.00, 0.00),
+(18, 'VK/25-26/018', 'client', 2, '2026-01-30', NULL, '25-26', 1, 50000.00, 4500.00, 4500.00, 0.00, 59000.00, 'final', 'pending', NULL, 2, '2026-01-30 15:50:12', 0.00, 0.00),
+(19, 'VK/25-26/019', 'client', 5, '2026-02-03', NULL, '25-26', 1, 180000.00, 16200.00, 16200.00, 0.00, 212400.00, 'final', 'pending', NULL, 2, '2026-02-03 10:35:56', 0.00, 0.00);
+
 -- --------------------------------------------------------
 
 --
@@ -388,6 +426,18 @@ CREATE TABLE `invoice_items` (
   `gst_percent` decimal(5,2) DEFAULT '0.00',
   `line_total` decimal(12,2) NOT NULL
 ) ;
+
+--
+-- Dumping data for table `invoice_items`
+--
+
+INSERT INTO `invoice_items` (`id`, `invoice_id`, `product_id`, `warehouse_id`, `quantity`, `rate`, `gst_percent`, `line_total`) VALUES
+(1, 3, 1, 2, 6.000, 8000.00, 18.00, 48000.00),
+(2, 4, 1, 2, 2.000, 1000.00, 18.00, 2000.00),
+(3, 16, 1, 1, 1.000, 15000.00, 18.00, 15000.00),
+(4, 17, 1, 1, 1.000, 10000.00, 18.00, 10000.00),
+(5, 18, 1, 1, 1.000, 50000.00, 18.00, 50000.00),
+(6, 19, 1, 1, 1.000, 180000.00, 18.00, 180000.00);
 
 -- --------------------------------------------------------
 
@@ -406,6 +456,13 @@ CREATE TABLE `invoice_payments` (
   `received_by` int DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP
 ) ;
+
+--
+-- Dumping data for table `invoice_payments`
+--
+
+INSERT INTO `invoice_payments` (`id`, `invoice_id`, `payment_date`, `amount`, `payment_mode`, `transaction_ref`, `note`, `received_by`, `created_at`) VALUES
+(1, 3, '2026-01-15', 10000.00, 'cash', NULL, '', NULL, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -452,6 +509,14 @@ CREATE TABLE `model_agreements` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ;
+
+--
+-- Dumping data for table `model_agreements`
+--
+
+INSERT INTO `model_agreements` (`id`, `client_id`, `applicant_name`, `consumer_number`, `applicant_address`, `agreement_date`, `vendor_name`, `vendor_address`, `system_capacity`, `pv_module_make`, `pv_module_capacity`, `panel_efficiency`, `inverter_company_name`, `inverter_capacity`, `system_cost`, `advance_percentage`, `dispatch_percentage`, `completion_percentage`, `created_by`, `created_at`, `updated_at`) VALUES
+(1, 5, 'PRANAY RAVINDRA KAMBLE', '411350027467', 'H NO 46,PL NO27 MIHAN KHAPRI PUNARVASAN 441108', '2026-01-22', 'VK SOLAR ENERGY', 'NAGPUR , MAHARASHTRA', 3.00, 'Kirloskar ', '454', '80', 'Polycab', '3', 180000.00, 10, 80, 10, 2, '2026-01-22 04:31:36', '2026-01-22 04:31:36'),
+(2, 4, 'SACHIN VISHWAS THAMKE', '410032705697', 'W.NO.4,H.NO.25/9 KAMBLE L/O WADDHAMNA NAGPUR', '2026-02-03', 'VK SOLAR ENERGY', 'NAGPUR , MAHARASHTRA', 3.00, 'kirloskar', '545', '85', 'KIRLOSKAR', '3.4', 180000.00, 10, 80, 10, 2, '2026-02-03 05:02:32', '2026-02-03 05:02:32');
 
 -- --------------------------------------------------------
 
@@ -509,6 +574,13 @@ CREATE TABLE `products` (
   `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ;
 
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `sku`, `name`, `brand`, `category_id`, `type`, `unit`, `serial_tracked`, `default_purchase_price`, `default_selling_price`, `tax_rate`, `hsn_code`, `weight_kg`, `length_mm`, `width_mm`, `height_mm`, `warranty_months`, `description`, `specs`, `created_by`, `created_at`, `updated_at`) VALUES
+(1, '1', '545 WP SOLAR PANEL', 'KIRLOSKAR', NULL, '', '', 0, 0.00, 0.00, 0.00, '8504', NULL, NULL, NULL, NULL, 25, 'MODEL-DCR\r\nMAKE-KIRLOSKAR', '{}', 2, '2026-01-16 17:07:56', '2026-01-16 17:07:56');
+
 -- --------------------------------------------------------
 
 --
@@ -555,6 +627,31 @@ CREATE TABLE `product_images` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `product_manufacturers`
+--
+
+CREATE TABLE `product_manufacturers` (
+  `id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `gst_number` varchar(30) DEFAULT NULL,
+  `address` text,
+  `contact_person` varchar(150) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `email` varchar(150) DEFAULT NULL,
+  `is_active` tinyint(1) DEFAULT '1',
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP
+) ;
+
+--
+-- Dumping data for table `product_manufacturers`
+--
+
+INSERT INTO `product_manufacturers` (`id`, `name`, `gst_number`, `address`, `contact_person`, `phone`, `email`, `is_active`, `created_at`) VALUES
+(1, 'Test', '57656768', 'test', 'test', '797987987', 'test@gmail.com', 1, '2026-01-17 20:08:58');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product_serials`
 --
 
@@ -568,6 +665,13 @@ CREATE TABLE `product_serials` (
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ;
+
+--
+-- Dumping data for table `product_serials`
+--
+
+INSERT INTO `product_serials` (`id`, `product_id`, `warehouse_id`, `serial_number`, `status`, `notes`, `created_at`, `updated_at`) VALUES
+(1, 1, 3, '123', 'sold', NULL, '2026-01-17 17:14:41', '2026-01-17 17:14:41');
 
 -- --------------------------------------------------------
 
@@ -585,6 +689,58 @@ CREATE TABLE `product_suppliers` (
   `lead_time_days` int DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP
 ) ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `purchase_orders`
+--
+
+CREATE TABLE `purchase_orders` (
+  `id` int NOT NULL,
+  `po_number` varchar(50) NOT NULL,
+  `manufacturer_id` int NOT NULL,
+  `warehouse_id` int NOT NULL,
+  `status` enum('pending','approved','rejected') DEFAULT 'pending',
+  `invoice_id` int DEFAULT NULL,
+  `remarks` text,
+  `created_by` int NOT NULL,
+  `approved_by` int DEFAULT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `approved_at` datetime DEFAULT NULL
+) ;
+
+--
+-- Dumping data for table `purchase_orders`
+--
+
+INSERT INTO `purchase_orders` (`id`, `po_number`, `manufacturer_id`, `warehouse_id`, `status`, `invoice_id`, `remarks`, `created_by`, `approved_by`, `created_at`, `approved_at`) VALUES
+(4, 'PO-20260117-151021', 1, 1, 'approved', NULL, NULL, 2, 16, '2026-01-17 20:40:21', '2026-01-17 21:08:37'),
+(5, 'PO-20260117-153527', 1, 1, 'approved', NULL, NULL, 2, 16, '2026-01-17 21:05:27', '2026-01-17 21:05:48');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `purchase_order_items`
+--
+
+CREATE TABLE `purchase_order_items` (
+  `id` int NOT NULL,
+  `purchase_order_id` int NOT NULL,
+  `product_id` int NOT NULL,
+  `quantity` decimal(12,3) NOT NULL,
+  `rate` decimal(12,2) NOT NULL,
+  `gst_percent` decimal(5,2) DEFAULT '0.00',
+  `total` decimal(12,2) NOT NULL
+) ;
+
+--
+-- Dumping data for table `purchase_order_items`
+--
+
+INSERT INTO `purchase_order_items` (`id`, `purchase_order_id`, `product_id`, `quantity`, `rate`, `gst_percent`, `total`) VALUES
+(1, 4, 1, 10.000, 100.00, 0.00, 1000.00),
+(2, 5, 1, 10.000, 12.00, 0.00, 120.00);
 
 -- --------------------------------------------------------
 
@@ -730,6 +886,30 @@ CREATE TABLE `stock_movements` (
   `reference_id` int DEFAULT NULL
 ) ;
 
+--
+-- Dumping data for table `stock_movements`
+--
+
+INSERT INTO `stock_movements` (`id`, `movement_type`, `product_id`, `warehouse_from`, `warehouse_to`, `quantity`, `unit`, `note`, `related_id`, `created_by`, `created_at`, `reference_type`, `reference_id`) VALUES
+(1, '', 1, 2, NULL, 50.000, 'pc', 'Added via add-stock form', NULL, 2, '2026-01-16 17:10:50', 'client', NULL),
+(2, 'sale', 1, 2, NULL, -6.000, 'pc', 'Invoice VK/25-26/001', NULL, 2, '2026-01-16 17:13:20', '', 7),
+(3, '', 1, 3, NULL, 20.000, 'pc', 'Added via add-stock form', NULL, 2, '2026-01-16 17:46:59', 'client', NULL),
+(4, 'transfer_out', 1, 3, 1, 10.000, 'pc', '', NULL, 2, '2026-01-16 17:57:08', NULL, NULL),
+(5, 'transfer_in', 1, 3, 1, 10.000, 'pc', '', NULL, 2, '2026-01-16 17:57:08', NULL, NULL),
+(6, 'consume', 1, 3, NULL, -10.000, 'pc', 'yyy', NULL, 21, '2026-01-16 18:15:25', NULL, NULL),
+(7, 'sale', 1, 2, NULL, -2.000, 'pc', 'Invoice VK/25-26/004', NULL, 2, '2026-01-17 10:40:43', '', 7),
+(8, 'consume', 1, 1, NULL, -1.000, 'pc', 'sdf', NULL, 2, '2026-01-17 18:50:50', NULL, NULL),
+(9, 'consume', 1, 1, NULL, -1.000, 'pc', '', NULL, 2, '2026-01-17 19:00:05', NULL, NULL),
+(10, 'consume', 1, 1, NULL, -1.000, 'pc', '', NULL, 2, '2026-01-17 19:15:20', 'retailer', 15),
+(11, 'consume', 1, 1, NULL, -1.000, 'pc', '', NULL, 2, '2026-01-17 19:17:09', 'client', 0),
+(12, 'consume', 1, 1, NULL, -1.000, 'pc', '', NULL, 2, '2026-01-17 19:20:18', 'client', 7),
+(13, 'purchase', 1, 1, NULL, 10.000, 'pc', 'Purchase order approved', NULL, 16, '2026-01-17 21:02:50', NULL, NULL),
+(14, 'purchase', 1, 1, NULL, 10.000, 'pc', 'Purchase order approved', NULL, 16, '2026-01-17 21:05:48', NULL, NULL),
+(15, 'purchase', 1, 1, NULL, 10.000, 'pc', 'Purchase order approved', NULL, 16, '2026-01-17 21:08:37', NULL, NULL),
+(16, 'sale', 1, 1, NULL, -1.000, 'pc', 'Invoice VK/25-26/017', NULL, 2, '2026-01-30 15:41:52', 'client', 2),
+(17, 'sale', 1, 1, NULL, -1.000, 'pc', 'Invoice VK/25-26/018', NULL, 2, '2026-01-30 15:51:00', 'client', 2),
+(18, 'sale', 1, 1, NULL, -1.000, 'pc', 'Invoice VK/25-26/019', NULL, 2, '2026-02-03 10:36:21', 'client', 5);
+
 -- --------------------------------------------------------
 
 --
@@ -798,11 +978,12 @@ INSERT INTO `users` (`id`, `username`, `email`, `password_hash`, `full_name`, `p
 (8, 'staff1', 'onkarpadman13@gamail.com', '$2y$10$/EGT6s0HN/vu8JFILb0hvO6lTets912sFpV0rWRHRC/bA7wgOXrtq', 'onkar padman', '07666396753', 'office_staff', 1, NULL, 2, '2025-11-11 07:26:20', '2025-11-11 07:30:22'),
 (12, 'officestaff', 'officestaff@gmail.com', 'office123', 'aniket', '9765778349', 'office_staff', 1, NULL, 2, '2025-12-16 07:20:33', '2025-12-16 07:22:50'),
 (13, 'harishkadu', 'kaduharish55@gmail.com', '$2y$10$nSi.RNWeMoY/Q09NJuEPb.8/dh/mKL3a.kq1l8UiHTFLApUhqADJC', 'harish kadu', '9075305275', 'office_staff', 1, NULL, 2, '2025-12-16 09:45:07', '2025-12-16 09:50:02'),
-(16, 'test@gmail.com', 'test@gmail.com', '$2y$10$ZOntdkwOKFpCaGkMCq5CZ.I3JqpV/koqiw8sfScTCUPjZakKmV5/.', 'Test User', '9860409222', 'warehouse_staff', 1, NULL, 2, '2026-01-09 07:20:26', '2026-01-09 07:20:26'),
+(16, 'test@gmail.com', 'test@gmail.com', '$2y$10$94gNRUQ7SZUN04Up/24ag.A76DlPrYItIrVGGy/au20nzUq.TFFIS', 'Test User', '9860409222', 'warehouse_staff', 1, NULL, 2, '2026-01-09 07:20:26', '2026-01-17 15:19:28'),
 (17, 'staff', 'adityathakre890776@gmail.com', '$2y$10$J.hoBVvwsuItVEEOwTwIZ.hk4BjGH.Rh.ArgH./MFWVi1BcVKwSVu', 'Aditya Prashant Thakare', '8010143603', 'office_staff', 1, NULL, 2, '2026-01-09 13:23:15', '2026-01-09 13:23:15'),
 (18, 'admin123', 'adityathakre776@gmail.com', '$2y$10$d1/psQPDb4oWMtbFfKVJb.aqAWBWrL0quyZCKwgk6c6bP5bKhFHwm', 'Ojas', '8010143603', 'office_staff', 1, NULL, 2, '2026-01-09 13:25:19', '2026-01-09 13:25:19'),
 (19, 'superadmin123', 'adityathaewkre776@gmail.com', '$2y$10$S4cMwxbOp3bQ76uW5vqQBOORFQZEM78qTUjJ/00ixkmHhj5K01LLi', 'Abhishek', '8110143603', 'office_staff', 1, NULL, 2, '2026-01-09 13:26:42', '2026-01-09 13:26:42'),
-(20, 'sales', 'adityathakrergfrefe776@gmail.com', '$2y$10$oipf70y116EKt9YU7i0tPuFyGud3q6NmyTQ5.BNIukKWcwoygU73m', 'Aditya Prashant Thakarddd', '8010143603', 'sales_marketing', 1, NULL, 1, '2026-01-09 14:53:07', '2026-01-09 14:53:07');
+(20, 'sales', 'adityathakrergfrefe776@gmail.com', '$2y$10$oipf70y116EKt9YU7i0tPuFyGud3q6NmyTQ5.BNIukKWcwoygU73m', 'Aditya Prashant Thakarddd', '8010143603', 'sales_marketing', 1, NULL, 1, '2026-01-09 14:53:07', '2026-01-09 14:53:07'),
+(21, 'SAGARZAMBARE1@', 'vksolarenergy1989@gmail.com', '$2y$10$I7UG5p.m9COOwS6EqItum.BT0jzegPlAcHzUqWLP3CzOSy.i7.g4u', 'MR.SAGAR WAMAN  ZAMBARE SIR', '09657135476', 'warehouse_staff', 1, NULL, 2, '2026-01-16 12:06:59', '2026-01-16 12:06:59');
 
 -- --------------------------------------------------------
 
@@ -854,32 +1035,34 @@ INSERT INTO `user_permissions` (`id`, `role`, `module`, `can_view`, `can_create`
 (27, 'sales_marketing', 'employee_management', 0, 0, 0, 0),
 (28, 'sales_marketing', 'quotation_management', 1, 1, 1, 0),
 (29, 'sales_marketing', 'customer_management', 1, 1, 1, 0),
-(30, 'sales_marketing', 'inventory_management', 1, 0, 0, 0),
-(31, 'sales_marketing', 'reports', 1, 0, 0, 0),
+(30, 'sales_marketing', 'inventory_management', 0, 0, 0, 0),
+(31, 'sales_marketing', 'reports', 0, 0, 0, 0),
 (32, 'sales_marketing', 'settings', 0, 0, 0, 0),
 (33, 'warehouse_staff', 'dashboard', 1, 0, 0, 0),
 (34, 'warehouse_staff', 'user_management', 0, 0, 0, 0),
 (35, 'warehouse_staff', 'employee_management', 0, 0, 0, 0),
-(36, 'warehouse_staff', 'quotation_management', 0, 0, 0, 0),
-(37, 'warehouse_staff', 'customer_management', 0, 0, 0, 0),
+(36, 'warehouse_staff', 'quotation_management', 1, 1, 1, 0),
+(37, 'warehouse_staff', 'customer_management', 1, 1, 1, 0),
 (38, 'warehouse_staff', 'inventory_management', 1, 1, 1, 0),
-(39, 'warehouse_staff', 'reports', 1, 0, 0, 0),
+(39, 'warehouse_staff', 'reports', 0, 0, 0, 0),
 (40, 'warehouse_staff', 'settings', 0, 0, 0, 0),
 (41, 'super_admin', 'bank_details_management', 1, 1, 1, 1),
 (42, 'admin', 'bank_details_management', 1, 1, 1, 1),
-(43, 'office_staff', 'bank_details_management', 1, 1, 1, 0),
-(44, 'sales_marketing', 'bank_details_management', 1, 1, 1, 0),
+(43, 'office_staff', 'bank_details_management', 1, 0, 0, 0),
+(44, 'sales_marketing', 'bank_details_management', 1, 0, 0, 0),
 (45, 'warehouse_staff', 'bank_details_management', 1, 0, 0, 0),
 (76, 'office_staff', 'invoice_management', 1, 1, 1, 0),
-(77, 'sales_marketing', 'invoice_management', 1, 0, 0, 0),
-(78, 'warehouse_staff', 'invoice_management', 1, 0, 0, 0),
+(77, 'sales_marketing', 'invoice_management', 0, 0, 0, 0),
+(78, 'warehouse_staff', 'invoice_management', 1, 1, 0, 0),
 (91, 'super_admin', 'settings', 1, 1, 1, 1),
 (92, 'admin', 'settings', 1, 1, 1, 1),
 (94, 'super_admin', 'product_management', 1, 1, 1, 1),
 (95, 'admin', 'product_management', 1, 1, 1, 1),
 (96, 'office_staff', 'product_management', 1, 1, 1, 0),
-(97, 'sales_marketing', 'product_management', 1, 0, 0, 0),
-(98, 'warehouse_staff', 'product_management', 1, 1, 0, 0);
+(97, 'sales_marketing', 'product_management', 0, 0, 0, 0),
+(98, 'warehouse_staff', 'product_management', 1, 1, 0, 0),
+(128, 'super_admin', 'partner_management', 1, 1, 1, 1),
+(129, 'admin', 'partner_management', 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -914,6 +1097,34 @@ INSERT INTO `user_profiles` (`id`, `user_id`, `address`, `city`, `state`, `pinco
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `vendors_retailers`
+--
+
+CREATE TABLE `vendors_retailers` (
+  `id` int NOT NULL,
+  `type` enum('vendor(Manufacturer Company)','retailer')  NOT NULL,
+  `company_name` varchar(150) NOT NULL,
+  `contact_person` varchar(150) DEFAULT NULL,
+  `mobile` varchar(20) DEFAULT NULL,
+  `email` varchar(150) DEFAULT NULL,
+  `address` text,
+  `gst_number` varchar(30) DEFAULT NULL,
+  `is_active` tinyint DEFAULT '1',
+  `created_by` int DEFAULT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP
+) ;
+
+--
+-- Dumping data for table `vendors_retailers`
+--
+
+INSERT INTO `vendors_retailers` (`id`, `type`, `company_name`, `contact_person`, `mobile`, `email`, `address`, `gst_number`, `is_active`, `created_by`, `created_at`) VALUES
+(15, 'retailer', 'gh solar', 'abhishek', '0987654321', 'a@gmail.com', 'dsfc', '123546435', 1, 2, '2026-01-17 16:59:41'),
+(16, 'vendor(Manufacturer Company)', 'Adani Pvt Ltd', 'abhishek', '9087654321', 'abhi@gmail.com', 'zigabai takli', '1234', 1, 2, '2026-01-17 18:48:39');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `warehouses`
 --
 
@@ -939,7 +1150,8 @@ CREATE TABLE `warehouses` (
 
 INSERT INTO `warehouses` (`id`, `name`, `code`, `address`, `city`, `state`, `pincode`, `contact_name`, `contact_phone`, `image`, `created_by`, `created_at`, `updated_at`) VALUES
 (1, 'Test', '3323', 'test', 'test', 'test', '666666', 'test', '5675675676', '', NULL, '2026-01-09 07:21:06', '2026-01-09 07:21:06'),
-(2, 'Test2', '56756', 'test2', 'test2', 'test2', '433433', 'test2', '433434343', '', NULL, '2026-01-09 07:21:44', '2026-01-09 07:21:44');
+(2, 'Test2', '56756', 'test2', 'test2', 'test2', '433433', 'test2', '433434343', '', NULL, '2026-01-09 07:21:44', '2026-01-09 07:21:44'),
+(3, 'khamgaon', 'k1', 'khamgaon', 'khamgaon', 'maharashtra', '440023', 'sagar', '12345678901', '', NULL, '2026-01-16 12:13:45', '2026-01-16 12:13:45');
 
 -- --------------------------------------------------------
 
@@ -960,7 +1172,8 @@ CREATE TABLE `warehouse_employees` (
 --
 
 INSERT INTO `warehouse_employees` (`id`, `warehouse_id`, `employee_id`, `role`, `assigned_at`) VALUES
-(1, 1, 1, NULL, '2026-01-09 07:21:06');
+(1, 1, 1, NULL, '2026-01-09 07:21:06'),
+(2, 3, 2, NULL, '2026-01-16 12:13:45');
 
 -- --------------------------------------------------------
 
@@ -976,6 +1189,15 @@ CREATE TABLE `warehouse_stock` (
   `reserved` decimal(12,3) NOT NULL DEFAULT '0.000',
   `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ;
+
+--
+-- Dumping data for table `warehouse_stock`
+--
+
+INSERT INTO `warehouse_stock` (`id`, `warehouse_id`, `product_id`, `quantity`, `reserved`, `updated_at`) VALUES
+(1, 2, 1, 42.000, 0.000, '2026-01-17 10:40:43'),
+(2, 3, 1, 0.000, 0.000, '2026-01-16 18:15:25'),
+(3, 1, 1, 32.000, 0.000, '2026-02-03 10:36:21');
 
 -- --------------------------------------------------------
 
@@ -1175,6 +1397,12 @@ ALTER TABLE `product_images`
   ADD KEY `product_id` (`product_id`);
 
 --
+-- Indexes for table `product_manufacturers`
+--
+ALTER TABLE `product_manufacturers`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product_serials`
 --
 ALTER TABLE `product_serials`
@@ -1190,6 +1418,24 @@ ALTER TABLE `product_suppliers`
   ADD PRIMARY KEY (`id`),
   ADD KEY `product_id` (`product_id`),
   ADD KEY `supplier_id` (`supplier_id`);
+
+--
+-- Indexes for table `purchase_orders`
+--
+ALTER TABLE `purchase_orders`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `po_number` (`po_number`),
+  ADD KEY `warehouse_id` (`warehouse_id`),
+  ADD KEY `invoice_id` (`invoice_id`),
+  ADD KEY `fk_po_manufacturer` (`manufacturer_id`);
+
+--
+-- Indexes for table `purchase_order_items`
+--
+ALTER TABLE `purchase_order_items`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `purchase_order_id` (`purchase_order_id`),
+  ADD KEY `product_id` (`product_id`);
 
 --
 -- Indexes for table `quotations`
@@ -1272,6 +1518,12 @@ ALTER TABLE `user_profiles`
   ADD UNIQUE KEY `user_id` (`user_id`);
 
 --
+-- Indexes for table `vendors_retailers`
+--
+ALTER TABLE `vendors_retailers`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `warehouses`
 --
 ALTER TABLE `warehouses`
@@ -1318,25 +1570,25 @@ ALTER TABLE `work_completion_reports`
 -- AUTO_INCREMENT for table `bank_quotations`
 --
 ALTER TABLE `bank_quotations`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `bank_quotation_products`
 --
 ALTER TABLE `bank_quotation_products`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `client_documents`
 --
 ALTER TABLE `client_documents`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `commissioning_certificates`
@@ -1360,31 +1612,31 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `declaration_documents`
 --
 ALTER TABLE `declaration_documents`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `invoice_items`
 --
 ALTER TABLE `invoice_items`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `invoice_payments`
 --
 ALTER TABLE `invoice_payments`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `login_history`
@@ -1396,7 +1648,7 @@ ALTER TABLE `login_history`
 -- AUTO_INCREMENT for table `model_agreements`
 --
 ALTER TABLE `model_agreements`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `net_metering_agreements`
@@ -1408,7 +1660,7 @@ ALTER TABLE `net_metering_agreements`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `product_attributes`
@@ -1429,16 +1681,34 @@ ALTER TABLE `product_images`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `product_manufacturers`
+--
+ALTER TABLE `product_manufacturers`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `product_serials`
 --
 ALTER TABLE `product_serials`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `product_suppliers`
 --
 ALTER TABLE `product_suppliers`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `purchase_orders`
+--
+ALTER TABLE `purchase_orders`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `purchase_order_items`
+--
+ALTER TABLE `purchase_order_items`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `quotations`
@@ -1468,7 +1738,7 @@ ALTER TABLE `solar_rooftop_quotations`
 -- AUTO_INCREMENT for table `stock_movements`
 --
 ALTER TABLE `stock_movements`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `suppliers`
@@ -1486,13 +1756,13 @@ ALTER TABLE `undertaking_documents`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `user_permissions`
 --
 ALTER TABLE `user_permissions`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
 
 --
 -- AUTO_INCREMENT for table `user_profiles`
@@ -1501,22 +1771,28 @@ ALTER TABLE `user_profiles`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `vendors_retailers`
+--
+ALTER TABLE `vendors_retailers`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
 -- AUTO_INCREMENT for table `warehouses`
 --
 ALTER TABLE `warehouses`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `warehouse_employees`
 --
 ALTER TABLE `warehouse_employees`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `warehouse_stock`
 --
 ALTER TABLE `warehouse_stock`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `warehouse_stock_snapshots`
@@ -1608,6 +1884,21 @@ ALTER TABLE `product_serials`
 ALTER TABLE `product_suppliers`
   ADD CONSTRAINT `product_suppliers_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `product_suppliers_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `suppliers` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `purchase_orders`
+--
+ALTER TABLE `purchase_orders`
+  ADD CONSTRAINT `fk_po_manufacturer` FOREIGN KEY (`manufacturer_id`) REFERENCES `product_manufacturers` (`id`),
+  ADD CONSTRAINT `purchase_orders_ibfk_2` FOREIGN KEY (`warehouse_id`) REFERENCES `warehouses` (`id`),
+  ADD CONSTRAINT `purchase_orders_ibfk_3` FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`id`);
+
+--
+-- Constraints for table `purchase_order_items`
+--
+ALTER TABLE `purchase_order_items`
+  ADD CONSTRAINT `purchase_order_items_ibfk_1` FOREIGN KEY (`purchase_order_id`) REFERENCES `purchase_orders` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `purchase_order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`);
 
 --
 -- Constraints for table `quotations`
