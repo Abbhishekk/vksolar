@@ -5333,3 +5333,29 @@
     [step] => 2
 )
 
+[2026-02-05 03:29:37] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-02-05 03:29:37] CONTENT_TYPE=
+[2026-02-05 03:29:37] CONTENT_LENGTH=
+[2026-02-05 03:29:37] RAW_LEN=0
+[2026-02-05 03:29:37] REQUEST_KEYS: action,step
+[2026-02-05 03:29:37] POST_KEYS: 
+[2026-02-05 03:29:37] FILES_KEYS: 
+[2026-02-05 03:29:37] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
+[2026-02-05 03:41:48] REQ_METHOD=GET ACTION=get_incomplete_clients
+[2026-02-05 03:41:48] CONTENT_TYPE=
+[2026-02-05 03:41:48] CONTENT_LENGTH=
+[2026-02-05 03:41:48] RAW_LEN=0
+[2026-02-05 03:41:48] REQUEST_KEYS: action,step
+[2026-02-05 03:41:48] POST_KEYS: 
+[2026-02-05 03:41:48] FILES_KEYS: 
+[2026-02-05 03:41:48] REQUEST_PREVIEW: Array
+(
+    [action] => get_incomplete_clients
+    [step] => 2
+)
+
