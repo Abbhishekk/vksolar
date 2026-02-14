@@ -10,14 +10,14 @@ $q = trim($_GET['q'] ?? '');
 
 // fetch products with a primary image
 $params = [];
-$sql = "SELECT p.id,p.sku,p.name,p.brand,p.type,p.unit,p.default_selling_price,
+$sql = "SELECT p.id,p.name
                (SELECT filename FROM product_images WHERE product_images.product_id = p.id AND is_primary = 1 LIMIT 1) AS primary_image
         FROM products p";
 
 if ($q !== '') {
-    $sql .= " WHERE p.name LIKE ? OR p.sku LIKE ? OR p.brand LIKE ?";
+    $sql .= " WHERE p.name ";
     $like = "%$q%";
-    $params = [$like,$like,$like];
+    $params = [$like];
 }
 $sql .= " ORDER BY p.id DESC LIMIT 200";
 

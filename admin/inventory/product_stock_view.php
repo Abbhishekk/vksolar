@@ -10,7 +10,7 @@ $auth->requirePermission('inventory_management', 'view');
 $product_id = intval($_GET['product_id'] ?? 0);
 
 // fetch all products for dropdown
-$products = $conn->query("SELECT id, name, sku FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
+$products = $conn->query("SELECT id, name FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 
 $product = null;
 $stocks = [];
@@ -18,7 +18,7 @@ $total = 0;
 
 if ($product_id) {
     // product details
-    $pstmt = $conn->prepare("SELECT id, name, sku, serial_tracked FROM products WHERE id = ? LIMIT 1");
+    $pstmt = $conn->prepare("SELECT id, name, serial_tracked FROM products WHERE id = ? LIMIT 1");
     $pstmt->bind_param("i", $product_id);
     $pstmt->execute();
     $product = $pstmt->get_result()->fetch_assoc();
@@ -68,7 +68,7 @@ if ($product_id) {
         <option value="">-- Select Product --</option>
         <?php foreach ($products as $p): ?>
           <option value="<?= $p['id'] ?>" <?= $product_id==$p['id']?'selected':'' ?>>
-            <?= htmlspecialchars($p['name'].' ('.$p['sku'].')') ?>
+            <?= htmlspecialchars($p['name']) ?>
           </option>
         <?php endforeach; ?>
       </select>
@@ -80,7 +80,7 @@ if ($product_id) {
     <!-- PRODUCT SUMMARY -->
     <div class="card mb-3">
       <div class="card-body">
-        <h5><?= htmlspecialchars($product['name']) ?> (<?= htmlspecialchars($product['sku']) ?>)</h5>
+        <h5><?= htmlspecialchars($product['name']) ?></h5>
         <p class="mb-0">
           Total Stock: <strong><?= $total ?></strong>
         </p>

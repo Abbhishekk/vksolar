@@ -245,3 +245,18 @@ Stack trace:
     [action] => draft
 )
 
+[14-Feb-2026 01:29:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'order clause' in /home9/abcoedtech/vksolarenergy.com/admin/invoice/manufacturer_list.php:8
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/invoice/manufacturer_list.php(8): mysqli->query()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/invoice/manufacturer_list.php on line 8
+[14-Feb-2026 01:31:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'order clause' in /home9/abcoedtech/vksolarenergy.com/admin/invoice/manufacturer_list.php:8
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/invoice/manufacturer_list.php(8): mysqli->query()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/invoice/manufacturer_list.php on line 8
+[14-Feb-2026 06:54:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.sku' in 'field list' in /home9/abcoedtech/vksolarenergy.com/admin/invoice/invoice_view.php:44
+Stack trace:
+#0 /home9/abcoedtech/vksolarenergy.com/admin/invoice/invoice_view.php(44): mysqli->prepare()
+#1 {main}
+  thrown in /home9/abcoedtech/vksolarenergy.com/admin/invoice/invoice_view.php on line 44

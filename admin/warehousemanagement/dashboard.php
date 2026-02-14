@@ -2,13 +2,13 @@
 if (session_status() === PHP_SESSION_NONE) session_start();
 require_once __DIR__ . '/../connect/db.php';
 
-$title = 'product_dashboard';
+$title = 'warehouse_dashboard';
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Product Dashboard</title>
+<title>Warehouse Dashboard</title>
 
 <?php require_once __DIR__ . '/../include/head2.php'; ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,33 +46,27 @@ $title = 'product_dashboard';
 <body>
 
 <?php
-$cwd = getcwd();
-chdir(__DIR__ . '/..');
-include 'include/sidebar.php';
-chdir($cwd);
+include __DIR__ . '/../include/sidebar.php';
 ?>
 
 <div id="main-content">
 
 <?php
-$cwd = getcwd();
-chdir(__DIR__ . '/..');
-include 'include/navbar.php';
-chdir($cwd);
+include __DIR__ . '/../include/navbar.php';
 ?>
 
 <main class="container-fluid">
 
-    <!-- Page Title -->
+    <!-- Title Section -->
     <div class="row mb-4">
         <div class="col-lg-12">
             <div class="dashboard-card">
                 <div class="dashboard-card-header">
-                    <h5 class="mb-0">Product Management Dashboard</h5>
+                    <h5 class="mb-0">Warehouse Management Dashboard</h5>
                 </div>
                 <div class="card-body">
                     <p class="mb-0 text-muted">
-                        Manage manufacturers, categories, and products from one place.
+                        Manage warehouses, stock movements and inventory reports.
                     </p>
                 </div>
             </div>
@@ -82,45 +76,61 @@ chdir($cwd);
     <!-- Dashboard Cards -->
     <div class="row">
 
-        <!-- Manufacturer Company -->
+        <!-- Manage Warehouses -->
         <div class="col-lg-3 col-md-6 mb-4">
             <div class="dashboard-card h-100 text-center">
                 <div class="card-body">
-                    <div class="dashboard-icon mb-3">🏭</div>
-                    <h6 class="mb-3">Manufacturer Company</h6>
-                    <a href="product_manufacturers.php" class="btn btn-success dashboard-btn w-100">
-                        Manage Companies
+                    <div class="dashboard-icon mb-3">🏬</div>
+                    <h6 class="mb-3">Warehouses</h6>
+                    <a href="warehouses.php"
+                       class="btn btn-success dashboard-btn w-100">
+                        Manage Warehouses
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Product Category -->
+        <!-- Stock In -->
         <div class="col-lg-3 col-md-6 mb-4">
             <div class="dashboard-card h-100 text-center">
                 <div class="card-body">
-                    <div class="dashboard-icon mb-3">📦</div>
-                    <h6 class="mb-3">Product Categories</h6>
-                    <a href="product_categories" class="btn btn-success dashboard-btn w-100">
-                        Manage Categories
+                    <div class="dashboard-icon mb-3">📥</div>
+                    <h6 class="mb-3">Stock In</h6>
+                    <a href="stock_in.php"
+                       class="btn btn-success dashboard-btn w-100">
+                        Add Stock
                     </a>
                 </div>
             </div>
         </div>
 
-        <!--  Products -->
+        <!-- Stock Out -->
         <div class="col-lg-3 col-md-6 mb-4">
             <div class="dashboard-card h-100 text-center">
                 <div class="card-body">
-                    <div class="dashboard-icon mb-3">➕  ⧸  📋</div>
-                    <h6 class="mb-3">Products</h6>
-                    <a href="products" class="btn btn-success dashboard-btn w-100">
-                        Manage Product
+                    <div class="dashboard-icon mb-3">📤</div>
+                    <h6 class="mb-3">Stock Out</h6>
+                    <a href="stock_out.php"
+                       class="btn btn-success dashboard-btn w-100">
+                        Issue Stock
                     </a>
                 </div>
             </div>
         </div>
 
+        <!-- Stock Report -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="dashboard-card h-100 text-center">
+                <div class="card-body">
+                    <div class="dashboard-icon mb-3">📊</div>
+                    <h6 class="mb-3">Stock Report</h6>
+                    <a href="stock_report.php"
+                       class="btn btn-success dashboard-btn w-100">
+                        View Report
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </div>
 

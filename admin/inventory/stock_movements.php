@@ -16,7 +16,6 @@ $sql = "
 SELECT
   sm.*,
   p.name AS product_name,
-  p.sku,
   wf.name AS from_warehouse,
   wt.name AS to_warehouse,
   c.name  AS client_name,
@@ -53,7 +52,7 @@ $stmt->execute();
 $rows = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 $stmt->close();
 
-$products = $conn->query("SELECT id,name,sku FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
+$products = $conn->query("SELECT id,name FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 $warehouses = $conn->query("SELECT id,name FROM warehouses ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 ?>
 <!doctype html>
@@ -93,7 +92,7 @@ $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd);
       <option value="">All Products</option>
       <?php foreach($products as $p): ?>
         <option value="<?= $p['id'] ?>" <?= $product_id==$p['id']?'selected':'' ?>>
-          <?= htmlspecialchars($p['name'].' ('.$p['sku'].')') ?>
+          <?= htmlspecialchars($p['name']) ?>
         </option>
       <?php endforeach; ?>
     </select>
@@ -143,7 +142,7 @@ $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd);
 ?>
 <tr>
   <td><?= $r['created_at'] ?></td>
-  <td><?= htmlspecialchars($r['product_name'].' ('.$r['sku'].')') ?></td>
+  <td><?= htmlspecialchars($r['product_name']) ?></td>
   <td><?= htmlspecialchars($r['from_warehouse'] ?? '—') ?></td>
   <td><?= htmlspecialchars($r['to_warehouse'] ?? $r['reference_type']) ?></td>
   <td class="text-center <?= $r['quantity']>=0?'qty-pos':'qty-neg' ?>">

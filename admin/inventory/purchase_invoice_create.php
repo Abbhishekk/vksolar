@@ -9,7 +9,7 @@ $title = 'purchase_invoice_create';
 
 /* ================= MASTER DATA ================= */
 $products = $conn->query("
-    SELECT id, name, sku 
+    SELECT id, name
     FROM products 
     ORDER BY name
 ")->fetch_all(MYSQLI_ASSOC);
@@ -21,10 +21,9 @@ $warehouses = $conn->query("
 ")->fetch_all(MYSQLI_ASSOC);
 
 $manufacturers = $conn->query("
-    SELECT id, name 
-    FROM product_manufacturers 
-    WHERE is_active = 1 
-    ORDER BY name
+    SELECT manufacturer_id, manufacturer_name 
+    FROM product_manufacturers
+    ORDER BY  manufacturer_name
 ")->fetch_all(MYSQLI_ASSOC);
 
 /* ================= HANDLE SUBMIT ================= */
@@ -40,11 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    if ($manufacturer_id <= 0) {
-        $_SESSION['inv_error'] = 'Please select manufacturer';
-        header("Location: purchase_invoice_create.php");
-        exit;
-    }
+    // if (empty($manufacturer_id)) {
+    //     $_SESSION['inv_error'] = 'Please select manufacturer';
+    //     header("Location: purchase_invoice_create.php");
+    //     exit;
+    // }
 
     if (empty($_POST['items']) || !is_array($_POST['items'])) {
         $_SESSION['inv_error'] = 'Please add at least one product';
@@ -175,8 +174,8 @@ chdir($cwd);
     <select name="manufacturer_id" class="form-select" required>
       <option value="">Select Manufacturer</option>
       <?php foreach ($manufacturers as $m): ?>
-        <option value="<?= $m['id'] ?>">
-          <?= htmlspecialchars($m['name']) ?>
+        <option value="<?= $m['manufacturer_id'] ?>">
+          <?= htmlspecialchars($m['manufacturer_name']) ?>
         </option>
       <?php endforeach; ?>
     </select>

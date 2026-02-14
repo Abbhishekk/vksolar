@@ -34,7 +34,7 @@ if ($edit_id) {
     $stmt->close();
 }
 
-$products   = $conn->query("SELECT id,name,sku FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
+$products   = $conn->query("SELECT id,name FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 $warehouses = $conn->query("SELECT id,name FROM warehouses ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 ?>
@@ -136,7 +136,7 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
       <select name="product_id[]" class="form-select product-select">
         <?php foreach($products as $p): ?>
           <option value="<?= $p['id'] ?>" <?= ($item['product_id'] == $p['id']) ? 'selected' : '' ?>>
-            <?= htmlspecialchars($p['name'].' ('.$p['sku'].')') ?>
+            <?= htmlspecialchars($p['name']) ?>
           </option>
         <?php endforeach; ?>
       </select>
@@ -168,7 +168,7 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
   <td>
     <select name="product_id[]" class="form-select product-select">
       <?php foreach($products as $p): ?>
-        <option value="<?= $p['id'] ?>"><?= htmlspecialchars($p['name'].' ('.$p['sku'].')') ?></option>
+        <option value="<?= $p['id'] ?>"><?= htmlspecialchars($p['name']) ?></option>
       <?php endforeach; ?>
     </select>
   </td>

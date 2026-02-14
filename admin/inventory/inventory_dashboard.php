@@ -12,14 +12,14 @@ $auth->requirePermission('inventory_management', 'view');
 $warehouses = $conn->query("SELECT id,name,code,city,image FROM warehouses ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 
 // top 10 products by total qty
-$top = $conn->query("SELECT p.id,p.name,p.sku, COALESCE(SUM(ws.quantity),0) as total
+$top = $conn->query("SELECT p.id,p.name, COALESCE(SUM(ws.quantity),0) as total
                      FROM products p
                      LEFT JOIN warehouse_stock ws ON ws.product_id = p.id
                      GROUP BY p.id ORDER BY total DESC LIMIT 12")->fetch_all(MYSQLI_ASSOC);
 
 // low stock: products with total <= threshold (example 5)
 $threshold = 5;
-$low = $conn->query("SELECT p.id,p.name,p.sku, COALESCE(SUM(ws.quantity),0) as total
+$low = $conn->query("SELECT p.id,p.name, COALESCE(SUM(ws.quantity),0) as total
                      FROM products p
                      LEFT JOIN warehouse_stock ws ON ws.product_id = p.id
                      GROUP BY p.id HAVING total <= {$threshold} ORDER BY total ASC LIMIT 20")->fetch_all(MYSQLI_ASSOC);
@@ -65,7 +65,7 @@ $low = $conn->query("SELECT p.id,p.name,p.sku, COALESCE(SUM(ws.quantity),0) as t
         <ul class="list-unstyled mb-0">
           <?php foreach($top as $t): ?>
             <li class="py-1">
-              <?= htmlspecialchars($t['name']) ?> (<?= htmlspecialchars($t['sku']) ?>) — <strong><?= intval($t['total']) ?></strong>
+              <?= htmlspecialchars($t['name']) ?>  — <strong><?= intval($t['total']) ?></strong>
             </li>
           <?php endforeach; ?>
         </ul>

@@ -405,59 +405,28 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
               <?php if ($auth->checkPermission('inventory_management','create')): ?>
               <li class="nav-item">
                 <a class="nav-link <?php if($title=='warehouse_create') echo 'active'; ?>"
-                   href="/admin/inventory/warehouse_create.php">
-                  Add Warehouse
+                   href="/admin/warehousemanagement/dashboard">
+                  Warehouses
                 </a>
               </li>
               <?php endif; ?>
         
-              <li class="nav-item">
-                <a class="nav-link <?php if($title=='warehouses') echo 'active'; ?>"
-                   href="/admin/inventory/warehouses.php">
-                  View Warehouses
-                </a>
-              </li>
+              <!--<li class="nav-item">-->
+              <!--  <a class="nav-link <?php //if($title=='warehouses') echo 'active'; ?>"-->
+              <!--     href="/admin/inventory/warehouses.php">-->
+              <!--    View Warehouses-->
+              <!--  </a>-->
+              <!--</li>-->
         
               <!-- PRODUCTS -->
+               <?php if ($auth->checkPermission('inventory_management','create')): ?>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#inventoryProductsCollapse">
+                <a class="nav-link" href="/admin/productmanagement/product_dashboard">
                   Products
-                  <i class="bi bi-chevron-down ms-auto"></i>
                 </a>
-                <div class="collapse" id="inventoryProductsCollapse">
-                  <ul class="nav flex-column ps-4">
-                    <?php if ($auth->checkPermission('inventory_management','create')): ?>
-                    <li>
-                      <a class="nav-link <?php if($title=='product_create') echo 'active'; ?>"
-                         href="/admin/inventory/product_form.php">
-                        Add Product
-                      </a>
-                    </li>
-                    <?php endif; ?>
-        
-                    <li>
-                      <a class="nav-link <?php if($title=='products') echo 'active'; ?>"
-                         href="/admin/inventory/products.php">
-                        Product List
-                      </a>
-                    </li>
-        
-                    <li>
-                      <a class="nav-link <?php if($title=='product_categories') echo 'active'; ?>"
-                         href="/admin/inventory/product_categories.php">
-                        Product Categories
-                      </a>
-                    </li>
-        
-                    <li>
-                      <a class="nav-link <?php if($title=='suppliers') echo 'active'; ?>"
-                         href="/admin/inventory/suppliers.php">
-                        Suppliers
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+                 </li>
+                <?php endif; ?>
+             
         
               <!-- STOCK -->
               <li class="nav-item">
@@ -579,7 +548,7 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
                       <?php if ($auth->checkPermission('invoice_management','create')): ?>
                       <li class="nav-item">
                         <a class="nav-link <?php if($title=='purchase_invoice_create') echo 'active'; ?>"
-                           href="/admin/inventory/purchase_invoice_create.php">
+                           href="/admin/invoice/purchase_invoice_create">
                           Create Purchase Invoice
                         </a>
                       </li>
@@ -587,7 +556,7 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
                 
                       <li class="nav-item">
                         <a class="nav-link <?php if($title=='purchase_invoice_list') echo 'active'; ?>"
-                           href="/admin/inventory/purchase_invoice_list.php">
+                           href="/admin/invoice/purchase_invoice_list">
                           Purchase Invoice List
                         </a>
                       </li>
