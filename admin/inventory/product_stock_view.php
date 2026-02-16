@@ -18,7 +18,7 @@ $total = 0;
 
 if ($product_id) {
     // product details
-    $pstmt = $conn->prepare("SELECT id, name, serial_tracked FROM products WHERE id = ? LIMIT 1");
+    $pstmt = $conn->prepare("SELECT id, name FROM products WHERE id = ? LIMIT 1");
     $pstmt->bind_param("i", $product_id);
     $pstmt->execute();
     $product = $pstmt->get_result()->fetch_assoc();
@@ -111,12 +111,13 @@ if ($product_id) {
               <td class="text-end"><?= intval($s['quantity']) ?></td>
               <td class="text-end"><?= intval($s['reserved']) ?></td>
               <td>
-                <?php if (intval($product['serial_tracked']) === 1): 
+                <?php
                     $q = $conn->prepare("SELECT COUNT(*) c FROM product_serials WHERE product_id=? AND warehouse_id=?");
                     $q->bind_param("ii", $product_id, $s['warehouse_id']);
                     $q->execute();
                     $cnt = $q->get_result()->fetch_assoc()['c'] ?? 0;
                     $q->close();
+                    if ($cnt > 0):
                 ?>
                   <a class="btn btn-sm btn-outline-primary"
                      href="product_serials.php?product_id=<?= $product_id ?>&warehouse_id=<?= $s['warehouse_id'] ?>">
