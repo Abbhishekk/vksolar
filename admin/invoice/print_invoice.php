@@ -23,7 +23,7 @@ $stmt->close();
 
 /* ================= ITEMS ================= */
 $stmt = $conn->prepare("
-    SELECT ii.*, p.name AS product_name, p.hsn_code, p.description
+    SELECT ii.*, p.name AS product_name, p.hsn_code
     FROM invoice_items ii
     JOIN products p ON p.id = ii.product_id
     WHERE ii.invoice_id = ?
@@ -234,7 +234,6 @@ $total += $taxable+$cgst+$sgst;
 <td><?= $sr++ ?></td>
 <td>
    <p style="margin:0 0 1em 0"><?= htmlspecialchars($it['product_name']) ?></p>
-   <i class="small" ><?= htmlspecialchars($it['description']) ?></i> 
 </td>
 <td><?= $it['hsn_code'] ?></td>
 <td class="right"><?= $it['quantity'] ?></td>
