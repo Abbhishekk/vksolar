@@ -436,10 +436,9 @@ $current_role = $_SESSION['role'] ?? '';
           </a>
           <div class="nav-dropdown" id="analytics-dropdown">
             <ul class="nav-dropdown-menu">
-              <li class="nav-dropdown-item">Energy Reports</li>
-              <li class="nav-dropdown-item">Performance Metrics</li>
-              <li class="nav-dropdown-item">Usage Statistics</li>
-              <li class="nav-dropdown-item">Trends Analysis</li>
+              <li><a href="/admin/reports/customer_analytics.php" style="text-decoration:none;" class="nav-dropdown-item">Customer Analytics</a></li>
+              <li><a href="/admin/reports/profit_analysis.php" style="text-decoration:none;" class="nav-dropdown-item">Profit Analysis</a></li>
+              <li><a href="/admin/stock_management/stock_report.php" style="text-decoration:none;" class="nav-dropdown-item">Stock Report</a></li>
             </ul>
           </div>
         </div>
@@ -454,10 +453,10 @@ $current_role = $_SESSION['role'] ?? '';
           </a>
           <div class="nav-dropdown" id="reports-dropdown">
             <ul class="nav-dropdown-menu">
-              <li class="nav-dropdown-item">Monthly Reports</li>
-              <li class="nav-dropdown-item">Annual Reports</li>
-              <li class="nav-dropdown-item">Custom Reports</li>
-              <li class="nav-dropdown-item">Export Data</li>
+              <li><a href="/admin/reports/sales_report.php" style="text-decoration:none;" class="nav-dropdown-item">Sales Report</a></li>
+              <li><a href="/admin/reports/purchase_report.php" style="text-decoration:none;" class="nav-dropdown-item">Purchase Report</a></li>
+              <li><a href="/admin/reports/profit_analysis.php" style="text-decoration:none;" class="nav-dropdown-item">Profit Analysis</a></li>
+              <li><a href="/admin/stock_management/stock_movements.php" style="text-decoration:none;" class="nav-dropdown-item">Stock Movements</a></li>
             </ul>
           </div>
         </div>
