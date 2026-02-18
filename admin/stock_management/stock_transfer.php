@@ -7,8 +7,7 @@ $auth->requirePermission('inventory_management', 'edit');
 
 $user_id = $_SESSION['user_id'] ?? null;
 
-// Fetch products & warehouses
-$products = $conn->query("SELECT id,name,sku,serial_tracked FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
+$products = $conn->query("SELECT id,name FROM products ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 $warehouses = $conn->query("SELECT id,name FROM warehouses ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 
 function getStock($conn, $product_id, $warehouse_id) {
@@ -19,9 +18,7 @@ function getStock($conn, $product_id, $warehouse_id) {
     return $r['quantity'] ?? 0;
 }
 
-// Handle submit
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
     $product_id     = intval($_POST['product_id']);
     $from_wh        = intval($_POST['warehouse_from']);
     $to_wh          = intval($_POST['warehouse_to']);
@@ -40,19 +37,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $conn->begin_transaction();
-
     try {
-        // Decrease from warehouse
         $conn->query("UPDATE warehouse_stock 
                       SET quantity = quantity - $qty 
                       WHERE product_id=$product_id AND warehouse_id=$from_wh");
 
-        // Increase to warehouse
         $conn->query("INSERT INTO warehouse_stock (product_id, warehouse_id, quantity)
                       VALUES ($product_id,$to_wh,$qty)
                       ON DUPLICATE KEY UPDATE quantity = quantity + VALUES(quantity)");
 
-        // Stock movement OUT
         $stmt = $conn->prepare("
             INSERT INTO stock_movements
             (movement_type, product_id, warehouse_from, warehouse_to, quantity, note, created_by)
@@ -61,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_param('iiidsi', $product_id, $from_wh, $to_wh, $qty, $note, $user_id);
         $stmt->execute();
 
-        // Stock movement IN
         $stmt = $conn->prepare("
             INSERT INTO stock_movements
             (movement_type, product_id, warehouse_from, warehouse_to, quantity, note, created_by)
@@ -71,10 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute();
 
         $conn->commit();
-
         $_SESSION['inv_success'] = 'Stock transferred successfully.';
         header('Location: stock_movements.php'); exit;
-
     } catch (Exception $e) {
         $conn->rollback();
         $_SESSION['inv_error'] = 'Transfer failed.';
@@ -89,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php require_once __DIR__ . '/../include/head2.php'; ?>
 </head>
 <body>
-    <?php $cwd = getcwd(); chdir(__DIR__ . '/..'); include 'include/sidebar.php'; chdir($cwd); ?>
+<?php $cwd = getcwd(); chdir(__DIR__ . '/..'); include 'include/sidebar.php'; chdir($cwd); ?>
 <div id="main-content">
 <?php $cwd = getcwd(); chdir(__DIR__ . '/..'); include 'include/navbar.php'; chdir($cwd); ?>
 <main class="container py-4">
@@ -97,14 +87,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <h3>Transfer Stock</h3>
 
 <form method="post" class="card p-4">
-
   <div class="mb-3">
     <label>Product</label>
     <select name="product_id" class="form-select" required>
       <option value="">Select product</option>
       <?php foreach($products as $p): ?>
         <option value="<?= $p['id'] ?>">
-          <?= htmlspecialchars($p['name'].' ('.$p['sku'].')') ?>
+          <?= htmlspecialchars($p['name']) ?>
         </option>
       <?php endforeach; ?>
     </select>
@@ -132,9 +121,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <option value="<?= $w['id'] ?>"><?= htmlspecialchars($w['name']) ?></option>
         <?php endforeach; ?>
       </select>
-        <div class="mb-2 text-muted">
-          Current stock: <strong id="toStock">—</strong>
-        </div>
+      <div class="mb-2 text-muted">
+        Current stock: <strong id="toStock">—</strong>
+      </div>
     </div>
   </div>
 
@@ -155,11 +144,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-
   const productSelect = document.querySelector('[name="product_id"]');
   const fromSelect    = document.querySelector('[name="warehouse_from"]');
   const toSelect      = document.querySelector('[name="warehouse_to"]');
-
   const fromStockEl = document.getElementById('fromStock');
   const toStockEl   = document.getElementById('toStock');
 
@@ -168,8 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
       targetEl.textContent = '—';
       return;
     }
-
-    fetch(`ajax_get_stock.php?product_id=${productId}&warehouse_id=${warehouseId}`)
+    fetch(`../inventory/ajax_get_stock.php?product_id=${productId}&warehouse_id=${warehouseId}`)
       .then(res => res.json())
       .then(data => {
         targetEl.textContent = data.success ? data.quantity : '0';
@@ -194,9 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   fromSelect.addEventListener('change', updateFromStock);
   toSelect.addEventListener('change', updateToStock);
-
 });
 </script>
-
 </body>
 </html>

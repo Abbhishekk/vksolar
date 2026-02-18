@@ -1,8 +1,8 @@
 <?php
 // admin/inventory/product_serial_view.php
-require_once "connect/auth_middleware.php";
 if (session_status() === PHP_SESSION_NONE) session_start();
 require_once __DIR__ . '/../connect/db.php';
+require_once __DIR__ . '/../connect/auth_middleware.php';
 $auth->requirePermission('inventory_management', 'view');
 
 $serial_id = intval($_GET['id'] ?? 0);
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Fetch serial details
 $stmt = $conn->prepare("
     SELECT ps.*, 
-           p.name as product_name, p.sku as product_sku, p.brand,
+           p.name as product_name,
            w.name as warehouse_name
     FROM product_serials ps
     LEFT JOIN products p ON p.id = ps.product_id
@@ -122,16 +122,7 @@ $stmt->close();
                                 </tr>
                                 <tr>
                                     <td><strong>Product:</strong></td>
-                                    <td>
-                                        <?= htmlspecialchars($serial['product_name']) ?>
-                                        <?php if ($serial['product_sku']): ?>
-                                            <br><small class="text-muted"><?= htmlspecialchars($serial['product_sku']) ?></small>
-                                        <?php endif; ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Brand:</strong></td>
-                                    <td><?= htmlspecialchars($serial['brand'] ?? '—') ?></td>
+                                    <td><?= htmlspecialchars($serial['product_name']) ?></td>
                                 </tr>
                             </table>
                         </div>

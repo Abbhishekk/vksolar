@@ -96,8 +96,9 @@ include __DIR__ . '/../include/navbar.php';
                 <div class="card-body">
                     <div class="dashboard-icon mb-3">📥</div>
                     <h6 class="mb-3">Stock In</h6>
-                    <a href="stock_in.php"
-                       class="btn btn-success dashboard-btn w-100">
+                    <span class="text-danger" >Unavailable</span>
+                    <a href="#"
+                       class="btn btn-success dashboard-btn w-100" style="pointer-events: none; opacity: 0.6;">
                         Add Stock
                     </a>
                 </div>
@@ -110,7 +111,8 @@ include __DIR__ . '/../include/navbar.php';
                 <div class="card-body">
                     <div class="dashboard-icon mb-3">📤</div>
                     <h6 class="mb-3">Stock Out</h6>
-                    <a href="stock_out.php"
+                    <span class="text-danger" >Unavailable</span>
+                    <a href="#"  style="pointer-events: none; opacity: 0.6;"
                        class="btn btn-success dashboard-btn w-100">
                         Issue Stock
                     </a>
@@ -124,7 +126,7 @@ include __DIR__ . '/../include/navbar.php';
                 <div class="card-body">
                     <div class="dashboard-icon mb-3">📊</div>
                     <h6 class="mb-3">Stock Report</h6>
-                    <a href="stock_report.php"
+                    <a href="../stock_management/stock_report.php"
                        class="btn btn-success dashboard-btn w-100">
                         View Report
                     </a>

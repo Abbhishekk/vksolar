@@ -446,36 +446,43 @@ $current_user_name = $_SESSION['full_name'] ?? 'User';
         
                     <li>
                       <a class="nav-link <?php if($title=='product_stock_view') echo 'active'; ?>"
-                         href="/admin/inventory/product_stock_view.php">
+                         href="/admin/stock_management/product_stock_view.php">
                         Product Stock <br>(Select)
                       </a>
                     </li>
         
                     <li>
                       <a class="nav-link <?php if($title=='warehouse_stock_add') echo 'active'; ?>"
-                         href="/admin/inventory/warehouse_stock_add.php">
+                         href="/admin/stock_management/warehouse_stock_add.php">
                         Add Stock
                       </a>
                     </li>
         
                     <li>
                       <a class="nav-link <?php if($title=='stock_transfer') echo 'active'; ?>"
-                         href="/admin/inventory/stock_transfer.php">
+                         href="/admin/stock_management/stock_transfer.php">
                         Transfer Stock <br>(Warehouse)
                       </a>
                     </li>
         
                     <li>
                       <a class="nav-link <?php if($title=='stock_issue') echo 'active'; ?>"
-                         href="/admin/inventory/stock_issue.php">
+                         href="/admin/stock_management/stock_issue.php">
                         Issue Stock <br>(Customer / Retailer)
                       </a>
                     </li>
         
                     <li>
                       <a class="nav-link <?php if($title=='stock_movements') echo 'active'; ?>"
-                         href="/admin/inventory/stock_movements.php">
+                         href="/admin/stock_management/stock_movements.php">
                         Stock Movements <br>/ Audit
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a class="nav-link <?php if($title=='stock_report') echo 'active'; ?>"
+                         href="/admin/stock_management/stock_report.php">
+                        Stock Report
                       </a>
                     </li>
         

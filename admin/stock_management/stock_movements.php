@@ -1,5 +1,4 @@
 <?php
-// admin/inventory/stock_movements.php
 if (session_status() === PHP_SESSION_NONE) session_start();
 require_once __DIR__ . '/../connect/db.php';
 require_once __DIR__ . '/../connect/auth_middleware.php';
@@ -11,7 +10,6 @@ $title = 'stock_movements';
 $product_id   = (int)($_GET['product_id'] ?? 0);
 $warehouse_id = (int)($_GET['warehouse_id'] ?? 0);
 
-/* QUERY */
 $sql = "
 SELECT
   sm.*,
@@ -62,7 +60,6 @@ $warehouses = $conn->query("SELECT id,name FROM warehouses ORDER BY name")->fetc
 <title>Stock Movements</title>
 <?php require_once __DIR__ . '/../include/head2.php'; ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <style>
 .badge-in{background:#28a745}
 .badge-out{background:#dc3545}
@@ -72,18 +69,11 @@ $warehouses = $conn->query("SELECT id,name FROM warehouses ORDER BY name")->fetc
 </style>
 </head>
 <body>
-
-<?php
-$cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/sidebar.php'; chdir($cwd);
-?>
+<?php $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/sidebar.php'; chdir($cwd); ?>
 <div id="main-content">
-<?php
-$cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd);
-?>
-
+<?php $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd); ?>
 
 <main class="container-fluid py-4">
-
 <h3>📦 Stock Movements</h3>
 
 <form class="row g-2 mb-3">
@@ -135,8 +125,6 @@ $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd);
 
 <?php foreach($rows as $r):
   $badge = 'badge-transfer';
-//   print_r($r);
-//   echo "<br>";
   if ($r['quantity'] > 0) $badge = 'badge-in';
   if ($r['quantity'] < 0) $badge = 'badge-out';
 ?>
