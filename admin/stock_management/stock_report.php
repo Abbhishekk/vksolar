@@ -15,6 +15,19 @@ $category_id = intval($_GET['category_id'] ?? 0);
 $warehouses = $conn->query("SELECT id, name FROM warehouses ORDER BY name")->fetch_all(MYSQLI_ASSOC);
 $categories = $conn->query("SELECT id, category_name FROM product_categories ORDER BY category_name")->fetch_all(MYSQLI_ASSOC);
 
+// Filter warehouses for warehouse_staff
+$current_role = $_SESSION['role'] ?? '';
+$user_id = $_SESSION['user_id'] ?? 0;
+if ($current_role === 'warehouse_staff') {
+    $user_id = $_SESSION['employee_id'] ?? 0;
+
+    $stmt = $conn->prepare("SELECT id, name FROM warehouses WHERE id IN (SELECT warehouse_id FROM warehouse_employees WHERE employee_id = ?) ORDER BY name");
+    $stmt->bind_param('i', $user_id);
+    $stmt->execute();
+    $warehouses = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    $stmt->close();
+}
+
 // Build query
 $sql = "
     SELECT 

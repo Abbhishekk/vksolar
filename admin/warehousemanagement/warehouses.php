@@ -76,15 +76,36 @@ if (isset($_GET['delete'])) {
 
 
 /* ================= FETCH LIST ================= */
-$warehouses = $conn->query("
-    SELECT w.*,
-    GROUP_CONCAT(e.full_name SEPARATOR ', ') AS employee_names
-    FROM warehouses w
-    LEFT JOIN warehouse_employees we ON we.warehouse_id = w.id
-    LEFT JOIN employees e ON e.id = we.employee_id
-    GROUP BY w.id
-    ORDER BY w.id DESC
-");
+$current_role = $_SESSION['role'] ?? '';
+$user_id = $_SESSION['user_id'] ?? 0;
+
+if ($current_role === 'warehouse_staff') {
+    $user_id = $_SESSION['employee_id'] ?? 0;
+    // Fetch only warehouses assigned to this user
+    $warehouses = $conn->prepare("
+        SELECT w.*,
+        GROUP_CONCAT(e.full_name SEPARATOR ', ') AS employee_names
+        FROM warehouses w
+        LEFT JOIN warehouse_employees we ON we.warehouse_id = w.id
+        LEFT JOIN employees e ON e.id = we.employee_id
+        WHERE w.id IN (SELECT warehouse_id FROM warehouse_employees WHERE employee_id = ?)
+        GROUP BY w.id
+        ORDER BY w.id DESC
+    ");
+    $warehouses->bind_param('i', $user_id);
+    $warehouses->execute();
+    $warehouses = $warehouses->get_result();
+} else {
+    $warehouses = $conn->query("
+        SELECT w.*,
+        GROUP_CONCAT(e.full_name SEPARATOR ', ') AS employee_names
+        FROM warehouses w
+        LEFT JOIN warehouse_employees we ON we.warehouse_id = w.id
+        LEFT JOIN employees e ON e.id = we.employee_id
+        GROUP BY w.id
+        ORDER BY w.id DESC
+    ");
+}
 
 $errors = $_SESSION['inv_errors'] ?? null;
 $success = $_SESSION['inv_success'] ?? null;

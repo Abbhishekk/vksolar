@@ -14,11 +14,26 @@ unset($_SESSION['inv_success'], $_SESSION['inv_errors']);
 
 $warehouses = [];
 
-$stmt = $conn->prepare("
-    SELECT id, name, code, address, city, image
-    FROM warehouses
-    ORDER BY id DESC
-");
+$current_role = $_SESSION['role'] ?? '';
+$user_id = $_SESSION['user_id'] ?? 0;
+
+if ($current_role === 'warehouse_staff') {
+    $user_id = $_SESSION['employee_id'] ?? 0;
+
+    $stmt = $conn->prepare("
+        SELECT id, name, code, address, city, image
+        FROM warehouses
+        WHERE id IN (SELECT warehouse_id FROM warehouse_employees WHERE employee_id = ?)
+        ORDER BY id DESC
+    ");
+    $stmt->bind_param('i', $user_id);
+} else {
+    $stmt = $conn->prepare("
+        SELECT id, name, code, address, city, image
+        FROM warehouses
+        ORDER BY id DESC
+    ");
+}
 
 $stmt->execute();
 $res = $stmt->get_result();
