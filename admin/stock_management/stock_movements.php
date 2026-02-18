@@ -9,6 +9,7 @@ $title = 'stock_movements';
 
 $product_id   = (int)($_GET['product_id'] ?? 0);
 $warehouse_id = (int)($_GET['warehouse_id'] ?? 0);
+$type = $_GET['type'] ?? '';
 
 $sql = "
 SELECT
@@ -40,6 +41,12 @@ if ($warehouse_id) {
     $params[] = $warehouse_id;
     $params[] = $warehouse_id;
     $types .= 'ii';
+}
+if ($type === 'in') {
+    $sql .= " AND sm.quantity > 0";
+}
+if ($type === 'out') {
+    $sql .= " AND sm.quantity < 0";
 }
 
 $sql .= " ORDER BY sm.created_at DESC LIMIT 500";
@@ -74,7 +81,7 @@ $warehouses = $conn->query("SELECT id,name FROM warehouses ORDER BY name")->fetc
 <?php $cwd=getcwd(); chdir(__DIR__.'/..'); include 'include/navbar.php'; chdir($cwd); ?>
 
 <main class="container-fluid py-4">
-<h3>📦 Stock Movements</h3>
+<h3>📦 Stock Movements <?= $type === 'in' ? '(Incoming)' : ($type === 'out' ? '(Outgoing)' : '') ?></h3>
 
 <form class="row g-2 mb-3">
   <div class="col-md-4">
@@ -96,6 +103,14 @@ $warehouses = $conn->query("SELECT id,name FROM warehouses ORDER BY name")->fetc
           <?= htmlspecialchars($w['name']) ?>
         </option>
       <?php endforeach; ?>
+    </select>
+  </div>
+
+  <div class="col-md-2">
+    <select name="type" class="form-select">
+      <option value="">All Movements</option>
+      <option value="in" <?= $type === 'in' ? 'selected' : '' ?>>Stock In</option>
+      <option value="out" <?= $type === 'out' ? 'selected' : '' ?>>Stock Out</option>
     </select>
   </div>
 
