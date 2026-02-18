@@ -24,6 +24,7 @@ $invoice_date  = $_POST['invoice_date'];
 $action        = $_POST['action']; // draft | final
 
 $product_ids  = $_POST['product_id'] ?? [];
+$manufacturer_ids = $_POST['manufacturer_id'] ?? [];
 $qtys         = $_POST['qty'] ?? [];
 $rates        = $_POST['rate'] ?? [];
 
@@ -157,6 +158,7 @@ try {
 
         $qty  = (float)$qtys[$i];
         $rate = (float)$rates[$i];
+        $manufacturer_id = (int)($manufacturer_ids[$i] ?? 0);
         if ($qty <= 0 || $rate <= 0) continue; // Skip items with zero or negative quantity/rate
 
         // Check stock availability for all invoices
@@ -170,13 +172,14 @@ try {
 
         $it = $conn->prepare("
             INSERT INTO invoice_items
-            (invoice_id, product_id, warehouse_id, quantity, rate, gst_percent, line_total)
-            VALUES (?, ?, ?, ?, ?, 18, ?)
+            (invoice_id, product_id, manufacturer_id, warehouse_id, quantity, rate, gst_percent, line_total)
+            VALUES (?, ?, ?, ?, ?, ?, 18, ?)
         ");
         $it->bind_param(
-            'iiiddd',
+            'iiiiddd',
             $invoice_id,
             $pid,
+            $manufacturer_id,
             $warehouse_id,
             $qty,
             $rate,

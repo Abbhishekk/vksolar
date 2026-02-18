@@ -118,6 +118,7 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
 <thead class="table-light">
 <tr>
   <th>Product</th>
+  <th>Manufacturer</th>
   <th width="120">Qty</th>
   <th width="150">Rate</th>
   <th width="100">Stock</th>
@@ -141,11 +142,16 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
         <?php endforeach; ?>
       </select>
     </td>
+    <td>
+      <select name="manufacturer_id[]" class="form-select manufacturer-select">
+        <option value="">Select Manufacturer</option>
+      </select>
+    </td>
     <td><input type="number" step="0.01" name="qty[]" class="form-control qty" value="<?= $item['quantity'] ?>"></td>
     <td><input type="number" step="0.01" name="rate[]" class="form-control rate" value="<?= $item['rate'] ?>"></td>
     <td><span class="stock-display text-muted">-</span></td>
     <td>
-      <select name="gst" class="form-select product-select" onchange="splitGST(this)">
+      <select name="gst[]" class="form-select gst-select" onchange="splitGST(this)">
         <option value="">Select GST</option>
         <option value="5">5%</option>
         <option value="18">18%</option>
@@ -153,11 +159,11 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
     </td>
     
     <td>
-      <input type="text" class="form-control" id="cgst" placeholder="CGST %" readonly>
+      <input type="text" class="form-control cgst-display" placeholder="CGST %" readonly>
     </td>
     
     <td>
-      <input type="text" class="form-control" id="sgst" placeholder="SGST %" readonly>
+      <input type="text" class="form-control sgst-display" placeholder="SGST %" readonly>
     </td>
     <td class="line-total text-end"><?= number_format($item['line_total'], 2) ?></td>
     <td><button type="button" class="btn btn-danger btn-sm removeRow">×</button></td>
@@ -172,11 +178,16 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
       <?php endforeach; ?>
     </select>
   </td>
+  <td>
+    <select name="manufacturer_id[]" class="form-select manufacturer-select">
+      <option value="">Select Manufacturer</option>
+    </select>
+  </td>
   <td><input type="number" step="0.01" name="qty[]" class="form-control qty"></td>
   <td><input type="number" step="0.01" name="rate[]" class="form-control rate"></td>
   <td><span class="stock-display text-muted">-</span></td>
   <td>
-      <select name="gst" class="form-select product-select" onchange="splitGST(this)">
+      <select name="gst[]" class="form-select gst-select" onchange="splitGST(this)">
         <option value="">Select GST</option>
         <option value="5">5%</option>
         <option value="18">18%</option>
@@ -184,11 +195,11 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
     </td>
     
     <td>
-      <input type="text" class="form-control" id="cgst" placeholder="CGST %" readonly>
+      <input type="text" class="form-control cgst-display" placeholder="CGST %" readonly>
     </td>
     
     <td>
-      <input type="text" class="form-control" id="sgst" placeholder="SGST %" readonly>
+      <input type="text" class="form-control sgst-display" placeholder="SGST %" readonly>
     </td>
 
   <td class="line-total text-end">0.00</td>
@@ -206,8 +217,8 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
 <div class="row">
   <div class="col-md-4 ms-auto">
     <div class="mb-2">Subtotal: ₹ <span id="subtotal">0.00</span></div>
-    <div class="mb-2">CGST (9%): ₹ <span id="cgst">0.00</span></div>
-    <div class="mb-2">SGST (9%): ₹ <span id="sgst">0.00</span></div>
+    <div class="mb-2">CGST: ₹ <span id="cgstAmount">0.00</span></div>
+    <div class="mb-2">SGST: ₹ <span id="sgstAmount">0.00</span></div>
     <h5>Total: ₹ <span id="grandTotal">0.00</span></h5>
   </div>
 </div>
@@ -225,19 +236,30 @@ $clients    = $conn->query("SELECT id,name FROM clients ORDER BY name")->fetch_a
 <script>
 function calc() {
   let subtotal = 0;
+  let totalCgst = 0;
+  let totalSgst = 0;
+  
   document.querySelectorAll('#itemsTable tbody tr').forEach(tr => {
     let q = parseFloat(tr.querySelector('.qty').value||0);
     let r = parseFloat(tr.querySelector('.rate').value||0);
-    let t = q*r;
+    let gstSelect = tr.querySelector('.gst-select');
+    let gstPercent = parseFloat(gstSelect?.value||0);
+    
+    let lineSubtotal = q*r;
+    let lineCgst = lineSubtotal * (gstPercent/2) / 100;
+    let lineSgst = lineSubtotal * (gstPercent/2) / 100;
+    let t = lineSubtotal + lineCgst + lineSgst;
+    
     tr.querySelector('.line-total').innerText = t.toFixed(2);
-    subtotal += t;
+    subtotal += lineSubtotal;
+    totalCgst += lineCgst;
+    totalSgst += lineSgst;
   });
-  let cgst = subtotal*0.09;
-  let sgst = subtotal*0.09;
+  
   document.getElementById('subtotal').innerText = subtotal.toFixed(2);
-  document.getElementById('cgst').innerText = cgst.toFixed(2);
-  document.getElementById('sgst').innerText = sgst.toFixed(2);
-  document.getElementById('grandTotal').innerText = (subtotal+cgst+sgst).toFixed(2);
+  document.getElementById('cgstAmount').innerText = totalCgst.toFixed(2);
+  document.getElementById('sgstAmount').innerText = totalSgst.toFixed(2);
+  document.getElementById('grandTotal').innerText = (subtotal+totalCgst+totalSgst).toFixed(2);
 }
 
 function updateStock(row) {
@@ -274,13 +296,33 @@ document.addEventListener('input', e=>{
 });
 
 document.addEventListener('change', e=>{
+  if(e.target.name === 'gst[]') calc();
   if(e.target.classList.contains('product-select')) {
-    updateStock(e.target.closest('tr'));
+    const row = e.target.closest('tr');
+    updateStock(row);
+    loadManufacturers(row, e.target.value);
   }
   if(e.target.name === 'warehouse_id') {
     updateAllStock();
   }
 });
+
+function loadManufacturers(row, productId) {
+  const manufacturerSelect = row.querySelector('.manufacturer-select');
+  manufacturerSelect.innerHTML = '<option value="">Loading...</option>';
+  
+  fetch(`get_manufacturers?product_id=${productId}`)
+    .then(response => response.json())
+    .then(data => {
+      manufacturerSelect.innerHTML = '<option value="">Select Manufacturer</option>';
+      data.forEach(m => {
+        manufacturerSelect.innerHTML += `<option value="${m.id}">${m.manufacturer_name}</option>`;
+      });
+    })
+    .catch(() => {
+      manufacturerSelect.innerHTML = '<option value="">Error loading</option>';
+    });
+}
 
 document.getElementById('addRow').onclick = ()=>{
   let row = document.querySelector('#itemsTable tbody tr').cloneNode(true);
@@ -315,14 +357,17 @@ document.addEventListener('DOMContentLoaded', updateAllStock);
 <script>
 function splitGST(select) {
     const gst = parseFloat(select.value);
+    const row = select.closest('tr');
+    const cgstInput = row.querySelector('.cgst-display');
+    const sgstInput = row.querySelector('.sgst-display');
 
     if (!isNaN(gst)) {
         const half = gst / 2;
-        document.getElementById('cgst').value = half + '%';
-        document.getElementById('sgst').value = half + '%';
+        cgstInput.value = half + '%';
+        sgstInput.value = half + '%';
     } else {
-        document.getElementById('cgst').value = '';
-        document.getElementById('sgst').value = '';
+        cgstInput.value = '';
+        sgstInput.value = '';
     }
 }
 </script>

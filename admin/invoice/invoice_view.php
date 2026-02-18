@@ -44,9 +44,11 @@ $items = [];
 $stmt = $conn->prepare("
     SELECT 
         ii.*,
-        p.name AS product_name
+        p.name AS product_name,
+        pm.manufacturer_name
     FROM invoice_items ii
     LEFT JOIN products p ON p.id = ii.product_id
+    LEFT JOIN product_manufacturers pm ON pm.id = ii.manufacturer_id
     WHERE ii.invoice_id = ?
 ");
 $stmt->bind_param('i', $id);
@@ -88,9 +90,10 @@ $stmt->close();
 
 /* ================= ITEMS ================= */
 $stmt = $conn->prepare("
-    SELECT ii.*, p.name AS product_name, p.hsn_code
+    SELECT ii.*, p.name AS product_name, p.hsn_code, pm.manufacturer_name
     FROM invoice_items ii
     JOIN products p ON p.id = ii.product_id
+    LEFT JOIN product_manufacturers pm ON pm.id = ii.manufacturer_id
     WHERE ii.invoice_id = ?
 ");
 $stmt->bind_param("i", $id);
@@ -289,7 +292,9 @@ $total += $taxable+$cgst+$sgst;
 <td><?= $sr++ ?></td>
 <td>
    <p style="margin:0 0 1em 0"><?= htmlspecialchars($it['product_name']) ?></p>
-
+   <?php if (!empty($it['manufacturer_name'])): ?>
+   <small style="color:#666">Product Manufacturer: <?= htmlspecialchars($it['manufacturer_name']) ?></small>
+   <?php endif; ?>
 </td>
 <td><?= $it['hsn_code'] ?></td>
 <td class="right"><?= $it['quantity'] ?></td>
